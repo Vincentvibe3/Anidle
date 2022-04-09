@@ -1,0 +1,6 @@
+{
+    "compilerOptions": {
+        "module": "esnext"
+    },
+	"extends": "./.svelte-kit/tsconfig.json"
+}
