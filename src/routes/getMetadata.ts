@@ -1,10 +1,10 @@
 import { cachedMetadata } from "$lib/cache"
 
-let process = await import("process")
+let process = import("process")
 
 const getToken = async ():Promise<string> => {
-    const client = process.env.VITE_SPOTIFY_CLIENT
-    const secret = process.env.VITE_SPOTIFY_SECRET
+    const client = (await process).env.VITE_SPOTIFY_CLIENT
+    const secret = (await process).env.VITE_SPOTIFY_SECRET
     let auth = Buffer.from(`${client}:${secret}`).toString("base64")
     let response = await fetch("https://accounts.spotify.com/api/token", 
         {
