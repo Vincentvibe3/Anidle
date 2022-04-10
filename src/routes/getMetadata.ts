@@ -24,7 +24,8 @@ export interface Metadata{
     mediaURL:string,
     spotifyURL:string,
     artist:string,
-    expiry:number //Unix Timestamp
+    expiry:number, //Unix Timestamp
+    albumArt:string
 }
 
 const fetchData = async (token:string, id:string):Promise<Metadata> => {
@@ -43,23 +44,27 @@ const fetchData = async (token:string, id:string):Promise<Metadata> => {
         mediaURL:respData.preview_url,
         spotifyURL:respData.external_urls.spotify,
         artist:respData.artists[0].name,
-        expiry:Date.now()+86400000
+        expiry:Date.now()+86400000,
+        albumArt:respData.album.images[0].url
     }
 }
 
+//fix cache clearing
 /** @type {import('./[id]').RequestHandler} */
 export async function get({ url }) {
     if (url.searchParams.has("id")){
         let id = url.searchParams.get("id")
         if (cachedMetadata.has(id)){
             let metadata = cachedMetadata.get(id)
-            if (metadata.expiry<Date.now()){
+            if (metadata.expiry>Date.now()){
                 return {
                     status:200,
                     body:{
                         metadata:metadata
                     }
                 }
+            } else {
+                cachedMetadata.delete(id)
             }
         }
         try {

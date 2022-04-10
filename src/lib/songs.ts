@@ -13,7 +13,7 @@ export var songs:Array<Song> = [
     },
     {
         id:"2Y3lK46bVHAl8VBx25EMTZ",
-        name:"Miss Kobayashi's Dragon Maid -Rhapsody of Blue Sky"
+        name:"Miss Kobayashi's Dragon Maid - Rhapsody of Blue Sky"
     },
     {
         id:"3IOpaj1JAUK254P4TyJEVQ",
