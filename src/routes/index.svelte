@@ -72,7 +72,9 @@
         }
     })
 </script>
-
+<svelte:head>
+	<title>Anidle</title>
+</svelte:head>
 {#if dialog && !finished}
     <Dialog></Dialog>
 {/if}

@@ -1,6 +1,6 @@
 import { cachedMetadata } from "$lib/cache"
 
-let process = import("process")
+const process = import("process")
 
 const getToken = async ():Promise<string> => {
     const client = (await process).env.VITE_SPOTIFY_CLIENT
