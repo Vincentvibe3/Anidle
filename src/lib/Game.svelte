@@ -4,7 +4,7 @@
     import { onMount } from 'svelte';
     import Progress from "$lib/Progress.svelte";
     import { getSuggestions } from '$lib/suggestions';
-    import Guesses from "$lib/guesses.svelte";
+    import Guesses from "$lib/Guesses.svelte";
     import FinishedDialog from "$lib/FinishedDialog.svelte";
     import type { Attempt } from "./reportGenerator";
 
