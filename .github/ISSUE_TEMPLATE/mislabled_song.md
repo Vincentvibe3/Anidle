@@ -1,5 +1,5 @@
 ---
-name: Mislabed Song
+name: Mislabled Song
 about: Report a mislabled song
 title: "[Mislabed Song]"
 labels: Mislabled Song
