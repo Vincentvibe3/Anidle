@@ -37,7 +37,7 @@
 
 <script lang="ts">
     import Dialog from "$lib/dialog.svelte"
-    import Game from "$lib/game.svelte";
+    import Game from "$lib/Game.svelte";
     import About from "$lib/about.svelte"
     import { getSong, type SongEntry } from '$lib/songChooser';
     import type { Metadata } from './getMetadata';

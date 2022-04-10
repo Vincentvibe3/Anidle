@@ -66,10 +66,6 @@
         margin-bottom: 1rem;
     }
 
-    ul {
-        padding-left: 1rem;
-    }
-
     a {
         color: rgb(171, 169, 253);
     }

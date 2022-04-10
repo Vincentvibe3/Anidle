@@ -2,10 +2,10 @@
     import type { Song } from "$lib/songs";
     import type { Metadata } from '../routes/getMetadata';
     import { onMount } from 'svelte';
-    import Progress from "$lib/progress.svelte";
+    import Progress from "$lib/Progress.svelte";
     import { getSuggestions } from '$lib/suggestions';
     import Guesses from "$lib/guesses.svelte";
-    import FinishedDialog from "$lib/finishedDialog.svelte";
+    import FinishedDialog from "$lib/FinishedDialog.svelte";
     import type { Attempt } from "./reportGenerator";
 
     export let song:Song

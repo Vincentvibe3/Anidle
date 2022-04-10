@@ -7,10 +7,29 @@
         {
             "name":"Start sveltekit",
             "type": "node",
-            "command": "npm run dev",
             "request": "launch",
             "runtimeExecutable": "npm",
             "runtimeArgs": ["run", "dev"],
+            "console":"internalConsole",
+            "envFile": "${workspaceFolder}/.env"
+        },
+
+        {
+            "name":"Build Production",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": ["run", "build"],
+            "console":"internalConsole",
+            "envFile": "${workspaceFolder}/.env"
+        },
+
+        {
+            "name":"Run Production",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": ["run", "preview"],
             "console":"internalConsole",
             "envFile": "${workspaceFolder}/.env"
         }
