@@ -37,13 +37,12 @@
 
 <script lang="ts">
     import Dialog from "$lib/dialog.svelte"
-    import Game from "$lib/Game.svelte";
+    import Game from "$lib/game.svelte";
     import About from "$lib/about.svelte"
     import { getSong, type SongEntry } from '$lib/songChooser';
     import type { Metadata } from './getMetadata';
     import type { Song } from '$lib/songs';
     import { onMount } from 'svelte';
-    import type { Attempt } from '$lib/reportGenerator';
 
     export let loaded = false
     export let loadFailed = false

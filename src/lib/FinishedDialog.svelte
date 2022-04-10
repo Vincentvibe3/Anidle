@@ -1,7 +1,7 @@
 <script lang="ts">
     import type { get, Metadata } from "src/routes/getMetadata";
     import { onMount } from "svelte";
-    import Report from "./Report.svelte";
+    import Report from "./report.svelte";
     import { getReport, type Attempt } from "./reportGenerator";
     import type { Song } from "./songs";
     export let displayed:boolean
