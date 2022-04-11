@@ -35,6 +35,7 @@
     let inputContentSet = false
     let gameSuccess = false
     let diffMessage = ""
+    let mounted= false
 
     interface Buttons {
         submitButton:HTMLButtonElement,
@@ -159,7 +160,6 @@
                 }
             }
         }
-        
     }
 
     const getTimeDiff = ()=>{
@@ -186,12 +186,28 @@
         }
     }
 
+    const adjustIconVisibility = (playback:boolean)=>{
+        if (mounted){
+            if (playback){
+                playIcon.style.display = "none"
+                pauseIcon.style.display = "block"
+            } else {
+                pauseIcon.style.display = "none"
+                playIcon.style.display = "block"
+            }
+        }
+        
+    }
+
     $: inputContent, getAnswerSuggestions(inputContent), setSubmitButtonState(inputContent)
     $:attemptCount, getTimeDiff()
+    $:playing, adjustIconVisibility(playing)
 
     onMount(()=>{
+        mounted = true
         currentTime = media.currentTime
         importProgress()
+        adjustIconVisibility(playing)
     })
 
     $:finished, displayEndScreen=finished
@@ -215,11 +231,8 @@
     <div class="buttons">
         <button bind:this={buttons.skipButton} on:click={addAttempt} class="controlButton">Skip{diffMessage}</button>
         <button bind:this={buttons.playButton} on:mouseenter={adjustPlayIconColor} on:mouseleave={adjustPlayIconColorMouseOut} on:click={playPause} class="play controlButton">
-            {#if playing}
-                <svg bind:this={pauseIcon} class="playIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
-            {:else}
-                <svg bind:this={playIcon} class="playIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-            {/if}
+            <svg bind:this={pauseIcon} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+            <svg bind:this={playIcon} class="playIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
         </button>
         <button bind:this={buttons.submitButton} on:click={checkAttempt} class="controlButton" disabled>Submit</button>
     </div>
