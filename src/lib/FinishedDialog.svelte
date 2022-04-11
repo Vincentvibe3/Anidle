@@ -135,10 +135,10 @@
             </div>
             
         </div>
+        <p class="errorMessage">Not the right song or anime? <a href="https://github.com/Vincentvibe3/Anidle/">Report an error</a></p>
         <button on:click={copyToClipboard}>Share</button>
         <button on:click={flipDisplay}>Close</button>
     </div>
-    
 </div>
 
 
@@ -245,7 +245,11 @@
         margin-bottom: 0.5rem;
     }
 
-    .songInfo a {
+    .errorMessage {
+        font-size: 0.8rem;
+    }
+
+    a {
         color: rgb(171, 169, 253);
         font-size: 0.8rem;
         text-overflow: ellipsis;
