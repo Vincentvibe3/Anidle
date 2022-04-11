@@ -74,7 +74,11 @@
         <p>Audio by <a href="https://www.spotify.com/">Spotify</a></p>
         <p>Icons by <a href="https://iconsvg.xyz/">IconSvg</a></p>
         <p>Font used: <a href="https://fonts.google.com/specimen/Manrope">Manrope</a></p>
-        <p>Find the code <a href="https://github.com/Vincentvibe3/Anidle/">here</a></p>
+        <p>Open Sourced <a href="https://github.com/Vincentvibe3/Anidle/">here</a></p>
+        <div class="submissions">
+            <p>Want to include a song?</p>
+            <a href="https://github.com/Vincentvibe3/Anidle/">Submit a song request</a>
+        </div>
         <button on:click={flipDisplay}>Close</button>
     </div>
     
@@ -86,6 +90,25 @@
     p {
         margin-top: 0rem;
         margin-bottom: 1rem;
+    }
+
+    .submissions {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .submissions p{
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .submissions p + a{
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+    }
+
+    .submissions a {
+        font-size: 0.8rem;
     }
 
     a {
