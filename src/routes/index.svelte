@@ -12,7 +12,7 @@
                     props: {
                         song:song,
                         metadata:{},
-                        loadFailed:false,
+                        loadFailed:true,
                         loaded:true,
                         index:songEntry.index
                     }

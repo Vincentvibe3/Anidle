@@ -20,7 +20,7 @@
             "request": "launch",
             "runtimeExecutable": "npm",
             "runtimeArgs": ["run", "build"],
-            "console":"internalConsole",
+            "console":"integratedTerminal",
             "envFile": "${workspaceFolder}/.env"
         },
 
@@ -32,6 +32,16 @@
             "runtimeArgs": ["run", "preview"],
             "console":"internalConsole",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "name":"Get Anime List",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "node",
+            "runtimeArgs": ["${workspaceFolder}/songFetching/app.js", "--initial"],
+            "console":"internalConsole",
+            "envFile": "${workspaceFolder}/songFetching/.env",
+            "outputCapture": "std"
         }
     ]
 }
