@@ -17,6 +17,8 @@
     let plural = ""
     let opacity = 0
     let clipboardSnackbar:HTMLElement
+    export let nextTime:number
+    let timer:string =""
 
     const dismiss = () => {
         container.style.display = "none"
@@ -104,9 +106,19 @@
     $: displayed, changeDisplay(displayed)
     $:attempts, updatePlural(attempts.length)
 
+    const updateTimer = () => {
+        let diff = nextTime-Date.now()
+        let hours = Math.floor(diff/(60*60*1000))
+        let minutes = Math.floor(diff%(hours*60*60*1000)/(60*1000))
+        let seconds = Math.floor(diff%((hours*60*60*1000)+(minutes*60*1000))/1000)
+        timer=`${hours}:${minutes}:${seconds}`
+        setTimeout(updateTimer, 1000)
+    }
+
     onMount(() => {
         mounted = true
         clipboardSnackbar.style.opacity = "0"
+        updateTimer()
         if (displayed){
             show()
         } else {
@@ -125,6 +137,7 @@
         {:else}
             <h2>You failed today's Anidle.</h2>
         {/if}
+        <p>Next Anidle in {timer}</p>
         <Report bind:attempts={attempts} bind:maxAttempts={maxAttempts}></Report>
         <div class="songInfo">
             <img alt="Album art for {metadata.albumArt}" src={metadata.albumArt}>
@@ -135,7 +148,7 @@
             </div>
             
         </div>
-        <p class="errorMessage">Not the right song or anime? <a href="https://github.com/Vincentvibe3/Anidle/">Report an error</a></p>
+        <p class="errorMessage">Not the right song or anime? <a href="https://github.com/Vincentvibe3/Anidle/issues">Report an error</a></p>
         <button on:click={copyToClipboard}>Share</button>
         <button on:click={flipDisplay}>Close</button>
     </div>

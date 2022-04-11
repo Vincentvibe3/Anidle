@@ -77,7 +77,7 @@
         <p>Open Sourced <a href="https://github.com/Vincentvibe3/Anidle/">here</a></p>
         <div class="submissions">
             <p>Want to include a song?</p>
-            <a href="https://github.com/Vincentvibe3/Anidle/">Submit a song request</a>
+            <a href="https://github.com/Vincentvibe3/Anidle/issues">Submit a song request</a>
         </div>
         <button on:click={flipDisplay}>Close</button>
     </div>

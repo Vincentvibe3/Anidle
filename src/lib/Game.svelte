@@ -7,11 +7,11 @@
     import Guesses from "$lib/Guesses.svelte";
     import FinishedDialog from "$lib/FinishedDialog.svelte";
     import type { Attempt } from "./reportGenerator";
-import { browser } from "$app/env";
 
     export let song:Song
     export let metadata:Metadata
     export let index:number
+    export let nextTime:number
 
     let media:HTMLAudioElement
     let buttons:Buttons = {
@@ -193,7 +193,7 @@ import { browser } from "$app/env";
     $:finished, displayEndScreen=finished
 </script>
 
-<FinishedDialog bind:index={index} bind:displayed={displayEndScreen} bind:song={song} bind:metadata={metadata} bind:attempts={attempts} bind:success={gameSuccess} bind:maxAttempts={attemptsTimestamp.length}></FinishedDialog>
+<FinishedDialog bind:nextTime={nextTime} bind:index={index} bind:displayed={displayEndScreen} bind:song={song} bind:metadata={metadata} bind:attempts={attempts} bind:success={gameSuccess} bind:maxAttempts={attemptsTimestamp.length}></FinishedDialog>
 <audio bind:this={media} src={metadata.mediaURL} preload="true"></audio>
 <Guesses bind:maxAttempts={attemptsTimestamp.length} bind:attempts={attempts}></Guesses>
 <div class="controls">

@@ -14,7 +14,8 @@
                         metadata:{},
                         loadFailed:true,
                         loaded:true,
-                        index:songEntry.index
+                        index:songEntry.index,
+                        nextTime:songEntry.expiry
                     }
                 }
             }
@@ -24,7 +25,8 @@
                     song:song,
                     metadata: metadata,
                     loaded: true,
-                    index:songEntry.index
+                    index:songEntry.index,
+                    nextTime:songEntry.expiry
                 }
             }
         }
@@ -49,6 +51,7 @@
     export let song:Song
     export let metadata:Metadata
     export let index:number
+    export let nextTime:number
 
     let gameStarted = false
     let showAbout = false
@@ -99,7 +102,7 @@
         <p>Loading failed.</p>
         <p>Reload the page to try again</p>
     {:else if loaded && !loadFailed}
-        <Game bind:gameStarted={gameStarted} bind:song={song} bind:metadata={metadata} bind:index={index} bind:displayEndScreen={displayEndScreen} bind:finished={finished}></Game>
+        <Game bind:nextTime={nextTime} bind:gameStarted={gameStarted} bind:song={song} bind:metadata={metadata} bind:index={index} bind:displayEndScreen={displayEndScreen} bind:finished={finished}></Game>
     {:else}
         <p>Loading...</p>
     {/if}

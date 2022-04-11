@@ -10,7 +10,6 @@ import { onMount } from "svelte";
     }
 
     const animateFadeOut = ()=>{
-        console.log(opacity)
         opacity-=0.1
         container.style.opacity = `${opacity}`
         if (opacity>0){
