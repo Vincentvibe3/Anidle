@@ -1,0 +1,4688 @@
+[
+    {
+        "enName": "Guren no Yumiya",
+        "jpName": "紅蓮の弓矢",
+        "artist": "Linked Horizon",
+        "anime": "Shingeki no Kyojin"
+    },
+    {
+        "enName": "Jiyuu no Tsubasa",
+        "jpName": "自由の翼",
+        "artist": "Linked Horizon",
+        "anime": "Shingeki no Kyojin"
+    },
+    {
+        "enName": "Utsukushiki Zankoku na Sekai",
+        "jpName": "美しき残酷な世界",
+        "artist": "Yoko Hikasa",
+        "anime": "Shingeki no Kyojin"
+    },
+    {
+        "enName": "great escape",
+        "jpName": "",
+        "artist": "Cinema Staff",
+        "anime": "Shingeki no Kyojin"
+    },
+    {
+        "enName": "the WORLD",
+        "jpName": "",
+        "artist": "Nightmare",
+        "anime": "Death Note"
+    },
+    {
+        "enName": "What's up, people?!",
+        "jpName": "",
+        "artist": "Maximum the Hormone",
+        "anime": "Death Note"
+    },
+    {
+        "enName": "Alumina",
+        "jpName": "",
+        "artist": "Nightmare",
+        "anime": "Death Note"
+    },
+    {
+        "enName": "Zetsubō Billy",
+        "jpName": "",
+        "artist": "Maximum the Hormone",
+        "anime": "Death Note"
+    },
+    {
+        "enName": "Coda ~ Death Note",
+        "jpName": "",
+        "artist": "Yoshihisa Hirano",
+        "anime": "Death Note"
+    },
+    {
+        "enName": "again",
+        "jpName": "",
+        "artist": "YUI",
+        "anime": "Fullmetal Alchemist: Brotherhood"
+    },
+    {
+        "enName": "Hologram",
+        "jpName": "ホログラム",
+        "artist": "NICO Touches the Walls",
+        "anime": "Fullmetal Alchemist: Brotherhood"
+    },
+    {
+        "enName": "Golden Time Lover",
+        "jpName": "ゴールデンタイムラバー",
+        "artist": "Sukima Switch",
+        "anime": "Fullmetal Alchemist: Brotherhood"
+    },
+    {
+        "enName": "Period",
+        "jpName": "",
+        "artist": "Chemistry",
+        "anime": "Fullmetal Alchemist: Brotherhood"
+    },
+    {
+        "enName": "Rain",
+        "jpName": "レイン",
+        "artist": "SID",
+        "anime": "Fullmetal Alchemist: Brotherhood"
+    },
+    {
+        "enName": "Uso",
+        "jpName": "嘘",
+        "artist": "SID",
+        "anime": "Fullmetal Alchemist: Brotherhood"
+    },
+    {
+        "enName": "LET IT OUT",
+        "jpName": "",
+        "artist": "Miho Fukuhara",
+        "anime": "Fullmetal Alchemist: Brotherhood"
+    },
+    {
+        "enName": "Tsunaida Te",
+        "jpName": "つないだ手",
+        "artist": "Lil'B",
+        "anime": "Fullmetal Alchemist: Brotherhood"
+    },
+    {
+        "enName": "Shunkan Sentimental",
+        "jpName": "瞬間センチメンタル",
+        "artist": "SCANDAL",
+        "anime": "Fullmetal Alchemist: Brotherhood"
+    },
+    {
+        "enName": "RAY OF LIGHT",
+        "jpName": "",
+        "artist": "Nakagawa Shouko",
+        "anime": "Fullmetal Alchemist: Brotherhood"
+    },
+    {
+        "enName": "THE HERO !! ~Okoreru Kobushi ni Hi wo Tsukero~ (THE HERO !! ～怒れる拳に火をつけろ～)",
+        "jpName": "",
+        "artist": "JAM Project",
+        "anime": "One Punch Man"
+    },
+    {
+        "enName": "Hoshi yori Saki ni Mitsukete Ageru",
+        "jpName": "星より先に見つけてあげる",
+        "artist": "Hiroko Moriguchi",
+        "anime": "One Punch Man"
+    },
+    {
+        "enName": "Kanashimitachi wo Dakishimete",
+        "jpName": "悲しみたちを抱きしめて",
+        "artist": "Hiroko Moriguchi",
+        "anime": "One Punch Man"
+    },
+    {
+        "enName": "crossing field",
+        "jpName": "",
+        "artist": "LiSA",
+        "anime": "Sword Art Online"
+    },
+    {
+        "enName": "INNOCENCE",
+        "jpName": "",
+        "artist": "Aoi Eir",
+        "anime": "Sword Art Online"
+    },
+    {
+        "enName": "Yume Sekai",
+        "jpName": "ユメセカイ",
+        "artist": "Haruka Tomatsu",
+        "anime": "Sword Art Online"
+    },
+    {
+        "enName": "Overfly",
+        "jpName": "",
+        "artist": "Luna Haruna",
+        "anime": "Sword Art Online"
+    },
+    {
+        "enName": "The Day",
+        "jpName": "",
+        "artist": "Porno Graffitti",
+        "anime": "Boku no Hero Academia"
+    },
+    {
+        "enName": "HEROES",
+        "jpName": "",
+        "artist": "Brian the Sun",
+        "anime": "Boku no Hero Academia"
+    },
+    {
+        "enName": "unravel",
+        "jpName": "",
+        "artist": "TK from Ling Tosite Sigure",
+        "anime": "Tokyo Ghoul"
+    },
+    {
+        "enName": "Seijatachi",
+        "jpName": "聖者たち",
+        "artist": "People In The Box",
+        "anime": "Tokyo Ghoul"
+    },
+    {
+        "enName": "R★O★C★K★S\"",
+        "jpName": "",
+        "artist": "Hound Dog",
+        "anime": "Naruto"
+    },
+    {
+        "enName": "Haruka Kanata",
+        "jpName": "遥か彼方",
+        "artist": "Asian Kung-fu Generation",
+        "anime": "Naruto"
+    },
+    {
+        "enName": "Kanashimi wo Yasashisa ni",
+        "jpName": "悲しみをやさしさに",
+        "artist": "little by little",
+        "anime": "Naruto"
+    },
+    {
+        "enName": "GO!!!",
+        "jpName": "",
+        "artist": "FLOW",
+        "anime": "Naruto"
+    },
+    {
+        "enName": "Seishun Kyosokyoku",
+        "jpName": "青春狂騒曲",
+        "artist": "Sambomaster",
+        "anime": "Naruto"
+    },
+    {
+        "enName": "No Boy, No Cry",
+        "jpName": "ノーボーイ・ノークライ",
+        "artist": "Stance Punks",
+        "anime": "Naruto"
+    },
+    {
+        "enName": "Namikaze Satellite",
+        "jpName": "波風サテライト",
+        "artist": "Snowkel",
+        "anime": "Naruto"
+    },
+    {
+        "enName": "Re:member",
+        "jpName": "",
+        "artist": "FLOW",
+        "anime": "Naruto"
+    },
+    {
+        "enName": "YURA YURA",
+        "jpName": "ユラユラ",
+        "artist": "Hearts Grow",
+        "anime": "Naruto"
+    },
+    {
+        "enName": "Wind",
+        "jpName": "",
+        "artist": "Akeboshi",
+        "anime": "Naruto"
+    },
+    {
+        "enName": "Harmonia",
+        "jpName": "",
+        "artist": "Rythem",
+        "anime": "Naruto"
+    },
+    {
+        "enName": "Viva Rock ~Japanese Side~",
+        "jpName": "",
+        "artist": "Orange Range",
+        "anime": "Naruto"
+    },
+    {
+        "enName": "ALIVE",
+        "jpName": "",
+        "artist": "Raiko",
+        "anime": "Naruto"
+    },
+    {
+        "enName": "Ima made Nando mo",
+        "jpName": "",
+        "artist": "the Mass Missile",
+        "anime": "Naruto"
+    },
+    {
+        "enName": "Ryusei",
+        "jpName": "",
+        "artist": "Tia",
+        "anime": "Naruto"
+    },
+    {
+        "enName": "Mountain A Go Go Too",
+        "jpName": "",
+        "artist": "Captain Straydum",
+        "anime": "Naruto"
+    },
+    {
+        "enName": "Hajimete Kimi to Shabetta",
+        "jpName": "",
+        "artist": "GagagaSP",
+        "anime": "Naruto"
+    },
+    {
+        "enName": "Nakushita Kotoba",
+        "jpName": "",
+        "artist": "No Regret Life",
+        "anime": "Naruto"
+    },
+    {
+        "enName": "Speed",
+        "jpName": "",
+        "artist": "Analogfish",
+        "anime": "Naruto"
+    },
+    {
+        "enName": "Soba ni Iru Kara",
+        "jpName": "",
+        "artist": "Amadori",
+        "anime": "Naruto"
+    },
+    {
+        "enName": "Parade",
+        "jpName": "",
+        "artist": "CHABA",
+        "anime": "Naruto"
+    },
+    {
+        "enName": "Yellow Moon",
+        "jpName": "",
+        "artist": "Akeboshi",
+        "anime": "Naruto"
+    },
+    {
+        "enName": "Pinocchio",
+        "jpName": "",
+        "artist": "Ore Ska Band",
+        "anime": "Naruto"
+    },
+    {
+        "enName": "Scenario",
+        "jpName": "",
+        "artist": "SABOTEN",
+        "anime": "Naruto"
+    },
+    {
+        "enName": "Gurenge",
+        "jpName": "紅蓮華",
+        "artist": "LiSA",
+        "anime": "Kimetsu no Yaiba"
+    },
+    {
+        "enName": "from the edge",
+        "jpName": "",
+        "artist": "FictionJunction feat. LiSA",
+        "anime": "Kimetsu no Yaiba"
+    },
+    {
+        "enName": "Kamado Tanjirou no Uta",
+        "jpName": "竈門炭治郎のうた",
+        "artist": "Go Shiina ft. Nami Nakagawa",
+        "anime": "Kimetsu no Yaiba"
+    },
+    {
+        "enName": "departure!",
+        "jpName": "",
+        "artist": "Ono Masatoshi",
+        "anime": "Hunter x Hunter (2011)"
+    },
+    {
+        "enName": "Just Awake",
+        "jpName": "",
+        "artist": "Fear, and Loathing in Las Vegas",
+        "anime": "Hunter x Hunter (2011)"
+    },
+    {
+        "enName": "HUNTING FOR YOUR DREAM",
+        "jpName": "",
+        "artist": "Galneryus",
+        "anime": "Hunter x Hunter (2011)"
+    },
+    {
+        "enName": "Riot",
+        "jpName": "",
+        "artist": "Yoshihisa Hirano",
+        "anime": "Hunter x Hunter (2011)"
+    },
+    {
+        "enName": "REASON",
+        "jpName": "",
+        "artist": "YUZU (ゆず)",
+        "anime": "Hunter x Hunter (2011)"
+    },
+    {
+        "enName": "Nagareboshi Kirari (YUZU Version)",
+        "jpName": "流れ星キラリ (ゆずバージョン)",
+        "artist": "YUZU (ゆず)",
+        "anime": "Hunter x Hunter (2011)"
+    },
+    {
+        "enName": "Hyouriittai",
+        "jpName": "表裏一体",
+        "artist": "YUZU (ゆず)",
+        "anime": "Hunter x Hunter (2011)"
+    },
+    {
+        "enName": "Understanding",
+        "jpName": "",
+        "artist": "Yoshihisa Hirano",
+        "anime": "Hunter x Hunter (2011)"
+    },
+    {
+        "enName": "Yume Tourou",
+        "jpName": "夢灯籠",
+        "artist": "RADWIMPS",
+        "anime": "Kimi no Na wa."
+    },
+    {
+        "enName": "Nandemonaiya",
+        "jpName": "なんでもないや",
+        "artist": "RADWIMPS",
+        "anime": "Kimi no Na wa."
+    },
+    {
+        "enName": "Shinzou wo Sasageyo!",
+        "jpName": "心臓を捧げよ！",
+        "artist": "Linked Horizon",
+        "anime": "Shingeki no Kyojin Season 2"
+    },
+    {
+        "enName": "Yuugure no Tori",
+        "jpName": "夕暮れの鳥",
+        "artist": "Shinsei Kamattechan",
+        "anime": "Shingeki no Kyojin Season 2"
+    },
+    {
+        "enName": "Hacking to the Gate",
+        "jpName": "",
+        "artist": "Kanako Itou",
+        "anime": "Steins;Gate"
+    },
+    {
+        "enName": "Toki Tsukasadoru Juuni no Meiyaku",
+        "jpName": "刻司ル十二ノ盟約",
+        "artist": "Yui Sakakibara",
+        "anime": "Steins;Gate"
+    },
+    {
+        "enName": "Fake Verthandi",
+        "jpName": "",
+        "artist": "Takeshi Abo",
+        "anime": "Steins;Gate"
+    },
+    {
+        "enName": "Sky Clad no Kansokusha",
+        "jpName": "スカイクラッドの観測者",
+        "artist": "Kanako Itou",
+        "anime": "Steins;Gate"
+    },
+    {
+        "enName": "Another Heaven",
+        "jpName": "",
+        "artist": "Kanako Itou",
+        "anime": "Steins;Gate"
+    },
+    {
+        "enName": "Peace Sign",
+        "jpName": "ピースサイン",
+        "artist": "Kenshi Yonezu",
+        "anime": "Boku no Hero Academia 2nd Season"
+    },
+    {
+        "enName": "Sora ni Utaeba",
+        "jpName": "空に歌えば",
+        "artist": "amazarashi",
+        "anime": "Boku no Hero Academia 2nd Season"
+    },
+    {
+        "enName": "Dakara, Hitori ja nai",
+        "jpName": "だから, ひとりじゃない",
+        "artist": "Little Glee Monster",
+        "anime": "Boku no Hero Academia 2nd Season"
+    },
+    {
+        "enName": "Datte Atashi no Hero.",
+        "jpName": "だってアタシのヒーロー。",
+        "artist": "LiSA",
+        "anime": "Boku no Hero Academia 2nd Season"
+    },
+    {
+        "enName": "This game",
+        "jpName": "",
+        "artist": "Konomi Suzuki",
+        "anime": "No Game No Life"
+    },
+    {
+        "enName": "Onegai☆Snyaiper",
+        "jpName": "おねがい☆すにゃいばー",
+        "artist": "Izuna Hatsuse (Miyuki Sawashiro)",
+        "anime": "No Game No Life"
+    },
+    {
+        "enName": "Oracion",
+        "jpName": "オラシオン",
+        "artist": "Shiro (Ai Kayano)",
+        "anime": "No Game No Life"
+    },
+    {
+        "enName": "Hero's Come Back",
+        "jpName": "",
+        "artist": "Nobodyknows+",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "distance",
+        "jpName": "",
+        "artist": "LONG SHOT PARTY",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "Blue Bird",
+        "jpName": "ブルーバード",
+        "artist": "Ikimonogakari",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "CLOSER",
+        "jpName": "",
+        "artist": "Inoue Joe",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "Hotaru no Hikari",
+        "jpName": "ホタルノヒカリ",
+        "artist": "Ikimonogakari",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "Sign",
+        "jpName": "",
+        "artist": "FLOW",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "Toumei Datta Sekai",
+        "jpName": "透明だった世界",
+        "artist": "Motohiro Hata",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "Diver",
+        "jpName": "",
+        "artist": "NICO Touches the Walls",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "Lovers",
+        "jpName": "ラヴァーズ",
+        "artist": "7!!",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "newsong",
+        "jpName": "",
+        "artist": "tacica",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "Totsugeki Rock",
+        "jpName": "突撃ロック",
+        "artist": "THE CRO-MAGNONS",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "Moshimo",
+        "jpName": "",
+        "artist": "Daisuke",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "Niwaka Ame Nimo Makezu",
+        "jpName": "ニワカ雨ニモ負ケズ",
+        "artist": "NICO Touches the Walls",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "Tsuki no Ookisa",
+        "jpName": "月の大きさ",
+        "artist": "Nogizaka46",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "Guren",
+        "jpName": "",
+        "artist": "DOES",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "Silhouette",
+        "jpName": "シルエット",
+        "artist": "KANA-BOON",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "Kaze",
+        "jpName": "風",
+        "artist": "Yamazaru",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "LINE",
+        "jpName": "",
+        "artist": "Sukima Switch",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "Blood Circulator",
+        "jpName": "ブラッドサーキュレーター",
+        "artist": "Asian Kung-Fu Generation",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "Kara no Kokoro",
+        "jpName": "カラノココロ",
+        "artist": "Anly",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "Nagare Boshi ~Shooting Star~ (流れ星〜Shooting Star〜)",
+        "jpName": "",
+        "artist": "HOME MADE Kazoku",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "Michi ~to you all (道 〜to you all)",
+        "jpName": "",
+        "artist": "aluto",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "KIMI MONOGATARI",
+        "jpName": "キミモノガタリ",
+        "artist": "little by little",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "Mezamero! Yasei",
+        "jpName": "目覚めろ!野性",
+        "artist": "MATCHY with QUESTION?",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "Sunao na Niji",
+        "jpName": "素直な虹",
+        "artist": "surface",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "BROKEN YOUTH",
+        "jpName": "",
+        "artist": "Nico Touches the Walls",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "Long Kiss Goodbye",
+        "jpName": "",
+        "artist": "HALCALI",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "BACCHIKOI!!!",
+        "jpName": "バッチコイ!!!",
+        "artist": "DEV PARADE",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "Shinkokyuu",
+        "jpName": "深呼吸",
+        "artist": "SUPER BEAVER",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "My ANSWER",
+        "jpName": "",
+        "artist": "SEAMO",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "Omae Dattanda",
+        "jpName": "おまえだったんだ",
+        "artist": "Kishidan",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "For You",
+        "jpName": "",
+        "artist": "AZU",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "Jitensha",
+        "jpName": "自転車",
+        "artist": "OreSkaBand",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "Utakata Hanabi",
+        "jpName": "うたかた花火",
+        "artist": "supercell",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "U can do it!",
+        "jpName": "",
+        "artist": "DOMINO",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "Mayonaka no Orchestra",
+        "jpName": "真夜中のオーケストラ",
+        "artist": "Aqua Timez",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "FREEDOM",
+        "jpName": "",
+        "artist": "HOME MADE Kazoku",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "Yokubou o Sakebe!!!!",
+        "jpName": "欲望を叫べ!!!!",
+        "artist": "OKAMOTO'S",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "Place to Try",
+        "jpName": "",
+        "artist": "TOTALFAT",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "By My Side",
+        "jpName": "バイマイサイド",
+        "artist": "Hemenway",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "Cascade",
+        "jpName": "カスケード",
+        "artist": "UNLIMITS",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "Kono Koe Karashite (この声枯らしてfeat. CHEHON)",
+        "jpName": "",
+        "artist": "AISHA feat. CHEHON",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "MOTHER",
+        "jpName": "",
+        "artist": "MUCC",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "Sayonara Memory",
+        "jpName": "さよならメモリー",
+        "artist": "7!!",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "I Can Hear",
+        "jpName": "",
+        "artist": "DISH//",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "Yume wo Daite ~Hajimari no Crissroad~",
+        "jpName": "夢を抱いて〜はじまりのクリスロード〜",
+        "artist": "Rake",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "Black Night Town",
+        "jpName": "ブラックナイトタウン",
+        "artist": "Akihisa Kondou",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "Niji",
+        "jpName": "虹",
+        "artist": "Shinkuu Horou (真空ホロウ)",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "FLAME",
+        "jpName": "",
+        "artist": "DISH//",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "Never Change feat.Lyu:Lyu",
+        "jpName": "",
+        "artist": "SHUN",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "Dame Dame da",
+        "jpName": "だめだめだ",
+        "artist": "Shiori Tomita",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "Spinning World",
+        "jpName": "",
+        "artist": "Diana Garnet",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "Kotoba no Iranai Yakusoku",
+        "jpName": "言葉のいらない約束",
+        "artist": "sana",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "Trouble Maker",
+        "jpName": "トラブルメイカー",
+        "artist": "KANIKAPILA",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "Sonna Kimi, Konna Boku",
+        "jpName": "そんな君、こんな僕",
+        "artist": "Thinking Dogs",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "Ao no Lullaby",
+        "jpName": "青のララバイ",
+        "artist": "Kuroneko Chelsea",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "Pino to Amélie",
+        "jpName": "ピノとアメリ",
+        "artist": "Huwie Ishizaki",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "Tabidachi no Uta",
+        "jpName": "旅立ちの唄",
+        "artist": "Ayumikurikamaki",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "Zetsu Zetsu",
+        "jpName": "『絶絶（ぜつぜつ）",
+        "artist": "Swimy",
+        "anime": "Naruto: Shippuuden"
+    },
+    {
+        "enName": "COLORS",
+        "jpName": "",
+        "artist": "FLOW",
+        "anime": "Code Geass: Hangyaku no Lelouch"
+    },
+    {
+        "enName": "Kaidoku Funou",
+        "jpName": "解読不能",
+        "artist": "Jinn",
+        "anime": "Code Geass: Hangyaku no Lelouch"
+    },
+    {
+        "enName": "Hitomi no Tsubasa",
+        "jpName": "瞳ノ翼",
+        "artist": "Access",
+        "anime": "Code Geass: Hangyaku no Lelouch"
+    },
+    {
+        "enName": "R1: DICE",
+        "jpName": "",
+        "artist": "FLOW",
+        "anime": "Code Geass: Hangyaku no Lelouch"
+    },
+    {
+        "enName": "Yuukyou Seishunka",
+        "jpName": "勇侠青春謳",
+        "artist": "Ali Project",
+        "anime": "Code Geass: Hangyaku no Lelouch"
+    },
+    {
+        "enName": "Mosaic Kakera",
+        "jpName": "モザイクカケラ",
+        "artist": "SunSet Swish",
+        "anime": "Code Geass: Hangyaku no Lelouch"
+    },
+    {
+        "enName": "Innocent Days",
+        "jpName": "",
+        "artist": "Hitomi",
+        "anime": "Code Geass: Hangyaku no Lelouch"
+    },
+    {
+        "enName": "R1: will-ill",
+        "jpName": "",
+        "artist": "TK from Ling Tosite Sigure",
+        "anime": "Code Geass: Hangyaku no Lelouch"
+    },
+    {
+        "enName": "Pre-Parade",
+        "jpName": "プレパレード",
+        "artist": "Rie Kugimiya, Yui Horie, and Eri Kitamura",
+        "anime": "Toradora!"
+    },
+    {
+        "enName": "silky heart",
+        "jpName": "",
+        "artist": "Yui Horie",
+        "anime": "Toradora!"
+    },
+    {
+        "enName": "Vanilla Salt",
+        "jpName": "バニラソルト",
+        "artist": "Yui Horie",
+        "anime": "Toradora!"
+    },
+    {
+        "enName": "Orange",
+        "jpName": "オレンジ",
+        "artist": "Rie Kugimiya, Yui Horie, and Eri Kitamura",
+        "anime": "Toradora!"
+    },
+    {
+        "enName": "Holy Night",
+        "jpName": "ホーリーナイト",
+        "artist": "Rie Kugimiya and Eri Kitamura",
+        "anime": "Toradora!"
+    },
+    {
+        "enName": "My Generation",
+        "jpName": "マイ・ジェネレーション",
+        "artist": "The Who",
+        "anime": "Koe no Katachi"
+    },
+    {
+        "enName": "Koi wo Shita no wa",
+        "jpName": "恋をしたのは",
+        "artist": "aiko",
+        "anime": "Koe no Katachi"
+    },
+    {
+        "enName": "Red Swan",
+        "jpName": "",
+        "artist": "YOSHIKI feat. HYDE",
+        "anime": "Shingeki no Kyojin Season 3"
+    },
+    {
+        "enName": "Akatsuki no Chinkonka",
+        "jpName": "暁の鎮魂歌",
+        "artist": "Linked Horizon",
+        "anime": "Shingeki no Kyojin Season 3"
+    },
+    {
+        "enName": "Goya no Machiawase",
+        "jpName": "午夜の待ち合わせ",
+        "artist": "Hello Sleepwalkers",
+        "anime": "Noragami"
+    },
+    {
+        "enName": "Heart Realize",
+        "jpName": "ハートリアライズ",
+        "artist": "Tia",
+        "anime": "Noragami"
+    },
+    {
+        "enName": "Hikaru nara",
+        "jpName": "光るなら",
+        "artist": "Goose house",
+        "anime": "Shigatsu wa Kimi no Uso"
+    },
+    {
+        "enName": "Nanairo Symphony",
+        "jpName": "七色シンフォニー",
+        "artist": "Coala Mode. (コアラモード.)",
+        "anime": "Shigatsu wa Kimi no Uso"
+    },
+    {
+        "enName": "Kirameki",
+        "jpName": "キラメキ",
+        "artist": "wacci",
+        "anime": "Shigatsu wa Kimi no Uso"
+    },
+    {
+        "enName": "Orange",
+        "jpName": "オレンジ",
+        "artist": "7!!",
+        "anime": "Shigatsu wa Kimi no Uso"
+    },
+    {
+        "enName": "Redo",
+        "jpName": "",
+        "artist": "Konomi Suzuki",
+        "anime": "Re:Zero kara Hajimeru Isekai Seikatsu"
+    },
+    {
+        "enName": "Paradisus-Paradoxum",
+        "jpName": "",
+        "artist": "MYTH & ROID",
+        "anime": "Re:Zero kara Hajimeru Isekai Seikatsu"
+    },
+    {
+        "enName": "STYX HELIX",
+        "jpName": "",
+        "artist": "MYTH & ROID",
+        "anime": "Re:Zero kara Hajimeru Isekai Seikatsu"
+    },
+    {
+        "enName": "Stay Alive",
+        "jpName": "",
+        "artist": "Emilia (Rie Takahashi)",
+        "anime": "Re:Zero kara Hajimeru Isekai Seikatsu"
+    },
+    {
+        "enName": "“STRAIGHT BET",
+        "jpName": "",
+        "artist": "MYTH & ROID",
+        "anime": "Re:Zero kara Hajimeru Isekai Seikatsu"
+    },
+    {
+        "enName": "“theater D",
+        "jpName": "",
+        "artist": "MYTH & ROID",
+        "anime": "Re:Zero kara Hajimeru Isekai Seikatsu"
+    },
+    {
+        "enName": "My Soul, Your Beats!",
+        "jpName": "",
+        "artist": "Lia",
+        "anime": "Angel Beats!"
+    },
+    {
+        "enName": "Brave Song",
+        "jpName": "",
+        "artist": "Aoi Tada",
+        "anime": "Angel Beats!"
+    },
+    {
+        "enName": "Ichiban no Takaramono ~Yui final ver.~ (一番の宝物 ~Yui final ver.~)",
+        "jpName": "",
+        "artist": "Girls Dead Monster feat. LiSA",
+        "anime": "Angel Beats!"
+    },
+    {
+        "enName": "ODD FUTURE",
+        "jpName": "",
+        "artist": "UVERworld",
+        "anime": "Boku no Hero Academia 3rd Season"
+    },
+    {
+        "enName": "Make my story",
+        "jpName": "",
+        "artist": "Lenny code fiction",
+        "anime": "Boku no Hero Academia 3rd Season"
+    },
+    {
+        "enName": "Update",
+        "jpName": "アップデート",
+        "artist": "miwa",
+        "anime": "Boku no Hero Academia 3rd Season"
+    },
+    {
+        "enName": "Long Hope Philia <TV Limited> (ロングホープ・フィリア＜TV Limited＞)",
+        "jpName": "",
+        "artist": "Masaki Suda",
+        "anime": "Boku no Hero Academia 3rd Season"
+    },
+    {
+        "enName": "We Are!",
+        "jpName": "ウィーアー!",
+        "artist": "Hiroshi Kitadani",
+        "anime": "One Piece"
+    },
+    {
+        "enName": "Believe",
+        "jpName": "",
+        "artist": "Folder5",
+        "anime": "One Piece"
+    },
+    {
+        "enName": "Hikari E",
+        "jpName": "ヒカリヘ",
+        "artist": "The Babystars",
+        "anime": "One Piece"
+    },
+    {
+        "enName": "Bon Voyage!",
+        "jpName": "",
+        "artist": "Bon-Bon Blanco",
+        "anime": "One Piece"
+    },
+    {
+        "enName": "Kokoro no Chizu",
+        "jpName": "ココロのちず",
+        "artist": "BOYSTYLE",
+        "anime": "One Piece"
+    },
+    {
+        "enName": "Brand New World",
+        "jpName": "",
+        "artist": "D-51",
+        "anime": "One Piece"
+    },
+    {
+        "enName": "Crazy Rainbow",
+        "jpName": "",
+        "artist": "Tackey & Tsubasa",
+        "anime": "One Piece"
+    },
+    {
+        "enName": "Jungle P",
+        "jpName": "",
+        "artist": "5050",
+        "anime": "One Piece"
+    },
+    {
+        "enName": "We Are (ウィーアー! 〜10周年Ver.〜)",
+        "jpName": "",
+        "artist": "TVXQ",
+        "anime": "One Piece"
+    },
+    {
+        "enName": "Share the World",
+        "jpName": "",
+        "artist": "TVXQ",
+        "anime": "One Piece"
+    },
+    {
+        "enName": "Kaze wo Sagashite",
+        "jpName": "風をさがして",
+        "artist": "Straw Hat Crew and Mari Yaguchi",
+        "anime": "One Piece"
+    },
+    {
+        "enName": "One Day",
+        "jpName": "",
+        "artist": "The Rootless",
+        "anime": "One Piece"
+    },
+    {
+        "enName": "Fight Together",
+        "jpName": "",
+        "artist": "Namie Amuro",
+        "anime": "One Piece"
+    },
+    {
+        "enName": "We go!",
+        "jpName": "ウィーゴー!",
+        "artist": "Hiroshi Kitadani",
+        "anime": "One Piece"
+    },
+    {
+        "enName": "Hands Up!",
+        "jpName": "",
+        "artist": "Kouta Shinzato",
+        "anime": "One Piece"
+    },
+    {
+        "enName": "Wake up!",
+        "jpName": "",
+        "artist": "AAA",
+        "anime": "One Piece"
+    },
+    {
+        "enName": "Hard Knock Days",
+        "jpName": "",
+        "artist": "GENERATIONS from EXILE TRIBE",
+        "anime": "One Piece"
+    },
+    {
+        "enName": "We can!",
+        "jpName": "ウィーキャン!",
+        "artist": "Kishidan and Hiroshi Kitadani",
+        "anime": "One Piece"
+    },
+    {
+        "enName": "Hope",
+        "jpName": "",
+        "artist": "Namie Amuro",
+        "anime": "One Piece"
+    },
+    {
+        "enName": "Super Powers",
+        "jpName": "",
+        "artist": "V6",
+        "anime": "One Piece"
+    },
+    {
+        "enName": "OVER THE TOP",
+        "jpName": "",
+        "artist": "Hiroshi Kitadani",
+        "anime": "One Piece"
+    },
+    {
+        "enName": "DREAMIN' ON",
+        "jpName": "",
+        "artist": "Da-iCE",
+        "anime": "One Piece"
+    },
+    {
+        "enName": "PAINT",
+        "jpName": "",
+        "artist": "I Don't Like Mondays.",
+        "anime": "One Piece"
+    },
+    {
+        "enName": "memories",
+        "jpName": "",
+        "artist": "Maki Otsuki",
+        "anime": "One Piece"
+    },
+    {
+        "enName": "RUN! RUN! RUN!",
+        "jpName": "",
+        "artist": "Maki Otsuki",
+        "anime": "One Piece"
+    },
+    {
+        "enName": "Watashi ga iru Yo",
+        "jpName": "私がいるよ",
+        "artist": "TOMATO CUBE",
+        "anime": "One Piece"
+    },
+    {
+        "enName": "Souchinosuke",
+        "jpName": "しょうちのすけ",
+        "artist": "Suitei-Shoujo",
+        "anime": "One Piece"
+    },
+    {
+        "enName": "BEFORE DAWN",
+        "jpName": "",
+        "artist": "AI-SACHI",
+        "anime": "One Piece"
+    },
+    {
+        "enName": "fish",
+        "jpName": "",
+        "artist": "The Kaleidoscope",
+        "anime": "One Piece"
+    },
+    {
+        "enName": "GLORY -Kimi ga iru Kara- (GLORY-君がいるから-)",
+        "jpName": "",
+        "artist": "Takako Uehara",
+        "anime": "One Piece"
+    },
+    {
+        "enName": "Shining ray",
+        "jpName": "",
+        "artist": "Janne da Arc",
+        "anime": "One Piece"
+    },
+    {
+        "enName": "Family",
+        "jpName": "",
+        "artist": "the Straw Hat Pirates",
+        "anime": "One Piece"
+    },
+    {
+        "enName": "Free Will",
+        "jpName": "",
+        "artist": "Ruppina",
+        "anime": "One Piece"
+    },
+    {
+        "enName": "FAITH",
+        "jpName": "",
+        "artist": "Ruppina",
+        "anime": "One Piece"
+    },
+    {
+        "enName": "A to Z ~One Piece Edition~ (A to Z〜ONE PIECE Edition〜)",
+        "jpName": "",
+        "artist": "ZZ",
+        "anime": "One Piece"
+    },
+    {
+        "enName": "Tsuki to Taiyou",
+        "jpName": "月と太陽",
+        "artist": "shela",
+        "anime": "One Piece"
+    },
+    {
+        "enName": "DREAMSHIP",
+        "jpName": "",
+        "artist": "Aiko Ikuta",
+        "anime": "One Piece"
+    },
+    {
+        "enName": "Mirai Koukai",
+        "jpName": "未来航海",
+        "artist": "Tackey & Tsubasa",
+        "anime": "One Piece"
+    },
+    {
+        "enName": "Eternal Pose",
+        "jpName": "エターナルポーズ",
+        "artist": "Asia Engineer",
+        "anime": "One Piece"
+    },
+    {
+        "enName": "Dear friends",
+        "jpName": "",
+        "artist": "TRIPLANE",
+        "anime": "One Piece"
+    },
+    {
+        "enName": "Asu wa Kurukara",
+        "jpName": "明日は来るから",
+        "artist": "TVXQ",
+        "anime": "One Piece"
+    },
+    {
+        "enName": "ADVENTURE WORLD",
+        "jpName": "",
+        "artist": "Delicatessen",
+        "anime": "One Piece"
+    },
+    {
+        "enName": "Skyreach",
+        "jpName": "",
+        "artist": "Sora Amamiya",
+        "anime": "Akame ga Kill!"
+    },
+    {
+        "enName": "LIAR MASK",
+        "jpName": "",
+        "artist": "Rika Mayama",
+        "anime": "Akame ga Kill!"
+    },
+    {
+        "enName": "Konna Sekai, Shiritakunakatta.",
+        "jpName": "こんな世界、知りたくなかった。",
+        "artist": "Miku Sawai",
+        "anime": "Akame ga Kill!"
+    },
+    {
+        "enName": "Tsuki Akari",
+        "jpName": "月灯り",
+        "artist": "Sora Amamiya",
+        "anime": "Akame ga Kill!"
+    },
+    {
+        "enName": "Kuusou Mesorogiwi",
+        "jpName": "空想メソロギヰ",
+        "artist": "Yousei Teikoku",
+        "anime": "Mirai Nikki (TV)"
+    },
+    {
+        "enName": "Dead END",
+        "jpName": "",
+        "artist": "Faylan",
+        "anime": "Mirai Nikki (TV)"
+    },
+    {
+        "enName": "#B: Kyouki Chinden",
+        "jpName": "狂気沈殿",
+        "artist": "Yousei Teikoku",
+        "anime": "Mirai Nikki (TV)"
+    },
+    {
+        "enName": "Blood Teller",
+        "jpName": "",
+        "artist": "Faylan",
+        "anime": "Mirai Nikki (TV)"
+    },
+    {
+        "enName": "filament",
+        "jpName": "",
+        "artist": "Yousei Teikoku",
+        "anime": "Mirai Nikki (TV)"
+    },
+    {
+        "enName": "#B: Happy End\"",
+        "jpName": "",
+        "artist": "Faylan",
+        "anime": "Mirai Nikki (TV)"
+    },
+    {
+        "enName": "Netsujou no Spectrum",
+        "jpName": "熱情のスペクトラム",
+        "artist": "Ikimonogakari",
+        "anime": "Nanatsu no Taizai"
+    },
+    {
+        "enName": "Seven Deadly Sins",
+        "jpName": "",
+        "artist": "MAN WITH A MISSION",
+        "anime": "Nanatsu no Taizai"
+    },
+    {
+        "enName": "7 -seven-",
+        "jpName": "",
+        "artist": "FLOW x GRANRODEO",
+        "anime": "Nanatsu no Taizai"
+    },
+    {
+        "enName": "Season",
+        "jpName": "",
+        "artist": "Alisa Takigawa",
+        "anime": "Nanatsu no Taizai"
+    },
+    {
+        "enName": "Re:Re:",
+        "jpName": "",
+        "artist": "Asian Kung-Fu Generation",
+        "anime": "Boku dake ga Inai Machi"
+    },
+    {
+        "enName": "Sore wa Chiisana Hikari no Youna",
+        "jpName": "それは小さな光のような",
+        "artist": "Sayuri",
+        "anime": "Boku dake ga Inai Machi"
+    },
+    {
+        "enName": "KAIKAIKITAN",
+        "jpName": "廻廻奇譚",
+        "artist": "Eve",
+        "anime": "Jujutsu Kaisen (TV)"
+    },
+    {
+        "enName": "VIVID VICE",
+        "jpName": "",
+        "artist": "Who-ya Extended",
+        "anime": "Jujutsu Kaisen (TV)"
+    },
+    {
+        "enName": "LOST IN PARADISE",
+        "jpName": "",
+        "artist": "ALI ft. AKLO",
+        "anime": "Jujutsu Kaisen (TV)"
+    },
+    {
+        "enName": "give it back",
+        "jpName": "",
+        "artist": "Cö shu Nie",
+        "anime": "Jujutsu Kaisen (TV)"
+    },
+    {
+        "enName": "Shoukei to Shikabane no Michi",
+        "jpName": "憧憬と屍の道",
+        "artist": "Linked Horizon",
+        "anime": "Shingeki no Kyojin Season 3 Part 2"
+    },
+    {
+        "enName": "Name of Love",
+        "jpName": "",
+        "artist": "cinema staff",
+        "anime": "Shingeki no Kyojin Season 3 Part 2"
+    },
+    {
+        "enName": "T-KT",
+        "jpName": "",
+        "artist": "Hiroyuki Sawano",
+        "anime": "Shingeki no Kyojin Season 3 Part 2"
+    },
+    {
+        "enName": "IGNITE",
+        "jpName": "",
+        "artist": "Eir Aoi",
+        "anime": "Sword Art Online II"
+    },
+    {
+        "enName": "courage",
+        "jpName": "",
+        "artist": "Haruka Tomatsu",
+        "anime": "Sword Art Online II"
+    },
+    {
+        "enName": "Separate Ways",
+        "jpName": "セパレイト・ウェイズ",
+        "artist": "Haruka Tomatsu",
+        "anime": "Sword Art Online II"
+    },
+    {
+        "enName": "Startear",
+        "jpName": "",
+        "artist": "Luna Haruna",
+        "anime": "Sword Art Online II"
+    },
+    {
+        "enName": "No More Time Machine",
+        "jpName": "",
+        "artist": "LiSA",
+        "anime": "Sword Art Online II"
+    },
+    {
+        "enName": "Shirushi",
+        "jpName": "シルシ",
+        "artist": "LiSA",
+        "anime": "Sword Art Online II"
+    },
+    {
+        "enName": "CORE PRIDE",
+        "jpName": "",
+        "artist": "UVERworld",
+        "anime": "Ao no Exorcist"
+    },
+    {
+        "enName": "IN MY WORLD",
+        "jpName": "",
+        "artist": "ROOKiEZ is PUNK'D",
+        "anime": "Ao no Exorcist"
+    },
+    {
+        "enName": "R1: Trailblazer",
+        "jpName": "",
+        "artist": "Rin Okumura",
+        "anime": "Ao no Exorcist"
+    },
+    {
+        "enName": "Take off",
+        "jpName": "",
+        "artist": "2PM",
+        "anime": "Ao no Exorcist"
+    },
+    {
+        "enName": "Wired Life",
+        "jpName": "",
+        "artist": "Meisa Kuroki",
+        "anime": "Ao no Exorcist"
+    },
+    {
+        "enName": "R1: dedicate",
+        "jpName": "",
+        "artist": "Yukio Okumura",
+        "anime": "Ao no Exorcist"
+    },
+    {
+        "enName": "Seishun Satsubatsu-ron",
+        "jpName": "青春サツバツ論",
+        "artist": "3-nen E-gumi Utatan (3年E組うた担)",
+        "anime": "Ansatsu Kyoushitsu"
+    },
+    {
+        "enName": "Jiriki Hongan Revolution",
+        "jpName": "自力本願レボリューション",
+        "artist": "3-nen E-gumi Utatan (3年E組うた担)",
+        "anime": "Ansatsu Kyoushitsu"
+    },
+    {
+        "enName": "Hello, shooting-star",
+        "jpName": "",
+        "artist": "moumoon",
+        "anime": "Ansatsu Kyoushitsu"
+    },
+    {
+        "enName": "99",
+        "jpName": "",
+        "artist": "MOB CHOIR",
+        "anime": "Mob Psycho 100"
+    },
+    {
+        "enName": "Refrain Boy",
+        "jpName": "リフレインボーイ",
+        "artist": "ALL OFF",
+        "anime": "Mob Psycho 100"
+    },
+    {
+        "enName": ": Refrain Boy -TEKINA remix- (リフレインボーイ -TEKINA remix-)",
+        "jpName": "",
+        "artist": "ALL OFF",
+        "anime": "Mob Psycho 100"
+    },
+    {
+        "enName": "fantastic dreamer",
+        "jpName": "",
+        "artist": "Machico",
+        "anime": "Kono Subarashii Sekai ni Shukufuku wo!"
+    },
+    {
+        "enName": "Chiisana Boukensha",
+        "jpName": "ちいさな冒険者",
+        "artist": "Aqua (Sora Amamiya), Megumin (Rie Takahashi), Darkness (Ai Kayano)",
+        "anime": "Kono Subarashii Sekai ni Shukufuku wo!"
+    },
+    {
+        "enName": "Imagination",
+        "jpName": "イマジネーション",
+        "artist": "SPYAIR",
+        "anime": "Haikyuu!!"
+    },
+    {
+        "enName": "Ah Yeah!!",
+        "jpName": "",
+        "artist": "Sukima Switch",
+        "anime": "Haikyuu!!"
+    },
+    {
+        "enName": "Tenchi Gaeshi",
+        "jpName": "天地ガエシ",
+        "artist": "NICO Touches the Walls",
+        "anime": "Haikyuu!!"
+    },
+    {
+        "enName": "LEO",
+        "jpName": "",
+        "artist": "tacica",
+        "anime": "Haikyuu!!"
+    },
+    {
+        "enName": "Touch Off",
+        "jpName": "",
+        "artist": "UVERworld",
+        "anime": "Yakusoku no Neverland"
+    },
+    {
+        "enName": "Zettai Zetsumei",
+        "jpName": "絶対絶命",
+        "artist": "Cö shu Nie",
+        "anime": "Yakusoku no Neverland"
+    },
+    {
+        "enName": "Lamp",
+        "jpName": "",
+        "artist": "Cö shu Nie",
+        "anime": "Yakusoku no Neverland"
+    },
+    {
+        "enName": "\"*Asterisk",
+        "jpName": "*～アスタリスク～",
+        "artist": "Orange Range",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "D-tecnolife",
+        "jpName": "",
+        "artist": "UVERworld",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "Ichirin no Hana",
+        "jpName": "一輪の花",
+        "artist": "High and Mighty Color",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "Tonight, Tonight, Tonight",
+        "jpName": "",
+        "artist": "Beat Crusaders",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "Rolling star",
+        "jpName": "",
+        "artist": "YUI",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "ALONES",
+        "jpName": "",
+        "artist": "Aqua Timez",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "After Dark",
+        "jpName": "アフターダーク",
+        "artist": "Asian Kung-Fu Generation",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "CHU-BURA",
+        "jpName": "",
+        "artist": "Kelun",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "Velonica",
+        "jpName": "",
+        "artist": "Aqua Timez",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "Shoujo S (少女S)",
+        "jpName": "",
+        "artist": "Scandal",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "Anima Rossa",
+        "jpName": "アニマロッサ",
+        "artist": "Porno Graffitti",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "chAngE",
+        "jpName": "",
+        "artist": "miwa",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "Ranbu no Melody",
+        "jpName": "乱舞のメロディ",
+        "artist": "SID",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "BLUE",
+        "jpName": "",
+        "artist": "ViViD",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "HARUKAZE",
+        "jpName": "",
+        "artist": "Scandal",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "Life is Like a Boat",
+        "jpName": "",
+        "artist": "Rie Fu",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "Thank You!!",
+        "jpName": "サンキュー!!",
+        "artist": "HOME MADE KAZOKU",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "Houkiboshi",
+        "jpName": "ほうき星",
+        "artist": "Younha",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "Happy People",
+        "jpName": "",
+        "artist": "Skoop on Somebody",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "My Pace",
+        "jpName": "マイペース",
+        "artist": "SunSet Swish",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "Hanabi",
+        "jpName": "",
+        "artist": "Ikimonogakari",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "MOVIN!!",
+        "jpName": "",
+        "artist": "Takacha",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "Baby It's You",
+        "jpName": "",
+        "artist": "JUNE",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "Sakura Biyori",
+        "jpName": "桜日和",
+        "artist": "Mai Hoshimura",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "Tsumasaki",
+        "jpName": "爪先",
+        "artist": "Ore Ska Band",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "Daidai",
+        "jpName": "橙",
+        "artist": "chatmonchy",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "Tane wo Maku Hibi",
+        "jpName": "種をまく日々",
+        "artist": "Atari Kousuke",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "Kansha.",
+        "jpName": "感謝.",
+        "artist": "RSP a.k.a Real Street Project",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "Orange",
+        "jpName": "オレンジ",
+        "artist": "Lil'B a.k.a MIE&AILA",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "Gallop",
+        "jpName": "ギャロップ",
+        "artist": "pe'zmoku",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "Hitohira no Hanabira",
+        "jpName": "ヒトヒラのハナビラ",
+        "artist": "STEREOPONY",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "Sky Chord ~Otona ni Naru Kimi he~ (Sky chord~大人になる君へ~)",
+        "jpName": "",
+        "artist": "Tsuji Shion",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "Kimi wo Mamotte, Kimi wo Aishite",
+        "jpName": "君を守って, 君を愛して",
+        "artist": "Sambomaster",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "Mad Surfer",
+        "jpName": "",
+        "artist": "Kenichi Asai",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "Sakurabito",
+        "jpName": "さくらびと",
+        "artist": "SunSet Swish",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "Tabidatsu Kimi e",
+        "jpName": "旅立つキミへ",
+        "artist": "RSP",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "Stay Beautiful",
+        "jpName": "",
+        "artist": "Diggy-MO'",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "Echoes",
+        "jpName": "",
+        "artist": "universe",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "Last Moment",
+        "jpName": "",
+        "artist": "SPYAIR",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "Song for...",
+        "jpName": "",
+        "artist": "ROOKiEZ is PUNK’D",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "Aoi Tori",
+        "jpName": "アオイトリ",
+        "artist": "fumika",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "Haruka Kanata",
+        "jpName": "ハルカカナタ",
+        "artist": "UNLIMITS",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "Re:pray",
+        "jpName": "",
+        "artist": "Aimer",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "Mask",
+        "jpName": "",
+        "artist": "Aqua Timez",
+        "anime": "Bleach"
+    },
+    {
+        "enName": "Let Me Hear",
+        "jpName": "",
+        "artist": "Fear, and Loathing in Las Vegas",
+        "anime": "Kiseijuu: Sei no Kakuritsu"
+    },
+    {
+        "enName": "IT'S THE RIGHT TIME",
+        "jpName": "",
+        "artist": "Daichi Miura",
+        "anime": "Kiseijuu: Sei no Kakuritsu"
+    },
+    {
+        "enName": "Tank!",
+        "jpName": "",
+        "artist": "The Seatbelts",
+        "anime": "Cowboy Bebop"
+    },
+    {
+        "enName": "The Real Folk Blues",
+        "jpName": "",
+        "artist": "The Seatbelts feat. Mai Yamane",
+        "anime": "Cowboy Bebop"
+    },
+    {
+        "enName": "Space Lion",
+        "jpName": "",
+        "artist": "The Seatbelts",
+        "anime": "Cowboy Bebop"
+    },
+    {
+        "enName": "Blue",
+        "jpName": "",
+        "artist": "The Seatbelts feat. Mai Yamane",
+        "anime": "Cowboy Bebop"
+    },
+    {
+        "enName": "Day of the River/Ano hi no kawa",
+        "jpName": "",
+        "artist": "Joe Hisaishi",
+        "anime": "Sen to Chihiro no Kamikakushi"
+    },
+    {
+        "enName": "Itsumo Nando demo (Always with Me)",
+        "jpName": "",
+        "artist": "Yumi Kimura",
+        "anime": "Sen to Chihiro no Kamikakushi"
+    },
+    {
+        "enName": "Snow fairy",
+        "jpName": "",
+        "artist": "FUNKIST",
+        "anime": "Fairy Tail"
+    },
+    {
+        "enName": "S.O.W. Sense of Wonder (S.O.W.センスオブワンダー)",
+        "jpName": "",
+        "artist": "Idoling!!!",
+        "anime": "Fairy Tail"
+    },
+    {
+        "enName": "ft.",
+        "jpName": "",
+        "artist": "FUNKIST",
+        "anime": "Fairy Tail"
+    },
+    {
+        "enName": "R.P.G. ~Rockin' Playing Game",
+        "jpName": "",
+        "artist": "SuG",
+        "anime": "Fairy Tail"
+    },
+    {
+        "enName": "Egao No Mahou",
+        "jpName": "エガオノマホウ",
+        "artist": "Magic Party",
+        "anime": "Fairy Tail"
+    },
+    {
+        "enName": "Fiesta",
+        "jpName": "",
+        "artist": "+Plus",
+        "anime": "Fairy Tail"
+    },
+    {
+        "enName": "Evidence",
+        "jpName": "",
+        "artist": "Daisy X Daisy",
+        "anime": "Fairy Tail"
+    },
+    {
+        "enName": "The Rock City Boy",
+        "jpName": "",
+        "artist": "JAMIL",
+        "anime": "Fairy Tail"
+    },
+    {
+        "enName": "Towa no Kizuna",
+        "jpName": "永久のキズナ",
+        "artist": "Daisy x Daisy feat. Another Infinity",
+        "anime": "Fairy Tail"
+    },
+    {
+        "enName": "I Wish",
+        "jpName": "",
+        "artist": "Milky Bunny",
+        "anime": "Fairy Tail"
+    },
+    {
+        "enName": "Hajimari no Sora",
+        "jpName": "はじまりの空",
+        "artist": "+Plus",
+        "anime": "Fairy Tail"
+    },
+    {
+        "enName": "Tenohira",
+        "jpName": "テノヒラ",
+        "artist": "HERO",
+        "anime": "Fairy Tail"
+    },
+    {
+        "enName": "Breakthrough",
+        "jpName": "",
+        "artist": "GOING UNDER GROUND",
+        "anime": "Fairy Tail"
+    },
+    {
+        "enName": "Fairy Tail: Yakusoku no Hi",
+        "jpName": "フェアリーテイル 〜約束の日〜",
+        "artist": "Chihiro Yonekura",
+        "anime": "Fairy Tail"
+    },
+    {
+        "enName": "Kanpeki gu~no ne",
+        "jpName": "完璧ぐ〜のね",
+        "artist": "Watarirouka Hashiri Tai",
+        "anime": "Fairy Tail"
+    },
+    {
+        "enName": "Tsuioku Merry-Go-Round",
+        "jpName": "追憶メリーゴーランド",
+        "artist": "onelifecrew",
+        "anime": "Fairy Tail"
+    },
+    {
+        "enName": "Gomen ne, Watashi.",
+        "jpName": "ごめんね、私。",
+        "artist": "Shiho Nanba",
+        "anime": "Fairy Tail"
+    },
+    {
+        "enName": "Kimi ga Iru Kara",
+        "jpName": "君がいるから",
+        "artist": "Mikuni Shimokawa",
+        "anime": "Fairy Tail"
+    },
+    {
+        "enName": "HOLY SHINE",
+        "jpName": "",
+        "artist": "Daisy X Daisy",
+        "anime": "Fairy Tail"
+    },
+    {
+        "enName": "Hitori Samishiku",
+        "jpName": "ひとりさみしく",
+        "artist": "ShaNa",
+        "anime": "Fairy Tail"
+    },
+    {
+        "enName": "Don't think. Feel !!!",
+        "jpName": "",
+        "artist": "Idoling!!!",
+        "anime": "Fairy Tail"
+    },
+    {
+        "enName": "Kono Te Nobashite",
+        "jpName": "この手伸ばして",
+        "artist": "Hi-Fi Camp",
+        "anime": "Fairy Tail"
+    },
+    {
+        "enName": "Boys Be Ambitious!!",
+        "jpName": "",
+        "artist": "Hi-Fi Camp",
+        "anime": "Fairy Tail"
+    },
+    {
+        "enName": "Glitter (Starving Trancer Remix)",
+        "jpName": "",
+        "artist": "Another Infinity feat. Mayumi Morinaga",
+        "anime": "Fairy Tail"
+    },
+    {
+        "enName": "YELL〜Kagayaku Tame no Mono〜 (YELL〜輝くためのもの〜)",
+        "jpName": "",
+        "artist": "Sata Andagi",
+        "anime": "Fairy Tail"
+    },
+    {
+        "enName": "Kimi ga Kureta Mono",
+        "jpName": "キミがくれたもの",
+        "artist": "Shizuka Kudou",
+        "anime": "Fairy Tail"
+    },
+    {
+        "enName": "We're the stars",
+        "jpName": "",
+        "artist": "Aimi",
+        "anime": "Fairy Tail"
+    },
+    {
+        "enName": "Munou",
+        "jpName": "無能",
+        "artist": "österreich",
+        "anime": "Tokyo Ghoul √A"
+    },
+    {
+        "enName": "Kisetsu wa Tsugitsugi Shindeiku",
+        "jpName": "季節は次々死んでいく",
+        "artist": "Amazarashi",
+        "anime": "Tokyo Ghoul √A"
+    },
+    {
+        "enName": "02~O-Two~",
+        "jpName": "02~ｵｰ･ﾂｰ~",
+        "artist": "Orange Range",
+        "anime": "Code Geass: Hangyaku no Lelouch R2"
+    },
+    {
+        "enName": "WORLD END",
+        "jpName": "",
+        "artist": "FLOW",
+        "anime": "Code Geass: Hangyaku no Lelouch R2"
+    },
+    {
+        "enName": "Shiawase Neiro",
+        "jpName": "ｼｱﾜｾﾈｲﾛ",
+        "artist": "Orange Range",
+        "anime": "Code Geass: Hangyaku no Lelouch R2"
+    },
+    {
+        "enName": "Waga Routashi Aku no Hana",
+        "jpName": "わが﨟たし悪の華",
+        "artist": "ALI PROJECT",
+        "anime": "Code Geass: Hangyaku no Lelouch R2"
+    },
+    {
+        "enName": "Boku no Sensou",
+        "jpName": "僕の戦争",
+        "artist": "Shinsei Kamattechan",
+        "anime": "Shingeki no Kyojin: The Final Season"
+    },
+    {
+        "enName": "Shougeki",
+        "jpName": "衝撃",
+        "artist": "Yuuko Andou",
+        "anime": "Shingeki no Kyojin: The Final Season"
+    },
+    {
+        "enName": "Sirius",
+        "jpName": "シリウス",
+        "artist": "Eir Aoi",
+        "anime": "Kill la Kill"
+    },
+    {
+        "enName": "ambiguous",
+        "jpName": "",
+        "artist": "GARNiDELiA",
+        "anime": "Kill la Kill"
+    },
+    {
+        "enName": "Gomen ne, Iiko ja Irarenai.",
+        "jpName": "ごめんね、いいコじゃいられない。",
+        "artist": "Miku Sawai",
+        "anime": "Kill la Kill"
+    },
+    {
+        "enName": "Shinsekai Koukyougaku",
+        "jpName": "新世界交響楽",
+        "artist": "Sayonara Ponytail (さよならポニーテール)",
+        "anime": "Kill la Kill"
+    },
+    {
+        "enName": "Flyers",
+        "jpName": "",
+        "artist": "BRADIO",
+        "anime": "Death Parade"
+    },
+    {
+        "enName": "Last Theater",
+        "jpName": "",
+        "artist": "NoisyCell",
+        "anime": "Death Parade"
+    },
+    {
+        "enName": "Zankoku na Tenshi no Thesis (残酷な天使のテーゼ, A Cruel Angel's Thesis)",
+        "jpName": "",
+        "artist": "Yoko Takahashi",
+        "anime": "Neon Genesis Evangelion"
+    },
+    {
+        "enName": "Fly Me to the Moon",
+        "jpName": "",
+        "artist": "Claire",
+        "anime": "Neon Genesis Evangelion"
+    },
+    {
+        "enName": "Kyoumu Densen",
+        "jpName": "凶夢伝染",
+        "artist": "ALI PROJECT",
+        "anime": "Another"
+    },
+    {
+        "enName": "anamnesis",
+        "jpName": "",
+        "artist": "Annabel",
+        "anime": "Another"
+    },
+    {
+        "enName": "Sincerely",
+        "jpName": "",
+        "artist": "TRUE",
+        "anime": "Violet Evergarden"
+    },
+    {
+        "enName": "Michishirube",
+        "jpName": "みちしるべ",
+        "artist": "Minori Chihara",
+        "anime": "Violet Evergarden"
+    },
+    {
+        "enName": "Believe in...",
+        "jpName": "",
+        "artist": "Aira Yuuki",
+        "anime": "Violet Evergarden"
+    },
+    {
+        "enName": "Kibou no Uta",
+        "jpName": "希望の唄",
+        "artist": "ULTRA TOWER",
+        "anime": "Shokugeki no Souma"
+    },
+    {
+        "enName": "Rising Rainbow",
+        "jpName": "ライジングレインボウ",
+        "artist": "Misokkasu",
+        "anime": "Shokugeki no Souma"
+    },
+    {
+        "enName": "Spice",
+        "jpName": "スパイス",
+        "artist": "Tokyo Karankoron",
+        "anime": "Shokugeki no Souma"
+    },
+    {
+        "enName": "Sacchan no Sexy Curry",
+        "jpName": "さっちゃんのセクシーカレー",
+        "artist": "Seiko Oomori",
+        "anime": "Shokugeki no Souma"
+    },
+    {
+        "enName": "Resonance",
+        "jpName": "",
+        "artist": "T.M.Revolution",
+        "anime": "Soul Eater"
+    },
+    {
+        "enName": "PAPERMOON",
+        "jpName": "",
+        "artist": "Tommy heavenly6",
+        "anime": "Soul Eater"
+    },
+    {
+        "enName": "#R1: Counter Identity",
+        "jpName": "",
+        "artist": "UNISON SQUARE GARDEN",
+        "anime": "Soul Eater"
+    },
+    {
+        "enName": "#R2: Ai ga Hoshii yo",
+        "jpName": "",
+        "artist": "Shion Tsuji",
+        "anime": "Soul Eater"
+    },
+    {
+        "enName": "I Wanna Be",
+        "jpName": "",
+        "artist": "STANCE PUNKS",
+        "anime": "Soul Eater"
+    },
+    {
+        "enName": "Style",
+        "jpName": "",
+        "artist": "Kana Nishino",
+        "anime": "Soul Eater"
+    },
+    {
+        "enName": "Bakusou Yumeuta",
+        "jpName": "",
+        "artist": "Diggy-MO'",
+        "anime": "Soul Eater"
+    },
+    {
+        "enName": "Strength",
+        "jpName": "",
+        "artist": "abingdon boys school",
+        "anime": "Soul Eater"
+    },
+    {
+        "enName": "#R1: Ao no Kaori",
+        "jpName": "",
+        "artist": "Yui Makino",
+        "anime": "Soul Eater"
+    },
+    {
+        "enName": "#R2: Northern Lights",
+        "jpName": "",
+        "artist": "How Merry Marry",
+        "anime": "Soul Eater"
+    },
+    {
+        "enName": "abnormalize",
+        "jpName": "",
+        "artist": "Ling Tosite Sigure (凛として時雨)",
+        "anime": "Psycho-Pass"
+    },
+    {
+        "enName": "Out of Control",
+        "jpName": "",
+        "artist": "Nothing's Carved in Stone",
+        "anime": "Psycho-Pass"
+    },
+    {
+        "enName": "Namae no nai Kaibutsu",
+        "jpName": "名前のない怪物",
+        "artist": "EGOIST",
+        "anime": "Psycho-Pass"
+    },
+    {
+        "enName": "All Alone With You",
+        "jpName": "",
+        "artist": "EGOIST",
+        "anime": "Psycho-Pass"
+    },
+    {
+        "enName": "Aoi Shiori",
+        "jpName": "青い栞",
+        "artist": "Galileo Galilei",
+        "anime": "Ano Hi Mita Hana no Namae wo Bokutachi wa Mada Shiranai."
+    },
+    {
+        "enName": "#R1: Circle Game",
+        "jpName": "サークルゲーム",
+        "artist": "Galileo Galilei",
+        "anime": "Ano Hi Mita Hana no Namae wo Bokutachi wa Mada Shiranai."
+    },
+    {
+        "enName": "Dear Love",
+        "jpName": "",
+        "artist": "Remedios",
+        "anime": "Ano Hi Mita Hana no Namae wo Bokutachi wa Mada Shiranai."
+    },
+    {
+        "enName": "secret base ~Kimi ga Kureta Mono~ (10 years after ver.) (secret base 〜君がくれたもの〜（10 years after Ver.）)",
+        "jpName": "",
+        "artist": "Meiko Honma (Ai Kayano), Naruko Anjou (Haruka Tomatsu), Chiriko Tsurumi (Saori Hayami)",
+        "anime": "Ano Hi Mita Hana no Namae wo Bokutachi wa Mada Shiranai."
+    },
+    {
+        "enName": "Kimi no Sei",
+        "jpName": "君のせい",
+        "artist": "the peggies",
+        "anime": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai"
+    },
+    {
+        "enName": "Fukashigi no Carte",
+        "jpName": "不可思議のカルテ",
+        "artist": "Mai Sakurajima (Asami Seto), Tomoe Koga (Nao Touyama), Rio Futaba (Atsumi Tanezaki), Nodoka Toyohama (Maaya Uchida), Kaede Azusagawa (Yurika Kubo), Shouko Makinohara (Inori Minase)",
+        "anime": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai"
+    },
+    {
+        "enName": "Sorairo Days",
+        "jpName": "空色デイズ",
+        "artist": "Shoko Nakagawa",
+        "anime": "Tengen Toppa Gurren Lagann"
+    },
+    {
+        "enName": "UNDERGROUND",
+        "jpName": "",
+        "artist": "HIGH VOLTAGE",
+        "anime": "Tengen Toppa Gurren Lagann"
+    },
+    {
+        "enName": "happily ever after",
+        "jpName": "",
+        "artist": "Shoko Nakagawa",
+        "anime": "Tengen Toppa Gurren Lagann"
+    },
+    {
+        "enName": "Minna no Peace",
+        "jpName": "みんなのピース",
+        "artist": "Afromania",
+        "anime": "Tengen Toppa Gurren Lagann"
+    },
+    {
+        "enName": "Polaris",
+        "jpName": "",
+        "artist": "BLUE ENCOUNT",
+        "anime": "Boku no Hero Academia 4th Season"
+    },
+    {
+        "enName": "Star Marker",
+        "jpName": "スターマーカー",
+        "artist": "KANA-BOON",
+        "anime": "Boku no Hero Academia 4th Season"
+    },
+    {
+        "enName": "Koukai no Uta",
+        "jpName": "航海の唄",
+        "artist": "Sayuri",
+        "anime": "Boku no Hero Academia 4th Season"
+    },
+    {
+        "enName": "Shout Baby",
+        "jpName": "",
+        "artist": "Ryokuoushoku Shakai (緑黄色社会)",
+        "anime": "Boku no Hero Academia 4th Season"
+    },
+    {
+        "enName": "Good Morning World!",
+        "jpName": "",
+        "artist": "BURNOUT SYNDROMES",
+        "anime": "Dr. Stone"
+    },
+    {
+        "enName": "Sangenshoku",
+        "jpName": "三原色",
+        "artist": "PELICAN FANCLUB",
+        "anime": "Dr. Stone"
+    },
+    {
+        "enName": "LIFE",
+        "jpName": "",
+        "artist": "Rude-α",
+        "anime": "Dr. Stone"
+    },
+    {
+        "enName": "Yume no You na",
+        "jpName": "夢のような",
+        "artist": "YouthK Saeki",
+        "anime": "Dr. Stone"
+    },
+    {
+        "enName": "KISS OF DEATH",
+        "jpName": "",
+        "artist": "Mika Nakashima x Hyde",
+        "anime": "Darling in the FranXX"
+    },
+    {
+        "enName": "Torikago",
+        "jpName": "トリカゴ",
+        "artist": "XX:me (Kiss Me; キス・ミー)",
+        "anime": "Darling in the FranXX"
+    },
+    {
+        "enName": "Manatsu no Setsuna",
+        "jpName": "真夏のセツナ",
+        "artist": "XX:me (Kiss Me; キス・ミー)",
+        "anime": "Darling in the FranXX"
+    },
+    {
+        "enName": "Beautiful World",
+        "jpName": "",
+        "artist": "XX:me (Kiss Me; キス・ミー)",
+        "anime": "Darling in the FranXX"
+    },
+    {
+        "enName": "Hitori",
+        "jpName": "ひとり",
+        "artist": "XX:me (Kiss Me; キス・ミー)",
+        "anime": "Darling in the FranXX"
+    },
+    {
+        "enName": "Escape",
+        "jpName": "",
+        "artist": "XX:me (Kiss Me; キス・ミー)",
+        "anime": "Darling in the FranXX"
+    },
+    {
+        "enName": "Darling",
+        "jpName": "",
+        "artist": "XX:me (Kiss Me; キス・ミー)",
+        "anime": "Darling in the FranXX"
+    },
+    {
+        "enName": "Seijaku no Apostle",
+        "jpName": "静寂のアポストル",
+        "artist": "JAM Project",
+        "anime": "One Punch Man 2nd Season"
+    },
+    {
+        "enName": "Chizu ga Nakutemo Modoru kara",
+        "jpName": "地図が無くても戻るから",
+        "artist": "Makoto Furukawa",
+        "anime": "One Punch Man 2nd Season"
+    },
+    {
+        "enName": "Bravely You",
+        "jpName": "",
+        "artist": "Lia",
+        "anime": "Charlotte"
+    },
+    {
+        "enName": "Yake Ochinai Tsubasa",
+        "jpName": "灼け落ちない翼",
+        "artist": "Aoi Tada",
+        "anime": "Charlotte"
+    },
+    {
+        "enName": "Rakuen made",
+        "jpName": "楽園まで",
+        "artist": "Yusa Nishimori (Maaya Uchida)",
+        "anime": "Charlotte"
+    },
+    {
+        "enName": "Tasogare",
+        "jpName": "黄昏",
+        "artist": "Anant-Garde Eyes",
+        "anime": "Charlotte"
+    },
+    {
+        "enName": "Kimi no Moji",
+        "jpName": "君の文字",
+        "artist": "Anri Kumaki",
+        "anime": "Charlotte"
+    },
+    {
+        "enName": "JoJo ~Sono Chi no Sadame~",
+        "jpName": "ジョジョ～その血の運命～",
+        "artist": "Hiroaki TOMMY Tominaga",
+        "anime": "JoJo no Kimyou na Bouken (TV)"
+    },
+    {
+        "enName": "BLOODY STREAM",
+        "jpName": "",
+        "artist": "Coda",
+        "anime": "JoJo no Kimyou na Bouken (TV)"
+    },
+    {
+        "enName": "Roundabout",
+        "jpName": "",
+        "artist": "YES",
+        "anime": "JoJo no Kimyou na Bouken (TV)"
+    },
+    {
+        "enName": "Love Dramatic feat. Rikka Ihara (ラブ・ドラマティック feat.伊原六花)",
+        "jpName": "",
+        "artist": "Masayuki Suzuki (鈴木雅之)",
+        "anime": "Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen"
+    },
+    {
+        "enName": "Sentimental Crisis",
+        "jpName": "センチメンタルクライシス",
+        "artist": "halca",
+        "anime": "Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen"
+    },
+    {
+        "enName": "Chikatto Chika Chika♡",
+        "jpName": "チカっとチカ千花っ♡",
+        "artist": "Chika Fujiwara (Konomi Kohara",
+        "anime": "Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen"
+    },
+    {
+        "enName": "Lilium",
+        "jpName": "",
+        "artist": "Kumiko Noma",
+        "anime": "Elfen Lied"
+    },
+    {
+        "enName": "Be Your Girl",
+        "jpName": "",
+        "artist": "Chieko Kawabe",
+        "anime": "Elfen Lied"
+    },
+    {
+        "enName": "ZERO!!",
+        "jpName": "",
+        "artist": "Minami Kuribayashi",
+        "anime": "Hataraku Maou-sama!"
+    },
+    {
+        "enName": "Gekka",
+        "jpName": "月花",
+        "artist": "nano.RIPE",
+        "anime": "Hataraku Maou-sama!"
+    },
+    {
+        "enName": "Star Chart",
+        "jpName": "スターチャート",
+        "artist": "nano.RIPE",
+        "anime": "Hataraku Maou-sama!"
+    },
+    {
+        "enName": "Tsumabiku Hitori",
+        "jpName": "ツマビクヒトリ",
+        "artist": "nano.RIPE",
+        "anime": "Hataraku Maou-sama!"
+    },
+    {
+        "enName": "Melissa",
+        "jpName": "メリッサ",
+        "artist": "Porno Graffitti",
+        "anime": "Fullmetal Alchemist"
+    },
+    {
+        "enName": "READY STEADY GO",
+        "jpName": "",
+        "artist": "L'Arc~en~Ciel",
+        "anime": "Fullmetal Alchemist"
+    },
+    {
+        "enName": "UNDO",
+        "jpName": "",
+        "artist": "Cool Joke",
+        "anime": "Fullmetal Alchemist"
+    },
+    {
+        "enName": "Rewrite",
+        "jpName": "リライト",
+        "artist": "Asian Kung-fu Generation",
+        "anime": "Fullmetal Alchemist"
+    },
+    {
+        "enName": "Kesenai Tsumi",
+        "jpName": "消せない罪",
+        "artist": "Nana Kitade",
+        "anime": "Fullmetal Alchemist"
+    },
+    {
+        "enName": "Tobira no Mukou e",
+        "jpName": "扉の向こうへ",
+        "artist": "YeLLOW Generation",
+        "anime": "Fullmetal Alchemist"
+    },
+    {
+        "enName": "Motherland",
+        "jpName": "",
+        "artist": "Crystal Kay",
+        "anime": "Fullmetal Alchemist"
+    },
+    {
+        "enName": "I Will",
+        "jpName": "",
+        "artist": "Sowelu",
+        "anime": "Fullmetal Alchemist"
+    },
+    {
+        "enName": "oath sign",
+        "jpName": "",
+        "artist": "LiSA",
+        "anime": "Fate/Zero"
+    },
+    {
+        "enName": "MEMORIA",
+        "jpName": "",
+        "artist": "Eir Aoi",
+        "anime": "Fate/Zero"
+    },
+    {
+        "enName": "HIGHSCHOOL OF THE DEAD",
+        "jpName": "",
+        "artist": "Kishida Kyoudan & The Akeboshi Rockets",
+        "anime": "Highschool of the Dead"
+    },
+    {
+        "enName": "Kimi to Taiyou ga Shinda hi",
+        "jpName": "",
+        "artist": "Maon Kurosaki",
+        "anime": "Highschool of the Dead"
+    },
+    {
+        "enName": "Color Me Dark",
+        "jpName": "",
+        "artist": "Maon Kurosaki",
+        "anime": "Highschool of the Dead"
+    },
+    {
+        "enName": "Return to Destiny",
+        "jpName": "",
+        "artist": "Maon Kurosaki",
+        "anime": "Highschool of the Dead"
+    },
+    {
+        "enName": "Cold Bullet Blues",
+        "jpName": "",
+        "artist": "Maon Kurosaki",
+        "anime": "Highschool of the Dead"
+    },
+    {
+        "enName": "Memories of Days Gone By",
+        "jpName": "",
+        "artist": "Maon Kurosaki",
+        "anime": "Highschool of the Dead"
+    },
+    {
+        "enName": "Under The Honey Shine",
+        "jpName": "",
+        "artist": "Maon Kurosaki",
+        "anime": "Highschool of the Dead"
+    },
+    {
+        "enName": "fuss fuzz",
+        "jpName": "",
+        "artist": "Maon Kurosaki",
+        "anime": "Highschool of the Dead"
+    },
+    {
+        "enName": "The place of hope",
+        "jpName": "",
+        "artist": "Maon Kurosaki",
+        "anime": "Highschool of the Dead"
+    },
+    {
+        "enName": "Houseki no Spy",
+        "jpName": "",
+        "artist": "Maon Kurosaki",
+        "anime": "Highschool of the Dead"
+    },
+    {
+        "enName": "THE last pain",
+        "jpName": "",
+        "artist": "Maon Kurosaki",
+        "anime": "Highschool of the Dead"
+    },
+    {
+        "enName": "Hollow Men",
+        "jpName": "",
+        "artist": "Maon Kurosaki",
+        "anime": "Highschool of the Dead"
+    },
+    {
+        "enName": "The Eternal Song",
+        "jpName": "",
+        "artist": "Maon Kurosaki",
+        "anime": "Highschool of the Dead"
+    },
+    {
+        "enName": "Hey World",
+        "jpName": "",
+        "artist": "Yuka Iguchi",
+        "anime": "Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka"
+    },
+    {
+        "enName": "RIGHT LIGHT RISE",
+        "jpName": "",
+        "artist": "Kanon Wakeshima",
+        "anime": "Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka"
+    },
+    {
+        "enName": "REALIZE ~Hajimari no Toki~ (REALIZE ～始まりのとき～)",
+        "jpName": "",
+        "artist": "Liliruca Arde (Maaya Uchida)",
+        "anime": "Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka"
+    },
+    {
+        "enName": "Clattanoia",
+        "jpName": "",
+        "artist": "O×T",
+        "anime": "Overlord"
+    },
+    {
+        "enName": "L.L.L.",
+        "jpName": "",
+        "artist": "MYTH&ROID",
+        "anime": "Overlord"
+    },
+    {
+        "enName": "Haruka Mirai",
+        "jpName": "ハルカミライ",
+        "artist": "Kankaku Piero (感覚ピエロ)",
+        "anime": "Black Clover"
+    },
+    {
+        "enName": "PAiNT it BLACK",
+        "jpName": "",
+        "artist": "BiSH",
+        "anime": "Black Clover"
+    },
+    {
+        "enName": "Black Rover",
+        "jpName": "",
+        "artist": "Vickeblanka",
+        "anime": "Black Clover"
+    },
+    {
+        "enName": "Guess Who Is Back",
+        "jpName": "",
+        "artist": "Kumi Koda (倖田來未)",
+        "anime": "Black Clover"
+    },
+    {
+        "enName": "Gamushara",
+        "jpName": "ガムシャラ",
+        "artist": "Miyuna (みゆな)",
+        "anime": "Black Clover"
+    },
+    {
+        "enName": "Rakugaki Page",
+        "jpName": "落書きペイジ",
+        "artist": "Kankaku Piero (感覚ピエロ)",
+        "anime": "Black Clover"
+    },
+    {
+        "enName": "JUSTadICE",
+        "jpName": "",
+        "artist": "Seiko Oomori (大森靖子)",
+        "anime": "Black Clover"
+    },
+    {
+        "enName": "sky＆blue",
+        "jpName": "",
+        "artist": "GIRLFRIEND",
+        "anime": "Black Clover"
+    },
+    {
+        "enName": "RiGHT NOW",
+        "jpName": "",
+        "artist": "EMPiRE",
+        "anime": "Black Clover"
+    },
+    {
+        "enName": "Black Catcher",
+        "jpName": "",
+        "artist": "Vickeblanka",
+        "anime": "Black Clover"
+    },
+    {
+        "enName": "Stories",
+        "jpName": "",
+        "artist": "Snow Man",
+        "anime": "Black Clover"
+    },
+    {
+        "enName": "Eien ni Hikare",
+        "jpName": "永遠に光れ",
+        "artist": "TOMORROW X TOGETHER",
+        "anime": "Black Clover"
+    },
+    {
+        "enName": "Grandeur",
+        "jpName": "",
+        "artist": "Snow Man",
+        "anime": "Black Clover"
+    },
+    {
+        "enName": "Aoi Honoo",
+        "jpName": "蒼い炎",
+        "artist": "Itowokashi (イトヲカシ)",
+        "anime": "Black Clover"
+    },
+    {
+        "enName": "Amazing Dreams",
+        "jpName": "",
+        "artist": "Swanky Dank",
+        "anime": "Black Clover"
+    },
+    {
+        "enName": "Black to the Dreamlight",
+        "jpName": "",
+        "artist": "Empire",
+        "anime": "Black Clover"
+    },
+    {
+        "enName": "four",
+        "jpName": "",
+        "artist": "Faky",
+        "anime": "Black Clover"
+    },
+    {
+        "enName": "Tenjou Tenge",
+        "jpName": "天上天下",
+        "artist": "Miyuna (みゆな)",
+        "anime": "Black Clover"
+    },
+    {
+        "enName": "My Song My Days",
+        "jpName": "",
+        "artist": "Solidemo, Sakura men (桜men)",
+        "anime": "Black Clover"
+    },
+    {
+        "enName": "Hana ga Saku Michi",
+        "jpName": "花が咲く道",
+        "artist": "THE CHARM PARK",
+        "anime": "Black Clover"
+    },
+    {
+        "enName": "against the gods",
+        "jpName": "",
+        "artist": "m-flo",
+        "anime": "Black Clover"
+    },
+    {
+        "enName": "Jinsei wa Senjou Da",
+        "jpName": "人生は戦場だ",
+        "artist": "Anzai Karen (安斉かれん)",
+        "anime": "Black Clover"
+    },
+    {
+        "enName": "New Page",
+        "jpName": "",
+        "artist": "INTERSECTION",
+        "anime": "Black Clover"
+    },
+    {
+        "enName": "Answer",
+        "jpName": "アンサー",
+        "artist": "Kaf (花譜)",
+        "anime": "Black Clover"
+    },
+    {
+        "enName": "A Walk",
+        "jpName": "",
+        "artist": "Gakuto Kajiwara",
+        "anime": "Black Clover"
+    },
+    {
+        "enName": "BEAUTIFUL",
+        "jpName": "",
+        "artist": "TREASURE",
+        "anime": "Black Clover"
+    },
+    {
+        "enName": "RISE",
+        "jpName": "",
+        "artist": "MADKID",
+        "anime": "Tate no Yuusha no Nariagari"
+    },
+    {
+        "enName": "FAITH",
+        "jpName": "",
+        "artist": "MADKID",
+        "anime": "Tate no Yuusha no Nariagari"
+    },
+    {
+        "enName": "Kimi no Namae",
+        "jpName": "きみの名前",
+        "artist": "Chiai Fujikawa (藤川千愛)",
+        "anime": "Tate no Yuusha no Nariagari"
+    },
+    {
+        "enName": "Falling Through Starlight",
+        "jpName": "",
+        "artist": "Asami Seto",
+        "anime": "Tate no Yuusha no Nariagari"
+    },
+    {
+        "enName": "Atashi ga Tonari ni Iru Uchi ni",
+        "jpName": "あたしが隣にいるうちに",
+        "artist": "Chiai Fujikawa (藤川千愛)",
+        "anime": "Tate no Yuusha no Nariagari"
+    },
+    {
+        "enName": "Kyouran Hey Kids!! (狂乱Hey Kids!!)",
+        "jpName": "",
+        "artist": "THE ORAL CIGARETTES",
+        "anime": "Noragami Aragoto"
+    },
+    {
+        "enName": "Nirvana",
+        "jpName": "ニルバナ",
+        "artist": "Tia",
+        "anime": "Noragami Aragoto"
+    },
+    {
+        "enName": "TOMORROW",
+        "jpName": "",
+        "artist": "Machico",
+        "anime": "Kono Subarashii Sekai ni Shukufuku wo! 2"
+    },
+    {
+        "enName": "Ouchi ni Kaeritai",
+        "jpName": "お家に帰りたい",
+        "artist": "Aqua (Sora Amamiya), Megumin (Rie Takahashi), Darkness (Ai Kayano)",
+        "anime": "Kono Subarashii Sekai ni Shukufuku wo! 2"
+    },
+    {
+        "enName": "Megumeru ~cuckool mix 2007~ (メグメル～cuckool mix 2007～)",
+        "jpName": "",
+        "artist": "eufonius",
+        "anime": "Clannad"
+    },
+    {
+        "enName": "Dango Daikazoku",
+        "jpName": "",
+        "artist": "Chata",
+        "anime": "Clannad"
+    },
+    {
+        "enName": "Uragiri no Yuuyake (裏切りの夕焼け; Sunset of Betrayal)",
+        "jpName": "",
+        "artist": "Theatre Brook",
+        "anime": "Durarara!!"
+    },
+    {
+        "enName": "Complication",
+        "jpName": "コンプリケイション",
+        "artist": "ROOKiEZ is PUNK'D",
+        "anime": "Durarara!!"
+    },
+    {
+        "enName": "Trust Me",
+        "jpName": "",
+        "artist": "Yuya Matsushita",
+        "anime": "Durarara!!"
+    },
+    {
+        "enName": "Butterfly",
+        "jpName": "",
+        "artist": "ON/OFF",
+        "anime": "Durarara!!"
+    },
+    {
+        "enName": "staple stable",
+        "jpName": "",
+        "artist": "Chiwa Saito",
+        "anime": "Bakemonogatari"
+    },
+    {
+        "enName": "Kaerimichi",
+        "jpName": "帰り道",
+        "artist": "Emiri Katou",
+        "anime": "Bakemonogatari"
+    },
+    {
+        "enName": "ambivalent world",
+        "jpName": "",
+        "artist": "Miyuki Sawashiro",
+        "anime": "Bakemonogatari"
+    },
+    {
+        "enName": "Ren'ai Circulation",
+        "jpName": "恋愛サーキュレーション",
+        "artist": "Kana Hanazawa",
+        "anime": "Bakemonogatari"
+    },
+    {
+        "enName": "Sugar Sweet Nightmare",
+        "jpName": "",
+        "artist": "Yui Horie",
+        "anime": "Bakemonogatari"
+    },
+    {
+        "enName": "Kimi no Shiranai Monogatari",
+        "jpName": "君の知らない物語",
+        "artist": "supercell; performed by nagi",
+        "anime": "Bakemonogatari"
+    },
+    {
+        "enName": "Trip -innocent of D-",
+        "jpName": "",
+        "artist": "Larval Stage Planning",
+        "anime": "High School DxD"
+    },
+    {
+        "enName": "STUDY x STUDY",
+        "jpName": "",
+        "artist": "StylipS",
+        "anime": "High School DxD"
+    },
+    {
+        "enName": "Deal with the devil",
+        "jpName": "",
+        "artist": "Tia",
+        "anime": "Kakegurui"
+    },
+    {
+        "enName": "LAYon-theLINE",
+        "jpName": "",
+        "artist": "D-selections",
+        "anime": "Kakegurui"
+    },
+    {
+        "enName": "Koi no Russian Roulette",
+        "jpName": "恋のロシアンルーレット",
+        "artist": "Yumemi Yumemite (Yuu Serizawa) & Yumeko Jabami (Saori Hayami)",
+        "anime": "Kakegurui"
+    },
+    {
+        "enName": "Yukitoki",
+        "jpName": "ユキトキ",
+        "artist": "Nagi Yanagi",
+        "anime": "Yahari Ore no Seishun Love Comedy wa Machigatteiru."
+    },
+    {
+        "enName": "Hello Alone",
+        "jpName": "",
+        "artist": "Yukino Yukinoshita (Saori Hayami) & Yui Yuigahama (Nao Touyama)",
+        "anime": "Yahari Ore no Seishun Love Comedy wa Machigatteiru."
+    },
+    {
+        "enName": "I'm A Believer",
+        "jpName": "アイム・ア・ビリーバー",
+        "artist": "SPYAIR",
+        "anime": "Haikyuu!! Second Season"
+    },
+    {
+        "enName": "FLY HIGH!!",
+        "jpName": "",
+        "artist": "BURNOUT SYNDROMES",
+        "anime": "Haikyuu!! Second Season"
+    },
+    {
+        "enName": "Climber",
+        "jpName": "クライマー",
+        "artist": "Galileo Galilei",
+        "anime": "Haikyuu!! Second Season"
+    },
+    {
+        "enName": "Hatsunetsu",
+        "jpName": "発熱",
+        "artist": "tacica",
+        "anime": "Haikyuu!! Second Season"
+    },
+    {
+        "enName": "QUESTION",
+        "jpName": "",
+        "artist": "3-nen E-gumi Utatan (3年E組うた担)",
+        "anime": "Ansatsu Kyoushitsu 2nd Season"
+    },
+    {
+        "enName": "Bye Bye Yesterday (バイバイ YESTERDAY)",
+        "jpName": "",
+        "artist": "3-nen E-gumi Utatan (3年E組うた担)",
+        "anime": "Ansatsu Kyoushitsu 2nd Season"
+    },
+    {
+        "enName": "Kaketa Tsuki",
+        "jpName": "欠けた月",
+        "artist": "Shion Miyawaki",
+        "anime": "Ansatsu Kyoushitsu 2nd Season"
+    },
+    {
+        "enName": "Mata Kimi ni Aeru Hi",
+        "jpName": "また君に会える日",
+        "artist": "Shion Miyawaki",
+        "anime": "Ansatsu Kyoushitsu 2nd Season"
+    },
+    {
+        "enName": "99.9",
+        "jpName": "",
+        "artist": "MOB CHOIR feat. sajou no hana",
+        "anime": "Mob Psycho 100 II"
+    },
+    {
+        "enName": "Gray",
+        "jpName": "グレイ",
+        "artist": "sajou no hana",
+        "anime": "Mob Psycho 100 II"
+    },
+    {
+        "enName": "Memosepia",
+        "jpName": "メモセピア",
+        "artist": "sajou no hana",
+        "anime": "Mob Psycho 100 II"
+    },
+    {
+        "enName": "Mabuta no Ura",
+        "jpName": "目蓋の裏",
+        "artist": "sajou no hana",
+        "anime": "Mob Psycho 100 II"
+    },
+    {
+        "enName": "Ikiru Hitobito",
+        "jpName": "いきるひとびと",
+        "artist": "sajou no hana",
+        "anime": "Mob Psycho 100 II"
+    },
+    {
+        "enName": "Sparkling Daydream",
+        "jpName": "",
+        "artist": "ZAQ",
+        "anime": "Chuunibyou demo Koi ga Shitai!"
+    },
+    {
+        "enName": "INSIDE IDENTITY",
+        "jpName": "",
+        "artist": "Black Raison d'être",
+        "anime": "Chuunibyou demo Koi ga Shitai!"
+    },
+    {
+        "enName": "Yasashisa no Riyuu",
+        "jpName": "優しさの理由",
+        "artist": "ChouCho",
+        "anime": "Hyouka"
+    },
+    {
+        "enName": "Mikansei Stride",
+        "jpName": "未完成ストライド",
+        "artist": "Saori Kodama",
+        "anime": "Hyouka"
+    },
+    {
+        "enName": "Madoromi no Yakusoku",
+        "jpName": "まどろみの約束",
+        "artist": "Satomi Satou & Ai Kayano",
+        "anime": "Hyouka"
+    },
+    {
+        "enName": "Kimi ni Matsuwaru Mystery",
+        "jpName": "君にまつわるミステリー",
+        "artist": "Satomi Satou & Ai Kayano",
+        "anime": "Hyouka"
+    },
+    {
+        "enName": "X.U.",
+        "jpName": "",
+        "artist": "SawanoHiroyuki:Gemie",
+        "anime": "Owari no Seraph"
+    },
+    {
+        "enName": "scaPEGoat",
+        "jpName": "",
+        "artist": "SawanoHiroyuki:Yosh",
+        "anime": "Owari no Seraph"
+    },
+    {
+        "enName": "Connect",
+        "jpName": "コネクト",
+        "artist": "ClariS",
+        "anime": "Mahou Shoujo Madoka★Magica"
+    },
+    {
+        "enName": "Mata Ashita",
+        "jpName": "また あした",
+        "artist": "Aoi Yuuki",
+        "anime": "Mahou Shoujo Madoka★Magica"
+    },
+    {
+        "enName": "Magia",
+        "jpName": "",
+        "artist": "Kalafina",
+        "anime": "Mahou Shoujo Madoka★Magica"
+    },
+    {
+        "enName": "and I'm home",
+        "jpName": "",
+        "artist": "Ai Nonaka and Eri Kitamura",
+        "anime": "Mahou Shoujo Madoka★Magica"
+    },
+    {
+        "enName": "Nameless story",
+        "jpName": "",
+        "artist": "Takuma Terashima",
+        "anime": "Tensei shitara Slime Datta Ken"
+    },
+    {
+        "enName": "Meguru Mono",
+        "jpName": "メグルモノ",
+        "artist": "Takuma Terashima",
+        "anime": "Tensei shitara Slime Datta Ken"
+    },
+    {
+        "enName": "Another colony",
+        "jpName": "",
+        "artist": "TRUE",
+        "anime": "Tensei shitara Slime Datta Ken"
+    },
+    {
+        "enName": "Little Soldier",
+        "jpName": "リトルソルジャー",
+        "artist": "Azusa Tadokoro",
+        "anime": "Tensei shitara Slime Datta Ken"
+    },
+    {
+        "enName": "Kimi ga Yume wo Tsuretekita",
+        "jpName": "君が夢を連れてきた",
+        "artist": "Pet na Kanojo-tachi (Ai Kayano, Mariko Nakatsu, Natsumi Takamori)",
+        "anime": "Sakura-sou no Pet na Kanojo"
+    },
+    {
+        "enName": "Yume no Tsuzuki",
+        "jpName": "夢の続き",
+        "artist": "Konomi Suzuki",
+        "anime": "Sakura-sou no Pet na Kanojo"
+    },
+    {
+        "enName": "I call your name again",
+        "jpName": "",
+        "artist": "Nanami Aoyama (Mariko Nakatsu)",
+        "anime": "Sakura-sou no Pet na Kanojo"
+    },
+    {
+        "enName": "DAYS of DASH",
+        "jpName": "",
+        "artist": "Konomi Suzuki",
+        "anime": "Sakura-sou no Pet na Kanojo"
+    },
+    {
+        "enName": "Prime number ~Kimi to Deaeru Hi~ (Prime number～君と出会える日～",
+        "jpName": "",
+        "artist": "Asuka Ookura (大倉明日香)",
+        "anime": "Sakura-sou no Pet na Kanojo"
+    },
+    {
+        "enName": "Kyou no Hi wa Sayounara",
+        "jpName": "今日の日はさようなら",
+        "artist": "Horie Yui, Nakatsu Mariko, Takamori Natsumi, Matsuoka Yoshitsugu,",
+        "anime": "Sakura-sou no Pet na Kanojo"
+    },
+    {
+        "enName": "TRASH CANDY",
+        "jpName": "",
+        "artist": "GRANRODEO",
+        "anime": "Bungou Stray Dogs"
+    },
+    {
+        "enName": "Namae wo Yobu yo",
+        "jpName": "名前を呼ぶよ",
+        "artist": "Luck Life",
+        "anime": "Bungou Stray Dogs"
+    },
+    {
+        "enName": "One Reason",
+        "jpName": "",
+        "artist": "DWB feat.fade",
+        "anime": "Deadman Wonderland"
+    },
+    {
+        "enName": "SHINY SHINY",
+        "jpName": "",
+        "artist": "NIRGILIS",
+        "anime": "Deadman Wonderland"
+    },
+    {
+        "enName": "Deep in Abyss",
+        "jpName": "",
+        "artist": "Riko (Miyu Tomita) and Regu (Mariya Ise)",
+        "anime": "Made in Abyss"
+    },
+    {
+        "enName": "Tabi no Hidarite, Saihate no Migite",
+        "jpName": "旅の左手、最果ての右手",
+        "artist": "Riko (Miyu Tomita) and Regu (Mariya Ise)",
+        "anime": "Made in Abyss"
+    },
+    {
+        "enName": "Euterpe",
+        "jpName": "",
+        "artist": "EGOIST; produced by supercell; performed by Chelly",
+        "anime": "Guilty Crown"
+    },
+    {
+        "enName": "My Dearest",
+        "jpName": "",
+        "artist": "supercell; performed by Koeda",
+        "anime": "Guilty Crown"
+    },
+    {
+        "enName": "The Everlasting Guilty Crown",
+        "jpName": "",
+        "artist": "EGOIST; produced by supercell; performed by Chelly",
+        "anime": "Guilty Crown"
+    },
+    {
+        "enName": "Departures ~Anata ni Okuru Ai no Uta~ (Departures ~あなたにおくるアイの歌~)",
+        "jpName": "",
+        "artist": "EGOIST; produced by supercell; performed by Chelly",
+        "anime": "Guilty Crown"
+    },
+    {
+        "enName": "Kokuhaku",
+        "jpName": "告白",
+        "artist": "supercell; performed by Koeda",
+        "anime": "Guilty Crown"
+    },
+    {
+        "enName": "Sekai no Yakusoku (世界の約束; The Promise of the World)",
+        "jpName": "",
+        "artist": "Chieko Baisho",
+        "anime": "Howl no Ugoku Shiro"
+    },
+    {
+        "enName": "My Secret",
+        "jpName": "",
+        "artist": "Saaya Mizuno",
+        "anime": "Kaichou wa Maid-sama!"
+    },
+    {
+        "enName": "Yokan",
+        "jpName": "予感",
+        "artist": "heidi.",
+        "anime": "Kaichou wa Maid-sama!"
+    },
+    {
+        "enName": "∞ Loop",
+        "jpName": "∞ループ",
+        "artist": "heidi.",
+        "anime": "Kaichou wa Maid-sama!"
+    },
+    {
+        "enName": "Homura",
+        "jpName": "炎",
+        "artist": "LiSA",
+        "anime": "Kimetsu no Yaiba Movie: Mugen Ressha-hen"
+    },
+    {
+        "enName": "Battlecry",
+        "jpName": "",
+        "artist": "Nujabes feat. Shing02",
+        "anime": "Samurai Champloo"
+    },
+    {
+        "enName": "Shiki no Uta",
+        "jpName": "四季ノ唄",
+        "artist": "MINMI",
+        "anime": "Samurai Champloo"
+    },
+    {
+        "enName": "Who's Theme",
+        "jpName": "",
+        "artist": "MINMI",
+        "anime": "Samurai Champloo"
+    },
+    {
+        "enName": "YOU",
+        "jpName": "",
+        "artist": "kazami",
+        "anime": "Samurai Champloo"
+    },
+    {
+        "enName": "FLY [SMALL CIRCLE OF FRIENDS]",
+        "jpName": "",
+        "artist": "Tsutchie & fat jon",
+        "anime": "Samurai Champloo"
+    },
+    {
+        "enName": "San Francisco",
+        "jpName": "",
+        "artist": "MIDICRONICA",
+        "anime": "Samurai Champloo"
+    },
+    {
+        "enName": "Cha-La Head-Cha-La",
+        "jpName": "",
+        "artist": "Hironobu Kageyama",
+        "anime": "Dragon Ball Z"
+    },
+    {
+        "enName": "We Gotta Power",
+        "jpName": "",
+        "artist": "Hironobu Kageyama",
+        "anime": "Dragon Ball Z"
+    },
+    {
+        "enName": "Dete Koi Tobikiri ZENKAI Power!",
+        "jpName": "",
+        "artist": "MANNA",
+        "anime": "Dragon Ball Z"
+    },
+    {
+        "enName": "Boku-tachi wa Tenshi datta",
+        "jpName": "",
+        "artist": "Hironobu Kageyama",
+        "anime": "Dragon Ball Z"
+    },
+    {
+        "enName": "Ashitaka Sekki (アシタカせっき; The Legend of Ashitaka)",
+        "jpName": "",
+        "artist": "Joe Hisaishi",
+        "anime": "Mononoke Hime"
+    },
+    {
+        "enName": "Mononoke Hime",
+        "jpName": "",
+        "artist": "Joe Hisaishi",
+        "anime": "Mononoke Hime"
+    },
+    {
+        "enName": "Toki wo Kizamu Uta",
+        "jpName": "時を刻む唄",
+        "artist": "Lia",
+        "anime": "Clannad: After Story"
+    },
+    {
+        "enName": "TORCH",
+        "jpName": "",
+        "artist": "Lia",
+        "anime": "Clannad: After Story"
+    },
+    {
+        "enName": "Chiisana Te no Hira",
+        "jpName": "小さなてのひら",
+        "artist": "riya",
+        "anime": "Clannad: After Story"
+    },
+    {
+        "enName": "Aozora no Rhapsody",
+        "jpName": "青空のラプソディ",
+        "artist": "fhána",
+        "anime": "Kobayashi-san Chi no Maid Dragon"
+    },
+    {
+        "enName": "Ishukan Communication",
+        "jpName": "イシュカン・コミュニケーション",
+        "artist": "Chorogonzu (ちょろゴンず)",
+        "anime": "Kobayashi-san Chi no Maid Dragon"
+    },
+    {
+        "enName": "MUKANJYO",
+        "jpName": "",
+        "artist": "Survive Said The Prophet",
+        "anime": "Vinland Saga"
+    },
+    {
+        "enName": "Dark Crow",
+        "jpName": "",
+        "artist": "MAN WITH A MISSION",
+        "anime": "Vinland Saga"
+    },
+    {
+        "enName": "Torches",
+        "jpName": "",
+        "artist": "Aimer",
+        "anime": "Vinland Saga"
+    },
+    {
+        "enName": "Drown",
+        "jpName": "",
+        "artist": "milet",
+        "anime": "Vinland Saga"
+    },
+    {
+        "enName": "Inferno",
+        "jpName": "インフェルノ",
+        "artist": "Mrs.GREEN APPLE",
+        "anime": "Enen no Shouboutai"
+    },
+    {
+        "enName": "MAYDAY feat. Ryo from CRYSTAL LAKE",
+        "jpName": "",
+        "artist": "coldrain",
+        "anime": "Enen no Shouboutai"
+    },
+    {
+        "enName": "veil",
+        "jpName": "",
+        "artist": "Keina Suda",
+        "anime": "Enen no Shouboutai"
+    },
+    {
+        "enName": "Nounai",
+        "jpName": "脳内",
+        "artist": "Lenny code fiction",
+        "anime": "Enen no Shouboutai"
+    },
+    {
+        "enName": "Monochrome no Kiss",
+        "jpName": "モノクロのキス",
+        "artist": "SID",
+        "anime": "Kuroshitsuji"
+    },
+    {
+        "enName": "I'm ALIVE!",
+        "jpName": "",
+        "artist": "BECCA",
+        "anime": "Kuroshitsuji"
+    },
+    {
+        "enName": "Lacrimosa",
+        "jpName": "",
+        "artist": "Kalafina",
+        "anime": "Kuroshitsuji"
+    },
+    {
+        "enName": "CLICK",
+        "jpName": "",
+        "artist": "ClariS",
+        "anime": "Nisekoi"
+    },
+    {
+        "enName": "STEP",
+        "jpName": "",
+        "artist": "ClariS",
+        "anime": "Nisekoi"
+    },
+    {
+        "enName": "Heart Pattern",
+        "jpName": "",
+        "artist": "Chitoge Kirisaki (Nao Touyama)",
+        "anime": "Nisekoi"
+    },
+    {
+        "enName": "Recover Decoration",
+        "jpName": "リカバーデコレーション",
+        "artist": "Kosaki Onodera (Kana Hanazawa)",
+        "anime": "Nisekoi"
+    },
+    {
+        "enName": "TRICK BOX",
+        "jpName": "",
+        "artist": "Seishirou Tsugumi (Mikako Komatsu)",
+        "anime": "Nisekoi"
+    },
+    {
+        "enName": "Order × Order",
+        "jpName": "オーダー×オーダー",
+        "artist": "Ruri Miyamoto (Yumi Uchiyama)",
+        "anime": "Nisekoi"
+    },
+    {
+        "enName": "Hanagonomi",
+        "jpName": "はなごのみ",
+        "artist": "Marika Tachibana (Kana Asumi)",
+        "anime": "Nisekoi"
+    },
+    {
+        "enName": "Souzou Diary",
+        "jpName": "想像ダイアリー",
+        "artist": "Chitoge Kirisaki (Nao Touyama), Kosaki Onodera (Kana Hanazawa), Seishirou Tsugumi (Mikako Komatsu), Marika Tachibana (Kana Asumi)",
+        "anime": "Nisekoi"
+    },
+    {
+        "enName": "Taisetsu no Tsukurikata",
+        "jpName": "大切の作り方",
+        "artist": "Chitoge Kirisaki (Nao Touyama), Kosaki Onodera (Kana Hanazawa)",
+        "anime": "Nisekoi"
+    },
+    {
+        "enName": "Can Do",
+        "jpName": "",
+        "artist": "GRANRODEO",
+        "anime": "Kuroko no Basket"
+    },
+    {
+        "enName": "RIMFIRE",
+        "jpName": "",
+        "artist": "GRANRODEO",
+        "anime": "Kuroko no Basket"
+    },
+    {
+        "enName": "Start it right away",
+        "jpName": "",
+        "artist": "Hyadain",
+        "anime": "Kuroko no Basket"
+    },
+    {
+        "enName": "Catal Rhythm",
+        "jpName": "カタルリズム",
+        "artist": "OLDCODEX",
+        "anime": "Kuroko no Basket"
+    },
+    {
+        "enName": "Kyoukai no Kanata",
+        "jpName": "境界の彼方",
+        "artist": "Minori Chihara",
+        "anime": "Kyoukai no Kanata"
+    },
+    {
+        "enName": "Daisy",
+        "jpName": "",
+        "artist": "STEREO DIVE FOUNDATION",
+        "anime": "Kyoukai no Kanata"
+    },
+    {
+        "enName": "DADDY! DADDY! DO! feat. Airi Suzuki (DADDY! DADDY! DO! feat. 鈴木愛理)",
+        "jpName": "",
+        "artist": "Masayuki Suzuki",
+        "anime": "Kaguya-sama wa Kokurasetai? Tensai-tachi no Renai Zunousen"
+    },
+    {
+        "enName": "Kaze ni Fukarete",
+        "jpName": "風に吹かれて",
+        "artist": "Haruka Fukuhara",
+        "anime": "Kaguya-sama wa Kokurasetai? Tensai-tachi no Renai Zunousen"
+    },
+    {
+        "enName": "Hikari Are",
+        "jpName": "ヒカリアレ",
+        "artist": "BURNOUT SYNDROMES",
+        "anime": "Haikyuu!!: Karasuno Koukou vs. Shiratorizawa Gakuen Koukou"
+    },
+    {
+        "enName": "Mashi Mashi",
+        "jpName": "マシ・マシ",
+        "artist": "NICO Touches the Walls",
+        "anime": "Haikyuu!!: Karasuno Koukou vs. Shiratorizawa Gakuen Koukou"
+    },
+    {
+        "enName": "Trigger",
+        "jpName": "",
+        "artist": "Yuuki Ozaki",
+        "anime": "Zankyou no Terror"
+    },
+    {
+        "enName": "Dare ka, Umi wo. (誰か、海を。)\"",
+        "jpName": "",
+        "artist": "Aimer",
+        "anime": "Zankyou no Terror"
+    },
+    {
+        "enName": "Von\"",
+        "jpName": "",
+        "artist": "Arnor Dan",
+        "anime": "Zankyou no Terror"
+    },
+    {
+        "enName": "database feat. TAKUMA (10 Feet)",
+        "jpName": "",
+        "artist": "MAN WITH A MISSION",
+        "anime": "Log Horizon"
+    },
+    {
+        "enName": "Your song*",
+        "jpName": "",
+        "artist": "Yun*chi",
+        "anime": "Log Horizon"
+    },
+    {
+        "enName": "ROUGH DIAMONDS",
+        "jpName": "",
+        "artist": "SCREEN mode",
+        "anime": "Shokugeki no Souma: Ni no Sara"
+    },
+    {
+        "enName": "Snow Drop",
+        "jpName": "スノードロップ",
+        "artist": "nano.RIPE",
+        "anime": "Shokugeki no Souma: Ni no Sara"
+    },
+    {
+        "enName": "Sakura Kiss",
+        "jpName": "",
+        "artist": "Chieko Kawabe",
+        "anime": "Ouran Koukou Host Club"
+    },
+    {
+        "enName": "Shissou",
+        "jpName": "",
+        "artist": "Last Alliance",
+        "anime": "Ouran Koukou Host Club"
+    },
+    {
+        "enName": "STAND PROUD",
+        "jpName": "",
+        "artist": "Jin Hashimoto (橋本仁)",
+        "anime": "JoJo no Kimyou na Bouken Part 3: Stardust Crusaders"
+    },
+    {
+        "enName": "Stardust Crusaders",
+        "jpName": "",
+        "artist": "Yugo Kanno",
+        "anime": "JoJo no Kimyou na Bouken Part 3: Stardust Crusaders"
+    },
+    {
+        "enName": "Walk Like an Egyptian",
+        "jpName": "",
+        "artist": "The Bangles",
+        "anime": "JoJo no Kimyou na Bouken Part 3: Stardust Crusaders"
+    },
+    {
+        "enName": "to the beginning",
+        "jpName": "",
+        "artist": "Kalafina",
+        "anime": "Fate/Zero 2nd Season"
+    },
+    {
+        "enName": "Sora wa Takaku Kaze wa Utau",
+        "jpName": "空は高く風は歌う",
+        "artist": "Luna Haruna",
+        "anime": "Fate/Zero 2nd Season"
+    },
+    {
+        "enName": "Manten",
+        "jpName": "満天",
+        "artist": "Kalafina",
+        "anime": "Fate/Zero 2nd Season"
+    },
+    {
+        "enName": "asphyxia",
+        "jpName": "",
+        "artist": "Cö shu Nie",
+        "anime": "Tokyo Ghoul:re"
+    },
+    {
+        "enName": "HALF",
+        "jpName": "",
+        "artist": "Ziyoou-vachi",
+        "anime": "Tokyo Ghoul:re"
+    },
+    {
+        "enName": "Iro Kousui",
+        "jpName": "色香水",
+        "artist": "You Kamiyama",
+        "anime": "Horimiya"
+    },
+    {
+        "enName": "Yakusoku",
+        "jpName": "約束",
+        "artist": "Friends",
+        "anime": "Horimiya"
+    },
+    {
+        "enName": "Kaen",
+        "jpName": "火炎",
+        "artist": "Ziyoou-vachi",
+        "anime": "Dororo"
+    },
+    {
+        "enName": "Dororo",
+        "jpName": "",
+        "artist": "ASIAN KUNG-FU GENERATION",
+        "anime": "Dororo"
+    },
+    {
+        "enName": "Sayonara Gokko",
+        "jpName": "さよならごっこ",
+        "artist": "amazarashi",
+        "anime": "Dororo"
+    },
+    {
+        "enName": "Yamiyo",
+        "jpName": "闇夜",
+        "artist": "Eve",
+        "anime": "Dororo"
+    },
+    {
+        "enName": "Howling",
+        "jpName": "",
+        "artist": "FLOW x GRANRODEO",
+        "anime": "Nanatsu no Taizai: Imashime no Fukkatsu"
+    },
+    {
+        "enName": "Ame ga Furu kara Niji ga Deru",
+        "jpName": "雨が降るから虹が出る",
+        "artist": "Sky Peace (スカイピース)",
+        "anime": "Nanatsu no Taizai: Imashime no Fukkatsu"
+    },
+    {
+        "enName": "Beautiful",
+        "jpName": "",
+        "artist": "Anly",
+        "anime": "Nanatsu no Taizai: Imashime no Fukkatsu"
+    },
+    {
+        "enName": "Chikai",
+        "jpName": "誓い",
+        "artist": "Sora Amamiya",
+        "anime": "Nanatsu no Taizai: Imashime no Fukkatsu"
+    },
+    {
+        "enName": "Q&A Recital! (Q&A リサイタル!)",
+        "jpName": "",
+        "artist": "Haruka Tomatsu",
+        "anime": "Tonari no Kaibutsu-kun"
+    },
+    {
+        "enName": "White Wishes",
+        "jpName": "",
+        "artist": "9nine",
+        "anime": "Tonari no Kaibutsu-kun"
+    },
+    {
+        "enName": "MAN HUMAN (DEVILMAN crybaby Ver.)",
+        "jpName": "",
+        "artist": "Denki Groove",
+        "anime": "Devilman: Crybaby"
+    },
+    {
+        "enName": "Konya dake",
+        "jpName": "今夜だけ",
+        "artist": "Takkyuu to Tabibito (卓球と旅人)",
+        "anime": "Devilman: Crybaby"
+    },
+    {
+        "enName": "Cagayake! GIRLS",
+        "jpName": "",
+        "artist": "Sakurakou Keion-bu",
+        "anime": "K-On!"
+    },
+    {
+        "enName": "Don't say 'lazy'",
+        "jpName": "",
+        "artist": "Sakurakou Keion-bu",
+        "anime": "K-On!"
+    },
+    {
+        "enName": "Rising Hope",
+        "jpName": "",
+        "artist": "LiSA",
+        "anime": "Mahouka Koukou no Rettousei"
+    },
+    {
+        "enName": "grilletto",
+        "jpName": "",
+        "artist": "GARNiDELiA",
+        "anime": "Mahouka Koukou no Rettousei"
+    },
+    {
+        "enName": "Millenario",
+        "jpName": "ミレナリオ",
+        "artist": "ELISA",
+        "anime": "Mahouka Koukou no Rettousei"
+    },
+    {
+        "enName": "Mirror",
+        "jpName": "",
+        "artist": "Rei Yasuda",
+        "anime": "Mahouka Koukou no Rettousei"
+    },
+    {
+        "enName": "ideal white",
+        "jpName": "",
+        "artist": "Mashiro Ayano",
+        "anime": "Fate/stay night: Unlimited Blade Works"
+    },
+    {
+        "enName": "believe",
+        "jpName": "",
+        "artist": "Kalafina",
+        "anime": "Fate/stay night: Unlimited Blade Works"
+    },
+    {
+        "enName": "THIS ILLUSION",
+        "jpName": "",
+        "artist": "LiSA",
+        "anime": "Fate/stay night: Unlimited Blade Works"
+    },
+    {
+        "enName": "Pray",
+        "jpName": "",
+        "artist": "Tommy heavenly6",
+        "anime": "Gintama"
+    },
+    {
+        "enName": "Tooi Nioi",
+        "jpName": "遠い匂い",
+        "artist": "YO-KING",
+        "anime": "Gintama"
+    },
+    {
+        "enName": "Giniro no Sora",
+        "jpName": "銀色の空",
+        "artist": "redballoon",
+        "anime": "Gintama"
+    },
+    {
+        "enName": "Kasanaru Kage",
+        "jpName": "かさなる影",
+        "artist": "Hearts Grow",
+        "anime": "Gintama"
+    },
+    {
+        "enName": "DONTEN",
+        "jpName": "曇天",
+        "artist": "DOES",
+        "anime": "Gintama"
+    },
+    {
+        "enName": "Anata MAGIC (アナタMAGIC)",
+        "jpName": "",
+        "artist": "monobright",
+        "anime": "Gintama"
+    },
+    {
+        "enName": "Stairway Generation",
+        "jpName": "",
+        "artist": "Base Ball Bear",
+        "anime": "Gintama"
+    },
+    {
+        "enName": "Light Infection",
+        "jpName": "",
+        "artist": "Prague",
+        "anime": "Gintama"
+    },
+    {
+        "enName": "#R1: Bakuchi Dancer",
+        "jpName": "バクチ・ダンサー",
+        "artist": "DOES",
+        "anime": "Gintama"
+    },
+    {
+        "enName": "#R2: Kaze no Gotoku",
+        "jpName": "風のごとく",
+        "artist": "Inoue Joe",
+        "anime": "Gintama"
+    },
+    {
+        "enName": "#R3: Kanousei Girl",
+        "jpName": "可能性ガール",
+        "artist": "Chiaki Kuriyama",
+        "anime": "Gintama"
+    },
+    {
+        "enName": "#R4: Katoniago",
+        "jpName": "カートニアゴ",
+        "artist": "FLiP",
+        "anime": "Gintama"
+    },
+    {
+        "enName": "Fuusen Gum",
+        "jpName": "",
+        "artist": "Captain Straydum",
+        "anime": "Gintama"
+    },
+    {
+        "enName": "MR.RAINDROP",
+        "jpName": "",
+        "artist": "amplified",
+        "anime": "Gintama"
+    },
+    {
+        "enName": "Yuki no Tsubasa",
+        "jpName": "",
+        "artist": "redballoon",
+        "anime": "Gintama"
+    },
+    {
+        "enName": "Candy Line",
+        "jpName": "",
+        "artist": "Hitomi Takahashi",
+        "anime": "Gintama"
+    },
+    {
+        "enName": "Shura",
+        "jpName": "",
+        "artist": "DOES",
+        "anime": "Gintama"
+    },
+    {
+        "enName": "Kiseki",
+        "jpName": "",
+        "artist": "Snowkel",
+        "anime": "Gintama"
+    },
+    {
+        "enName": "SIGNAL",
+        "jpName": "",
+        "artist": "KELUN",
+        "anime": "Gintama"
+    },
+    {
+        "enName": "Speed of Flow",
+        "jpName": "",
+        "artist": "The Rodeo Carburettor",
+        "anime": "Gintama"
+    },
+    {
+        "enName": "Sanagi",
+        "jpName": "",
+        "artist": "POSSIBILITY",
+        "anime": "Gintama"
+    },
+    {
+        "enName": "This World is yours",
+        "jpName": "",
+        "artist": "plingmin",
+        "anime": "Gintama"
+    },
+    {
+        "enName": "Ai, Ai, Ai",
+        "jpName": "",
+        "artist": "GHOSTNOTE",
+        "anime": "Gintama"
+    },
+    {
+        "enName": "Kagayaita",
+        "jpName": "",
+        "artist": "SHIGI",
+        "anime": "Gintama"
+    },
+    {
+        "enName": "Asa Answer",
+        "jpName": "",
+        "artist": "PENGIN",
+        "anime": "Gintama"
+    },
+    {
+        "enName": "Wo Ai Ni",
+        "jpName": "",
+        "artist": "Hitomi Takahashi feat. Beat Crusaders",
+        "anime": "Gintama"
+    },
+    {
+        "enName": "Wonderful Days",
+        "jpName": "",
+        "artist": "ONE☆DRAFT",
+        "anime": "Gintama"
+    },
+    {
+        "enName": "SAYONARA no Sora",
+        "jpName": "",
+        "artist": "Qwai",
+        "anime": "Gintama"
+    },
+    {
+        "enName": "#R1: Bokutachi no Kisetsu",
+        "jpName": "",
+        "artist": "DOES",
+        "anime": "Gintama"
+    },
+    {
+        "enName": "#R2: Wave",
+        "jpName": "",
+        "artist": "Vijandeux",
+        "anime": "Gintama"
+    },
+    {
+        "enName": "#R3: In My Life",
+        "jpName": "",
+        "artist": "AZU",
+        "anime": "Gintama"
+    },
+    {
+        "enName": "#R4: Sakurane",
+        "jpName": "",
+        "artist": "Piko",
+        "anime": "Gintama"
+    },
+    {
+        "enName": "V.I.P",
+        "jpName": "",
+        "artist": "SID",
+        "anime": "Magi: The Labyrinth of Magic"
+    },
+    {
+        "enName": "Matataku Hoshi no Shita de",
+        "jpName": "瞬く星の下で",
+        "artist": "Porno Graffitti",
+        "anime": "Magi: The Labyrinth of Magic"
+    },
+    {
+        "enName": "Yubi Bouenkyou",
+        "jpName": "指望遠鏡",
+        "artist": "Nogizaka 46",
+        "anime": "Magi: The Labyrinth of Magic"
+    },
+    {
+        "enName": "The Bravery",
+        "jpName": "",
+        "artist": "supercell",
+        "anime": "Magi: The Labyrinth of Magic"
+    },
+    {
+        "enName": "Rightfully",
+        "jpName": "",
+        "artist": "Mili",
+        "anime": "Goblin Slayer"
+    },
+    {
+        "enName": "Gin no Kisei",
+        "jpName": "銀の祈誓",
+        "artist": "Soraru",
+        "anime": "Goblin Slayer"
+    },
+    {
+        "enName": "Though Our Paths May Diverge",
+        "jpName": "",
+        "artist": "Mili",
+        "anime": "Goblin Slayer"
+    },
+    {
+        "enName": "Within",
+        "jpName": "",
+        "artist": "Mili",
+        "anime": "Goblin Slayer"
+    },
+    {
+        "enName": "Harumodoki",
+        "jpName": "春擬き",
+        "artist": "Nagi Yanagi",
+        "anime": "Yahari Ore no Seishun Love Comedy wa Machigatteiru. Zoku"
+    },
+    {
+        "enName": "Everyday World",
+        "jpName": "エブリデイワールド",
+        "artist": "Yukino Yukinoshita (Saori Hayami) & Yui Yuigahama (Nao Touyama)",
+        "anime": "Yahari Ore no Seishun Love Comedy wa Machigatteiru. Zoku"
+    },
+    {
+        "enName": "Realize",
+        "jpName": "",
+        "artist": "Konomi Suzuki",
+        "anime": "Re:Zero kara Hajimeru Isekai Seikatsu 2nd Season"
+    },
+    {
+        "enName": "Memento",
+        "jpName": "",
+        "artist": "nonoc",
+        "anime": "Re:Zero kara Hajimeru Isekai Seikatsu 2nd Season"
+    },
+    {
+        "enName": "Crazy Noisy Bizarre Town",
+        "jpName": "",
+        "artist": "THE DU",
+        "anime": "JoJo no Kimyou na Bouken Part 4: Diamond wa Kudakenai"
+    },
+    {
+        "enName": "chase",
+        "jpName": "",
+        "artist": "batta",
+        "anime": "JoJo no Kimyou na Bouken Part 4: Diamond wa Kudakenai"
+    },
+    {
+        "enName": "Great Days",
+        "jpName": "",
+        "artist": "Karen Aoki, Daisuke Hasegawa",
+        "anime": "JoJo no Kimyou na Bouken Part 4: Diamond wa Kudakenai"
+    },
+    {
+        "enName": "I WANT YOU",
+        "jpName": "",
+        "artist": "Savage Garden",
+        "anime": "JoJo no Kimyou na Bouken Part 4: Diamond wa Kudakenai"
+    },
+    {
+        "enName": "JoJo - Sono Chi no Kioku: end of THE WORLD (ジョジョ その血の記憶〜end of THE WORLD〜)",
+        "jpName": "",
+        "artist": "JO☆STARS～TOMMY, Coda, JIN～",
+        "anime": "JoJo no Kimyou na Bouken Part 3: Stardust Crusaders 2nd Season"
+    },
+    {
+        "enName": "Last Train Home",
+        "jpName": "ラスト・トレイン・ホーム",
+        "artist": "Pat Metheny Group",
+        "anime": "JoJo no Kimyou na Bouken Part 3: Stardust Crusaders 2nd Season"
+    },
+    {
+        "enName": "Aku Yaku♢Kyousoukyoku ~ Oingo to Boingo~",
+        "jpName": "アク役♢協奏曲〜オインゴとボインゴ〜",
+        "artist": "Oingo (Makoto Yasumura) and Boingo (Motoko Kumai)",
+        "anime": "JoJo no Kimyou na Bouken Part 3: Stardust Crusaders 2nd Season"
+    },
+    {
+        "enName": "Aku Yaku♢Kyousoukyoku ~ Hol Horse to Boingo~",
+        "jpName": "アク役◇協奏曲～ホル・ホースとボインゴ～",
+        "artist": "Hol Horse (Hidenobu Kiuchi) and Boingo (Motoko Kumai)",
+        "anime": "JoJo no Kimyou na Bouken Part 3: Stardust Crusaders 2nd Season"
+    },
+    {
+        "enName": "Sanpo (さんぽ; Stroll)",
+        "jpName": "",
+        "artist": "Azumi Inoue",
+        "anime": "Tonari no Totoro"
+    },
+    {
+        "enName": "Tonari no Totoro (となりのトトロ; My Neighbor Totoro)",
+        "jpName": "",
+        "artist": "Azumi Inoue",
+        "anime": "Tonari no Totoro"
+    },
+    {
+        "enName": "Tabibito no Uta",
+        "jpName": "旅人の唄",
+        "artist": "Yuiko Oohara",
+        "anime": "Mushoku Tensei: Isekai Ittara Honki Dasu"
+    },
+    {
+        "enName": "Mezame no uta",
+        "jpName": "目覚めの唄",
+        "artist": "Yuiko Oohara",
+        "anime": "Mushoku Tensei: Isekai Ittara Honki Dasu"
+    },
+    {
+        "enName": "Only",
+        "jpName": "オンリー",
+        "artist": "Yuiko Oohara",
+        "anime": "Mushoku Tensei: Isekai Ittara Honki Dasu"
+    },
+    {
+        "enName": "Date A Live",
+        "jpName": "デート・ア・ライブ",
+        "artist": "sweet ARMS",
+        "anime": "Date A Live"
+    },
+    {
+        "enName": "Hatsukoi Winding Road",
+        "jpName": "",
+        "artist": "Kayoko Tsumita, Risako Murai, Midori Tsukimiya",
+        "anime": "Date A Live"
+    },
+    {
+        "enName": "SAVE THE WORLD",
+        "jpName": "",
+        "artist": "Iori Nomizu",
+        "anime": "Date A Live"
+    },
+    {
+        "enName": "SAVE MY HEART",
+        "jpName": "",
+        "artist": "Iori Nomizu",
+        "anime": "Date A Live"
+    },
+    {
+        "enName": "Strawberry Rain",
+        "jpName": "ストロベリーレイン",
+        "artist": "Iori Nomizu",
+        "anime": "Date A Live"
+    },
+    {
+        "enName": "Makafushigi Adventure",
+        "jpName": "",
+        "artist": "Hiroki Takahashi",
+        "anime": "Dragon Ball"
+    },
+    {
+        "enName": "Romatikku Ageru Yo",
+        "jpName": "",
+        "artist": "Ushio Hashimoto",
+        "anime": "Dragon Ball"
+    },
+    {
+        "enName": "Button",
+        "jpName": "",
+        "artist": "PENGUIN RESEARCH",
+        "anime": "ReLIFE"
+    },
+    {
+        "enName": "Iijuu★Rider",
+        "jpName": "イ―ジュ－★ライダー",
+        "artist": "Tamio Okuda",
+        "anime": "ReLIFE"
+    },
+    {
+        "enName": "HOT LIMIT",
+        "jpName": "",
+        "artist": "T.M.Revolution",
+        "anime": "ReLIFE"
+    },
+    {
+        "enName": "Timing",
+        "jpName": "タイミング",
+        "artist": "BLACK BISCUITS",
+        "anime": "ReLIFE"
+    },
+    {
+        "enName": "HONEY",
+        "jpName": "",
+        "artist": "L'Arc~en~Ciel",
+        "anime": "ReLIFE"
+    },
+    {
+        "enName": "Kore ga Watashi no Ikiru Michi",
+        "jpName": "これが私の生きる道",
+        "artist": "PUFFY",
+        "anime": "ReLIFE"
+    },
+    {
+        "enName": "Sunny Day Sunday",
+        "jpName": "",
+        "artist": "Sentimental Bus",
+        "anime": "ReLIFE"
+    },
+    {
+        "enName": "Saudade",
+        "jpName": "サウダージ",
+        "artist": "Porno Graffitti",
+        "anime": "ReLIFE"
+    },
+    {
+        "enName": "Yuki no Hana",
+        "jpName": "雪の華",
+        "artist": "Mika Nakashima",
+        "anime": "ReLIFE"
+    },
+    {
+        "enName": "There will be love there -Ai no Aru Basho- (There will be love there -愛のある場所-)",
+        "jpName": "",
+        "artist": "The Brilliant Green",
+        "anime": "ReLIFE"
+    },
+    {
+        "enName": "Asu e no Tobira",
+        "jpName": "明日への扉",
+        "artist": "I WiSH",
+        "anime": "ReLIFE"
+    },
+    {
+        "enName": "PIECES OF A DREAM",
+        "jpName": "",
+        "artist": "CHEMISTRY",
+        "anime": "ReLIFE"
+    },
+    {
+        "enName": "Natsumatsuri",
+        "jpName": "夏祭り",
+        "artist": "Whiteberry",
+        "anime": "ReLIFE"
+    },
+    {
+        "enName": "Seishun wa Zankoku ja nai",
+        "jpName": "青春は残酷じゃない",
+        "artist": "Natsuki Hanae",
+        "anime": "Saiki Kusuo no Ψ-nan"
+    },
+    {
+        "enName": "Sai Ψ Sai Kouchou",
+        "jpName": "最Ψ最好調！",
+        "artist": "Dempagumi.inc",
+        "anime": "Saiki Kusuo no Ψ-nan"
+    },
+    {
+        "enName": "Ψ desu I LIKE YOU",
+        "jpName": "",
+        "artist": "Dempagumi.inc",
+        "anime": "Saiki Kusuo no Ψ-nan"
+    },
+    {
+        "enName": "Kokoro",
+        "jpName": "こころ",
+        "artist": "Natsuki Hanae",
+        "anime": "Saiki Kusuo no Ψ-nan"
+    },
+    {
+        "enName": "Cry Baby",
+        "jpName": "",
+        "artist": "Official HiGE DANdism",
+        "anime": "Tokyo Revengers"
+    },
+    {
+        "enName": "Koko de Iki wo shite",
+        "jpName": "ここで息をして",
+        "artist": "eill",
+        "anime": "Tokyo Revengers"
+    },
+    {
+        "enName": "Tokyo Wonder.",
+        "jpName": "トーキョーワンダー。",
+        "artist": "Nakimushi (泣き虫☔︎)",
+        "anime": "Tokyo Revengers"
+    },
+    {
+        "enName": "#1 Golden Time",
+        "jpName": "",
+        "artist": "Yui Horie",
+        "anime": "Golden Time"
+    },
+    {
+        "enName": "#2 The♡World's♡End",
+        "jpName": "",
+        "artist": "Yui Horie",
+        "anime": "Golden Time"
+    },
+    {
+        "enName": "Sweet & Sweet CHERRY",
+        "jpName": "",
+        "artist": "Yui Horie",
+        "anime": "Golden Time"
+    },
+    {
+        "enName": "Hanneikyuuteki ni Aishite yo♡",
+        "jpName": "半永久的に愛してよ♡",
+        "artist": "Yui Horie",
+        "anime": "Golden Time"
+    },
+    {
+        "enName": "Golden Time",
+        "jpName": "",
+        "artist": "Yui Horie",
+        "anime": "Golden Time"
+    },
+    {
+        "enName": "Caste Room",
+        "jpName": "カーストルーム",
+        "artist": "ZAQ",
+        "anime": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e (TV)"
+    },
+    {
+        "enName": "Beautiful Soldier",
+        "jpName": "",
+        "artist": "Minami",
+        "anime": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e (TV)"
+    },
+    {
+        "enName": "ADAMAS",
+        "jpName": "",
+        "artist": "LiSA",
+        "anime": "Sword Art Online: Alicization"
+    },
+    {
+        "enName": "RESISTER",
+        "jpName": "",
+        "artist": "ASCA",
+        "anime": "Sword Art Online: Alicization"
+    },
+    {
+        "enName": "Iris",
+        "jpName": "アイリス",
+        "artist": "Eir Aoi",
+        "anime": "Sword Art Online: Alicization"
+    },
+    {
+        "enName": "forget-me-not",
+        "jpName": "",
+        "artist": "ReoNa",
+        "anime": "Sword Art Online: Alicization"
+    },
+    {
+        "enName": "Niji no Kanata ni",
+        "jpName": "虹の彼方に",
+        "artist": "ReoNa",
+        "anime": "Sword Art Online: Alicization"
+    },
+    {
+        "enName": "No.1",
+        "jpName": "",
+        "artist": "DISH//",
+        "anime": "Boku no Hero Academia 5th Season"
+    },
+    {
+        "enName": "Merry-Go-Round",
+        "jpName": "",
+        "artist": "MAN WITH A MISSION",
+        "anime": "Boku no Hero Academia 5th Season"
+    },
+    {
+        "enName": "Ashiato",
+        "jpName": "足跡",
+        "artist": "the peggies",
+        "anime": "Boku no Hero Academia 5th Season"
+    },
+    {
+        "enName": "Uso ja Nai",
+        "jpName": "嘘じゃない",
+        "artist": "Soushi Sakiyama",
+        "anime": "Boku no Hero Academia 5th Season"
+    },
+    {
+        "enName": "Ai no Prison",
+        "jpName": "愛のプリズン",
+        "artist": "Kangoku Danshi (監獄男子)",
+        "anime": "Prison School"
+    },
+    {
+        "enName": "Tsumibukaki Oretachi no Sanka",
+        "jpName": "罪深き 俺たちの賛歌",
+        "artist": "Kangoku Danshi (監獄男子)",
+        "anime": "Prison School"
+    },
+    {
+        "enName": "MASAYUME CHASING",
+        "jpName": "",
+        "artist": "BoA",
+        "anime": "Fairy Tail (2014)"
+    },
+    {
+        "enName": "STRIKE BACK",
+        "jpName": "",
+        "artist": "BACK-ON",
+        "anime": "Fairy Tail (2014)"
+    },
+    {
+        "enName": "Mysterious Magic",
+        "jpName": "",
+        "artist": "Do As Infinity",
+        "anime": "Fairy Tail (2014)"
+    },
+    {
+        "enName": "BREAK OUT",
+        "jpName": "",
+        "artist": "V6",
+        "anime": "Fairy Tail (2014)"
+    },
+    {
+        "enName": "Yume-iro Graffiti",
+        "jpName": "ユメイログラフィティ",
+        "artist": "Tackey & Tsubasa",
+        "anime": "Fairy Tail (2014)"
+    },
+    {
+        "enName": "NEVER-END TALE",
+        "jpName": "",
+        "artist": "Tatsuyuki Kobayashi and Konomi Suzuki",
+        "anime": "Fairy Tail (2014)"
+    },
+    {
+        "enName": "Believe In Myself",
+        "jpName": "",
+        "artist": "EDGE of LIFE",
+        "anime": "Fairy Tail (2014)"
+    },
+    {
+        "enName": "Ashita wo Narase",
+        "jpName": "明日を鳴らせ",
+        "artist": "Kavka Shishido",
+        "anime": "Fairy Tail (2014)"
+    },
+    {
+        "enName": "Kimi to Kare to Boku to Kanojo to",
+        "jpName": "君と彼と僕と彼女と",
+        "artist": "BREATHE",
+        "anime": "Fairy Tail (2014)"
+    },
+    {
+        "enName": "Kokoro no Kagi",
+        "jpName": "心の鍵",
+        "artist": "May J.",
+        "anime": "Fairy Tail (2014)"
+    },
+    {
+        "enName": "Kimi no Mirai",
+        "jpName": "キミノミライ",
+        "artist": "ROOT FIVE",
+        "anime": "Fairy Tail (2014)"
+    },
+    {
+        "enName": "Don't let me down",
+        "jpName": "",
+        "artist": "Mariya Nishiuchi",
+        "anime": "Fairy Tail (2014)"
+    },
+    {
+        "enName": "Never ever",
+        "jpName": "",
+        "artist": "TOKYO GIRLS' STYLE (東京女子流)",
+        "anime": "Fairy Tail (2014)"
+    },
+    {
+        "enName": "FOREVER HERE",
+        "jpName": "",
+        "artist": "Yoko Ishida",
+        "anime": "Fairy Tail (2014)"
+    },
+    {
+        "enName": "Azayaka na Tabiji",
+        "jpName": "鮮やかな旅路",
+        "artist": "Megumi Mori",
+        "anime": "Fairy Tail (2014)"
+    },
+    {
+        "enName": "Landscape",
+        "jpName": "",
+        "artist": "SOLIDEMO",
+        "anime": "Fairy Tail (2014)"
+    },
+    {
+        "enName": "Red Fraction",
+        "jpName": "",
+        "artist": "MELL",
+        "anime": "Black Lagoon"
+    },
+    {
+        "enName": "Don't Look Behind",
+        "jpName": "",
+        "artist": "EDISON",
+        "anime": "Black Lagoon"
+    },
+    {
+        "enName": "disillusion",
+        "jpName": "",
+        "artist": "Tainaka Sachi",
+        "anime": "Fate/stay night"
+    },
+    {
+        "enName": "Kirameku Namida wa Hoshi ni",
+        "jpName": "きらめく涙は星に",
+        "artist": "Tainaka Sachi",
+        "anime": "Fate/stay night"
+    },
+    {
+        "enName": "Anata ga Ita Mori",
+        "jpName": "あなたがいた森",
+        "artist": "Jyukai",
+        "anime": "Fate/stay night"
+    },
+    {
+        "enName": "Hikari",
+        "jpName": "ヒカリ",
+        "artist": "Jyukai",
+        "anime": "Fate/stay night"
+    },
+    {
+        "enName": "Kimi to no Ashita",
+        "jpName": "君との明日",
+        "artist": "Tainaka Sachi",
+        "anime": "Fate/stay night"
+    },
+    {
+        "enName": "Howling",
+        "jpName": "",
+        "artist": "Abingdon Boys School",
+        "anime": "Darker than Black: Kuro no Keiyakusha"
+    },
+    {
+        "enName": "Kakusei Heroism ~The Hero without a Name~",
+        "jpName": "",
+        "artist": "An Cafe",
+        "anime": "Darker than Black: Kuro no Keiyakusha"
+    },
+    {
+        "enName": "Tsuki Akari",
+        "jpName": "",
+        "artist": "Rie Fu",
+        "anime": "Darker than Black: Kuro no Keiyakusha"
+    },
+    {
+        "enName": "Dreams",
+        "jpName": "",
+        "artist": "HIGH and MIGHTY COLOR",
+        "anime": "Darker than Black: Kuro no Keiyakusha"
+    },
+    {
+        "enName": "BRAVER",
+        "jpName": "",
+        "artist": "ZAQ",
+        "anime": "Shokugeki no Souma: San no Sara"
+    },
+    {
+        "enName": "Kyokyo Jitsujitsu",
+        "jpName": "虚虚実実",
+        "artist": "nano.RIPE",
+        "anime": "Shokugeki no Souma: San no Sara"
+    }
+]

@@ -42,6 +42,16 @@
             "console":"internalConsole",
             "envFile": "${workspaceFolder}/songFetching/.env",
             "outputCapture": "std"
+        },
+        {
+            "name":"Run linker",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "node",
+            "runtimeArgs": ["${workspaceFolder}/songFetching/linker.js"],
+            "console":"internalConsole",
+            "envFile": "${workspaceFolder}/songFetching/.env",
+            "outputCapture": "std"
         }
     ]
 }
