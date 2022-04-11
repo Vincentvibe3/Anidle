@@ -12,7 +12,7 @@
                     props: {
                         song:song,
                         metadata:{},
-                        loadFailed:true,
+                        loadFailed:false,
                         loaded:true,
                         index:songEntry.index
                     }
@@ -75,7 +75,7 @@
 <svelte:head>
 	<title>Anidle</title>
 </svelte:head>
-{#if dialog && !finished}
+{#if dialog && !finished && !loadFailed}
     <Dialog></Dialog>
 {/if}
 <header>

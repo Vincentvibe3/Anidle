@@ -3,25 +3,46 @@
     export let displayed:boolean
     let container:HTMLElement
     let mounted = false
+    let opacity = 0
 
     const dismiss = () => {
         container.style.display = "none"
     }
     const show = () => {
         container.style.display = "flex"
+        animateFadeIn()
     }
-
-    onMount(()=>{
-        mounted = true
-    })
 
     const changeDisplay = (value) => {
         if (mounted){
             if (value){
                 show()
             } else {
-                dismiss()
+                console.log("fadeout")
+                animateFadeOut()
             }
+        }
+        
+    }
+
+    const animateFadeIn = ()=>{
+        opacity+=0.1
+        container.style.opacity = `${opacity}`
+        if (opacity<1){
+            setTimeout(animateFadeIn, 0.1)
+        } else {
+            opacity = 1
+        }
+    }
+
+    const animateFadeOut = ()=>{
+        opacity-=0.1
+        container.style.opacity = `${opacity}`
+        if (opacity>0){
+            setTimeout(animateFadeOut, 0.1)
+        } else {
+            opacity = 0
+            dismiss()
         }
         
     }
@@ -33,10 +54,11 @@
     $: displayed, changeDisplay(displayed)
 
     onMount(() => {
+        mounted = true
         if (displayed){
             show()
         } else {
-            dismiss()
+            animateFadeOut()
         }
     })
 

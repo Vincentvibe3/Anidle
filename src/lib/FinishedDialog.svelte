@@ -15,26 +15,67 @@
     let container:HTMLElement
     let mounted = false
     let plural = ""
+    let opacity = 0
+    let clipboardSnackbar:HTMLElement
 
     const dismiss = () => {
         container.style.display = "none"
-        
     }
     const show = () => {
         container.style.display = "flex"
+        animateFadeIn()
     }
-
-    onMount(()=>{
-        mounted = true
-    })
 
     const changeDisplay = (value) => {
         if (mounted){
             if (value){
                 show()
             } else {
-                dismiss()
+                animateFadeOut()
             }
+        }
+        
+    }
+
+    const animateFadeIn = ()=>{
+        opacity+=0.1
+        container.style.opacity = `${opacity}`
+        if (opacity<1){
+            setTimeout(animateFadeIn, 0.1)
+        } else {
+            opacity = 1
+        }
+    }
+
+    const animateFadeOut = ()=>{
+        opacity-=0.1
+        container.style.opacity = `${opacity}`
+        if (opacity>0){
+            setTimeout(animateFadeOut, 0.1)
+        } else {
+            opacity = 0
+            dismiss()
+        }
+    }
+
+    const animateFadeInClipboard = ()=>{
+        clipboardSnackbar.style.display= "flex"
+        clipboardSnackbar.style.opacity = `${Number.parseFloat(clipboardSnackbar.style.opacity)+0.1}`
+        if (Number.parseFloat(clipboardSnackbar.style.opacity)<1){
+            setTimeout(animateFadeInClipboard, 20)
+        } else {
+            clipboardSnackbar.style.opacity = "1"
+            setTimeout(animateFadeOutClipboard, 3000)
+        }
+    }
+
+    const animateFadeOutClipboard = ()=>{
+        clipboardSnackbar.style.opacity = `${Number.parseFloat(clipboardSnackbar.style.opacity)-0.1}`
+        if (Number.parseFloat(clipboardSnackbar.style.opacity)>0){
+            setTimeout(animateFadeOutClipboard, 20)
+        } else {
+            clipboardSnackbar.style.opacity = "0"
+            clipboardSnackbar.style.display= "none"
         }
         
     }
@@ -56,13 +97,16 @@
             window.location.protocol+"//"+
             window.location.host+` #${index}`+"\n"+
             getReport(attempts, maxAttempts)
-            )
+        )
+        animateFadeInClipboard()
     }
 
     $: displayed, changeDisplay(displayed)
     $:attempts, updatePlural(attempts.length)
 
     onMount(() => {
+        mounted = true
+        clipboardSnackbar.style.opacity = "0"
         if (displayed){
             show()
         } else {
@@ -70,6 +114,9 @@
         }
     })
 </script>
+<div bind:this={clipboardSnackbar} on:click={animateFadeOutClipboard} class="copied">
+    <p>Copied to Clipboard</p>
+</div>
 <div bind:this={container} class="container">
     <div on:click={flipDisplay} class="bg"></div>
     <div class="card">
@@ -96,6 +143,24 @@
 
 
 <style>
+
+    .copied {
+        position: fixed;
+        top: 1rem;
+        z-index: 5;
+        background-color: #65b265;
+        display: none;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        opacity: 0;
+    }
+
+    .copied p {
+        margin: 0rem;
+        padding: 0rem;
+    }
 
     h2 {
         margin-top: 0rem;

@@ -1,18 +1,36 @@
 <script>
+import { onMount } from "svelte";
+
+
     let container
-    const dismiss = ()=>{
+    let opacity = 1
+
+    const dismiss = () => {
         container.style.display = "none"
+    }
+
+    const animateFadeOut = ()=>{
+        console.log(opacity)
+        opacity-=0.1
+        container.style.opacity = `${opacity}`
+        if (opacity>0){
+            setTimeout(animateFadeOut, 0.1)
+        } else {
+            opacity = 0
+            dismiss()
+        }
+        
     }
 </script>
 <div bind:this={container} class="container">
-    <div on:click={dismiss} class="bg"></div>
+    <div on:click={animateFadeOut} class="bg"></div>
     <div class="card">
-        <h2>Instructions</h2>
+        <h2>How to Play</h2>
         <ul>
             <li><p class="Instructions">You have 6 tries to guess the opening or ending</p></li>
             <li><p class="Instructions">Press skip to reveal more of the song</p></li>
         </ul>
-        <button on:click={dismiss}>Start</button>
+        <button on:click={animateFadeOut}>Start</button>
     </div>
 </div>
 

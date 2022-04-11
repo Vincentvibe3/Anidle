@@ -7,7 +7,6 @@
 
     const setColor = () => {
         for (let attempt of attempts){
-            console.log(attempt)
             if (attempt.success){
                 attemptBoxes[attempts.indexOf(attempt)].style.backgroundColor = "#65b265"               
                 attemptBoxes[attempts.indexOf(attempt)].style.border = "solid #65b265 0.15rem"        
