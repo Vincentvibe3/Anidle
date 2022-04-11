@@ -20,6 +20,7 @@
         playButton:undefined
     }
     let playIcon:SVGElement
+    let pauseIcon:SVGElement
     let playing = false
     let currentTime:number = 0
     let maxTime:number = 16
@@ -106,6 +107,7 @@
 
     const disableButtons = ()=>{
         playIcon.style.stroke = "#FFFFFF"
+        pauseIcon.style.stroke = "#FFFFFF"
         Object.keys(buttons).forEach((key)=>{
             buttons[key].disabled = true
         })
@@ -171,6 +173,7 @@
 
     const adjustPlayIconColor = () => {
         if (!buttons.playButton.disabled){
+            pauseIcon.style.stroke = "#FFFFFF"
             playIcon.style.stroke = "#FFFFFF"
         }
         
@@ -178,6 +181,7 @@
 
     const adjustPlayIconColorMouseOut = () => {
         if (!buttons.playButton.disabled){
+            pauseIcon.style.stroke = "#000000"
             playIcon.style.stroke = "#000000"
         }
     }
@@ -211,7 +215,11 @@
     <div class="buttons">
         <button bind:this={buttons.skipButton} on:click={addAttempt} class="controlButton">Skip{diffMessage}</button>
         <button bind:this={buttons.playButton} on:mouseenter={adjustPlayIconColor} on:mouseleave={adjustPlayIconColorMouseOut} on:click={playPause} class="play controlButton">
-            <svg bind:this={playIcon} class="playIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            {#if playing}
+                <svg bind:this={pauseIcon} class="playIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+            {:else}
+                <svg bind:this={playIcon} class="playIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            {/if}
         </button>
         <button bind:this={buttons.submitButton} on:click={checkAttempt} class="controlButton" disabled>Submit</button>
     </div>
