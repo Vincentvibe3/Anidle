@@ -7,6 +7,7 @@
     import Guesses from "$lib/Guesses.svelte";
     import FinishedDialog from "$lib/FinishedDialog.svelte";
     import type { Attempt } from "./reportGenerator";
+import { browser } from "$app/env";
 
     export let song:Song
     export let metadata:Metadata
@@ -58,14 +59,14 @@
     const saveProgress = ()=>{
         gameStarted = true
         let stringAttempts = JSON.stringify(attempts)
-        document.cookie = `progress=${song.id}+${stringAttempts}; SameSite=lax Expires=Session`
+        localStorage.setItem("progress", `${song.id}+${stringAttempts}`)
     }
 
     const importProgress = () => {
-        if (document.cookie == ""){
+        if (localStorage.getItem("progress") == null){
             return
         }
-        let data = document.cookie.split("=")[1].split("+")
+        let data = localStorage.getItem("progress").split("+")
         let stringJson = data[1]
         let id = data[0]
         if (id==song.id){
