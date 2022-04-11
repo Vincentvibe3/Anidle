@@ -18,7 +18,6 @@
             if (value){
                 show()
             } else {
-                console.log("fadeout")
                 animateFadeOut()
             }
         }
