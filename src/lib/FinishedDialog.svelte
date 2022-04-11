@@ -106,12 +106,20 @@
     $: displayed, changeDisplay(displayed)
     $:attempts, updatePlural(attempts.length)
 
+    const timeFormatter = (num:number):string => {
+        if (num>9){
+            return `${num}`
+        } else {
+            return `0${num}`
+        }
+    }
+
     const updateTimer = () => {
         let diff = nextTime-Date.now()
         let hours = Math.floor(diff/(60*60*1000))
         let minutes = Math.floor(diff%(hours*60*60*1000)/(60*1000))
         let seconds = Math.floor(diff%((hours*60*60*1000)+(minutes*60*1000))/1000)
-        timer=`${hours}:${minutes}:${seconds}`
+        timer=`${timeFormatter(hours)}:${timeFormatter(minutes)}:${timeFormatter(seconds)}`
         setTimeout(updateTimer, 1000)
     }
 
