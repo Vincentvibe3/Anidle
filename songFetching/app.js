@@ -9,12 +9,10 @@ var animeCount = 150
 var songData = []
 var animes = new Map()
 var processed = 0
-let cleanNumbers = /^#[0-9]*:/gm
+let cleanNumbers = /^#[0-9-a-z-A-z]*( |:)/gm
 let split = /(?<!^|[\s])[^\w]( by|By )/gm
 let endFilter = /^(\).*?\()/gm
 let filterBrackets = /\[.*\]/gm
-let jpNameFilter = /(\([^A-z]*\))$/gm
-let trailingParenthesis = new RegExp("\\)$")
 
 let animeFetchDone = false
 let songFetchDone = false
@@ -30,18 +28,33 @@ const getJpTitle = (str) => {
       } else if (letter==="("){
         open--
       } 
-      if (open>0 && letter!==")"){
+      if (open>0){
           jpTitleList.push(letter)
       } else {
         break
       }
     }
-    console.log(jpTitleList.reverse().join(""))
+    jpTitleList.reverse().pop()
+    
+    let match = jpTitleList.join("")
+    let checkStr = match
+    let stripASCII = /[^a-z-A-Z-0-9]/
+    let illegalCharacters = stripASCII.exec(wanakana.toRomaji(match))
+    if (illegalCharacters!=null){
+      for (let char of illegalCharacters){
+        if (!wanakana.isKanji(char)){
+          checkStr = checkStr.replace(char, "")
+        }
+      }
+    }
+    if (wanakana.isMixed(checkStr) || wanakana.isJapanese(checkStr)){
+      return match
+    } else {
+      return ""
+    } 
   }
+  return ""
 }
-
-getJpTitle("secret base ~Kimi ga Kureta Mono~ (10 years after ver.) (secret base 〜君がくれたもの〜（10 years after Ver.）)")
-console.log(wanakana.isMixed("(10 years after ver.)"))
 
 const formatSongs = (str)=> {
   console.log(str)
@@ -63,11 +76,9 @@ const formatSongs = (str)=> {
     artist = artistRound1.replace(artistRound2[1], "")
   }
   let track = artistTrackSplit[0].replace("\"", "")
-  let enName = track.split(jpNameFilter)[0]
-  let jpName = track.replace(enName, "")
-    .replace("(", "")
-    .replace(trailingParenthesis, "")
-
+  console.log(track)
+  let jpName = getJpTitle(track)
+  let enName = track.replace(`(${jpName})`, "")
   return {
     enName:enName.trim(),
     jpName:jpName.trim(),
@@ -145,7 +156,7 @@ const getSong = async (id) => {
           for (let song of data.opening_themes){
             let formatted = formatSongs(song.text)
             if (formatted!=null) {
-              formatted.anime = data.title
+              formatted.anime = data.title.replace("(TV)", "")
               let duplicate = checkDuplicates(formatted.anime, formatted.enName)
               if (!duplicate){
                 songData.push(formatted)
@@ -157,7 +168,7 @@ const getSong = async (id) => {
           for (let song of data.ending_themes){
             let formatted = formatSongs(song.text)
             if (formatted!=null) {
-              formatted.anime = data.title
+              formatted.anime = data.title.replace("(TV)", "")
               let duplicate = checkDuplicates(formatted.anime, formatted.enName)
               if (!duplicate){
                 songData.push(formatted)
@@ -219,5 +230,5 @@ const start = async ()=>{
   }
 }
 
-// start()
+start()
 

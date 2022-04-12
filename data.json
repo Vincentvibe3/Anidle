@@ -114,8 +114,8 @@
         "anime": "Fullmetal Alchemist: Brotherhood"
     },
     {
-        "enName": "THE HERO !! ~Okoreru Kobushi ni Hi wo Tsukero~ (THE HERO !! ～怒れる拳に火をつけろ～)",
-        "jpName": "",
+        "enName": "THE HERO !! ~Okoreru Kobushi ni Hi wo Tsukero~",
+        "jpName": "THE HERO !! ～怒れる拳に火をつけろ～",
         "artist": "JAM Project",
         "anime": "One Punch Man"
     },
@@ -606,8 +606,8 @@
         "anime": "Naruto: Shippuuden"
     },
     {
-        "enName": "Nagare Boshi ~Shooting Star~ (流れ星〜Shooting Star〜)",
-        "jpName": "",
+        "enName": "Nagare Boshi ~Shooting Star~",
+        "jpName": "流れ星〜Shooting Star〜",
         "artist": "HOME MADE Kazoku",
         "anime": "Naruto: Shippuuden"
     },
@@ -732,8 +732,8 @@
         "anime": "Naruto: Shippuuden"
     },
     {
-        "enName": "Kono Koe Karashite (この声枯らしてfeat. CHEHON)",
-        "jpName": "",
+        "enName": "Kono Koe Karashite",
+        "jpName": "この声枯らしてfeat. CHEHON",
         "artist": "AISHA feat. CHEHON",
         "anime": "Naruto: Shippuuden"
     },
@@ -1026,8 +1026,8 @@
         "anime": "Angel Beats!"
     },
     {
-        "enName": "Ichiban no Takaramono ~Yui final ver.~ (一番の宝物 ~Yui final ver.~)",
-        "jpName": "",
+        "enName": "Ichiban no Takaramono ~Yui final ver.~",
+        "jpName": "一番の宝物 ~Yui final ver.~",
         "artist": "Girls Dead Monster feat. LiSA",
         "anime": "Angel Beats!"
     },
@@ -1050,8 +1050,8 @@
         "anime": "Boku no Hero Academia 3rd Season"
     },
     {
-        "enName": "Long Hope Philia <TV Limited> (ロングホープ・フィリア＜TV Limited＞)",
-        "jpName": "",
+        "enName": "Long Hope Philia <TV Limited>",
+        "jpName": "ロングホープ・フィリア＜TV Limited＞",
         "artist": "Masaki Suda",
         "anime": "Boku no Hero Academia 3rd Season"
     },
@@ -1101,12 +1101,6 @@
         "enName": "Jungle P",
         "jpName": "",
         "artist": "5050",
-        "anime": "One Piece"
-    },
-    {
-        "enName": "We Are (ウィーアー! 〜10周年Ver.〜)",
-        "jpName": "",
-        "artist": "TVXQ",
         "anime": "One Piece"
     },
     {
@@ -1230,8 +1224,8 @@
         "anime": "One Piece"
     },
     {
-        "enName": "GLORY -Kimi ga iru Kara- (GLORY-君がいるから-)",
-        "jpName": "",
+        "enName": "GLORY -Kimi ga iru Kara-",
+        "jpName": "GLORY-君がいるから-",
         "artist": "Takako Uehara",
         "anime": "One Piece"
     },
@@ -1344,7 +1338,7 @@
         "anime": "Mirai Nikki (TV)"
     },
     {
-        "enName": "#B: Kyouki Chinden",
+        "enName": "Kyouki Chinden",
         "jpName": "狂気沈殿",
         "artist": "Yousei Teikoku",
         "anime": "Mirai Nikki (TV)"
@@ -1362,7 +1356,7 @@
         "anime": "Mirai Nikki (TV)"
     },
     {
-        "enName": "#B: Happy End\"",
+        "enName": "Happy End\"",
         "jpName": "",
         "artist": "Faylan",
         "anime": "Mirai Nikki (TV)"
@@ -1548,8 +1542,8 @@
         "anime": "Mob Psycho 100"
     },
     {
-        "enName": ": Refrain Boy -TEKINA remix- (リフレインボーイ -TEKINA remix-)",
-        "jpName": "",
+        "enName": ": Refrain Boy -TEKINA remix-",
+        "jpName": "リフレインボーイ -TEKINA remix-",
         "artist": "ALL OFF",
         "anime": "Mob Psycho 100"
     },
@@ -1770,8 +1764,8 @@
         "anime": "Bleach"
     },
     {
-        "enName": "Kansha.",
-        "jpName": "感謝.",
+        "enName": "Kansha. (感謝.)",
+        "jpName": "",
         "artist": "RSP a.k.a Real Street Project",
         "anime": "Bleach"
     },
@@ -1794,8 +1788,8 @@
         "anime": "Bleach"
     },
     {
-        "enName": "Sky Chord ~Otona ni Naru Kimi he~ (Sky chord~大人になる君へ~)",
-        "jpName": "",
+        "enName": "Sky Chord ~Otona ni Naru Kimi he~",
+        "jpName": "Sky chord~大人になる君へ~",
         "artist": "Tsuji Shion",
         "anime": "Bleach"
     },
@@ -1926,8 +1920,8 @@
         "anime": "Fairy Tail"
     },
     {
-        "enName": "S.O.W. Sense of Wonder (S.O.W.センスオブワンダー)",
-        "jpName": "",
+        "enName": "S.O.W. Sense of Wonder",
+        "jpName": "S.O.W.センスオブワンダー",
         "artist": "Idoling!!!",
         "anime": "Fairy Tail"
     },
@@ -2064,8 +2058,8 @@
         "anime": "Fairy Tail"
     },
     {
-        "enName": "YELL〜Kagayaku Tame no Mono〜 (YELL〜輝くためのもの〜)",
-        "jpName": "",
+        "enName": "YELL〜Kagayaku Tame no Mono〜",
+        "jpName": "YELL〜輝くためのもの〜",
         "artist": "Sata Andagi",
         "anime": "Fairy Tail"
     },
@@ -2094,8 +2088,8 @@
         "anime": "Tokyo Ghoul √A"
     },
     {
-        "enName": "02~O-Two~",
-        "jpName": "02~ｵｰ･ﾂｰ~",
+        "enName": "02~O-Two~ (02~ｵｰ･ﾂｰ~)",
+        "jpName": "",
         "artist": "Orange Range",
         "anime": "Code Geass: Hangyaku no Lelouch R2"
     },
@@ -2166,8 +2160,8 @@
         "anime": "Death Parade"
     },
     {
-        "enName": "Zankoku na Tenshi no Thesis (残酷な天使のテーゼ, A Cruel Angel's Thesis)",
-        "jpName": "",
+        "enName": "Zankoku na Tenshi no Thesis",
+        "jpName": "残酷な天使のテーゼ, A Cruel Angel's Thesis",
         "artist": "Yoko Takahashi",
         "anime": "Neon Genesis Evangelion"
     },
@@ -2244,13 +2238,13 @@
         "anime": "Soul Eater"
     },
     {
-        "enName": "#R1: Counter Identity",
+        "enName": "Counter Identity",
         "jpName": "",
         "artist": "UNISON SQUARE GARDEN",
         "anime": "Soul Eater"
     },
     {
-        "enName": "#R2: Ai ga Hoshii yo",
+        "enName": "Ai ga Hoshii yo",
         "jpName": "",
         "artist": "Shion Tsuji",
         "anime": "Soul Eater"
@@ -2280,13 +2274,13 @@
         "anime": "Soul Eater"
     },
     {
-        "enName": "#R1: Ao no Kaori",
+        "enName": "Ao no Kaori",
         "jpName": "",
         "artist": "Yui Makino",
         "anime": "Soul Eater"
     },
     {
-        "enName": "#R2: Northern Lights",
+        "enName": "Northern Lights",
         "jpName": "",
         "artist": "How Merry Marry",
         "anime": "Soul Eater"
@@ -2322,7 +2316,7 @@
         "anime": "Ano Hi Mita Hana no Namae wo Bokutachi wa Mada Shiranai."
     },
     {
-        "enName": "#R1: Circle Game",
+        "enName": "Circle Game",
         "jpName": "サークルゲーム",
         "artist": "Galileo Galilei",
         "anime": "Ano Hi Mita Hana no Namae wo Bokutachi wa Mada Shiranai."
@@ -2334,8 +2328,8 @@
         "anime": "Ano Hi Mita Hana no Namae wo Bokutachi wa Mada Shiranai."
     },
     {
-        "enName": "secret base ~Kimi ga Kureta Mono~ (10 years after ver.) (secret base 〜君がくれたもの〜（10 years after Ver.）)",
-        "jpName": "",
+        "enName": "secret base ~Kimi ga Kureta Mono~ (10 years after ver.)",
+        "jpName": "secret base 〜君がくれたもの〜（10 years after Ver.）",
         "artist": "Meiko Honma (Ai Kayano), Naruko Anjou (Haruka Tomatsu), Chiriko Tsurumi (Saori Hayami)",
         "anime": "Ano Hi Mita Hana no Namae wo Bokutachi wa Mada Shiranai."
     },
@@ -2526,8 +2520,8 @@
         "anime": "JoJo no Kimyou na Bouken (TV)"
     },
     {
-        "enName": "Love Dramatic feat. Rikka Ihara (ラブ・ドラマティック feat.伊原六花)",
-        "jpName": "",
+        "enName": "Love Dramatic feat. Rikka Ihara",
+        "jpName": "ラブ・ドラマティック feat.伊原六花",
         "artist": "Masayuki Suzuki (鈴木雅之)",
         "anime": "Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen"
     },
@@ -2538,8 +2532,8 @@
         "anime": "Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen"
     },
     {
-        "enName": "Chikatto Chika Chika♡",
-        "jpName": "チカっとチカ千花っ♡",
+        "enName": "Chikatto Chika Chika♡ (チカっとチカ千花っ♡)",
+        "jpName": "",
         "artist": "Chika Fujiwara (Konomi Kohara",
         "anime": "Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen"
     },
@@ -2730,8 +2724,8 @@
         "anime": "Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka"
     },
     {
-        "enName": "REALIZE ~Hajimari no Toki~ (REALIZE ～始まりのとき～)",
-        "jpName": "",
+        "enName": "REALIZE ~Hajimari no Toki~",
+        "jpName": "REALIZE ～始まりのとき～",
         "artist": "Liliruca Arde (Maaya Uchida)",
         "anime": "Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka"
     },
@@ -2958,8 +2952,8 @@
         "anime": "Kono Subarashii Sekai ni Shukufuku wo! 2"
     },
     {
-        "enName": "Megumeru ~cuckool mix 2007~ (メグメル～cuckool mix 2007～)",
-        "jpName": "",
+        "enName": "Megumeru ~cuckool mix 2007~",
+        "jpName": "メグメル～cuckool mix 2007～",
         "artist": "eufonius",
         "anime": "Clannad"
     },
@@ -2970,8 +2964,8 @@
         "anime": "Clannad"
     },
     {
-        "enName": "Uragiri no Yuuyake (裏切りの夕焼け; Sunset of Betrayal)",
-        "jpName": "",
+        "enName": "Uragiri no Yuuyake",
+        "jpName": "裏切りの夕焼け; Sunset of Betrayal",
         "artist": "Theatre Brook",
         "anime": "Durarara!!"
     },
@@ -3102,8 +3096,8 @@
         "anime": "Ansatsu Kyoushitsu 2nd Season"
     },
     {
-        "enName": "Bye Bye Yesterday (バイバイ YESTERDAY)",
-        "jpName": "",
+        "enName": "Bye Bye Yesterday",
+        "jpName": "バイバイ YESTERDAY",
         "artist": "3-nen E-gumi Utatan (3年E組うた担)",
         "anime": "Ansatsu Kyoushitsu 2nd Season"
     },
@@ -3336,8 +3330,8 @@
         "anime": "Guilty Crown"
     },
     {
-        "enName": "Departures ~Anata ni Okuru Ai no Uta~ (Departures ~あなたにおくるアイの歌~)",
-        "jpName": "",
+        "enName": "Departures ~Anata ni Okuru Ai no Uta~",
+        "jpName": "Departures ~あなたにおくるアイの歌~",
         "artist": "EGOIST; produced by supercell; performed by Chelly",
         "anime": "Guilty Crown"
     },
@@ -3348,8 +3342,8 @@
         "anime": "Guilty Crown"
     },
     {
-        "enName": "Sekai no Yakusoku (世界の約束; The Promise of the World)",
-        "jpName": "",
+        "enName": "Sekai no Yakusoku",
+        "jpName": "世界の約束; The Promise of the World",
         "artist": "Chieko Baisho",
         "anime": "Howl no Ugoku Shiro"
     },
@@ -3438,8 +3432,8 @@
         "anime": "Dragon Ball Z"
     },
     {
-        "enName": "Ashitaka Sekki (アシタカせっき; The Legend of Ashitaka)",
-        "jpName": "",
+        "enName": "Ashitaka Sekki",
+        "jpName": "アシタカせっき; The Legend of Ashitaka",
         "artist": "Joe Hisaishi",
         "anime": "Mononoke Hime"
     },
@@ -3822,8 +3816,8 @@
         "anime": "Nanatsu no Taizai: Imashime no Fukkatsu"
     },
     {
-        "enName": "Q&A Recital! (Q&A リサイタル!)",
-        "jpName": "",
+        "enName": "Q&A Recital!",
+        "jpName": "Q&A リサイタル!",
         "artist": "Haruka Tomatsu",
         "anime": "Tonari no Kaibutsu-kun"
     },
@@ -3930,8 +3924,8 @@
         "anime": "Gintama"
     },
     {
-        "enName": "Anata MAGIC (アナタMAGIC)",
-        "jpName": "",
+        "enName": "Anata MAGIC",
+        "jpName": "アナタMAGIC",
         "artist": "monobright",
         "anime": "Gintama"
     },
@@ -3948,25 +3942,25 @@
         "anime": "Gintama"
     },
     {
-        "enName": "#R1: Bakuchi Dancer",
+        "enName": "Bakuchi Dancer",
         "jpName": "バクチ・ダンサー",
         "artist": "DOES",
         "anime": "Gintama"
     },
     {
-        "enName": "#R2: Kaze no Gotoku",
+        "enName": "Kaze no Gotoku",
         "jpName": "風のごとく",
         "artist": "Inoue Joe",
         "anime": "Gintama"
     },
     {
-        "enName": "#R3: Kanousei Girl",
+        "enName": "Kanousei Girl",
         "jpName": "可能性ガール",
         "artist": "Chiaki Kuriyama",
         "anime": "Gintama"
     },
     {
-        "enName": "#R4: Katoniago",
+        "enName": "Katoniago",
         "jpName": "カートニアゴ",
         "artist": "FLiP",
         "anime": "Gintama"
@@ -4068,25 +4062,25 @@
         "anime": "Gintama"
     },
     {
-        "enName": "#R1: Bokutachi no Kisetsu",
+        "enName": "Bokutachi no Kisetsu",
         "jpName": "",
         "artist": "DOES",
         "anime": "Gintama"
     },
     {
-        "enName": "#R2: Wave",
+        "enName": "Wave",
         "jpName": "",
         "artist": "Vijandeux",
         "anime": "Gintama"
     },
     {
-        "enName": "#R3: In My Life",
+        "enName": "In My Life",
         "jpName": "",
         "artist": "AZU",
         "anime": "Gintama"
     },
     {
-        "enName": "#R4: Sakurane",
+        "enName": "Sakurane",
         "jpName": "",
         "artist": "Piko",
         "anime": "Gintama"
@@ -4188,8 +4182,8 @@
         "anime": "JoJo no Kimyou na Bouken Part 4: Diamond wa Kudakenai"
     },
     {
-        "enName": "JoJo - Sono Chi no Kioku: end of THE WORLD (ジョジョ その血の記憶〜end of THE WORLD〜)",
-        "jpName": "",
+        "enName": "JoJo - Sono Chi no Kioku: end of THE WORLD",
+        "jpName": "ジョジョ その血の記憶〜end of THE WORLD〜",
         "artist": "JO☆STARS～TOMMY, Coda, JIN～",
         "anime": "JoJo no Kimyou na Bouken Part 3: Stardust Crusaders 2nd Season"
     },
@@ -4200,26 +4194,26 @@
         "anime": "JoJo no Kimyou na Bouken Part 3: Stardust Crusaders 2nd Season"
     },
     {
-        "enName": "Aku Yaku♢Kyousoukyoku ~ Oingo to Boingo~",
-        "jpName": "アク役♢協奏曲〜オインゴとボインゴ〜",
+        "enName": "Aku Yaku♢Kyousoukyoku ~ Oingo to Boingo~ (アク役♢協奏曲〜オインゴとボインゴ〜)",
+        "jpName": "",
         "artist": "Oingo (Makoto Yasumura) and Boingo (Motoko Kumai)",
         "anime": "JoJo no Kimyou na Bouken Part 3: Stardust Crusaders 2nd Season"
     },
     {
-        "enName": "Aku Yaku♢Kyousoukyoku ~ Hol Horse to Boingo~",
-        "jpName": "アク役◇協奏曲～ホル・ホースとボインゴ～",
+        "enName": "Aku Yaku♢Kyousoukyoku ~ Hol Horse to Boingo~ (アク役◇協奏曲～ホル・ホースとボインゴ～)",
+        "jpName": "",
         "artist": "Hol Horse (Hidenobu Kiuchi) and Boingo (Motoko Kumai)",
         "anime": "JoJo no Kimyou na Bouken Part 3: Stardust Crusaders 2nd Season"
     },
     {
-        "enName": "Sanpo (さんぽ; Stroll)",
-        "jpName": "",
+        "enName": "Sanpo",
+        "jpName": "さんぽ; Stroll",
         "artist": "Azumi Inoue",
         "anime": "Tonari no Totoro"
     },
     {
-        "enName": "Tonari no Totoro (となりのトトロ; My Neighbor Totoro)",
-        "jpName": "",
+        "enName": "Tonari no Totoro",
+        "jpName": "となりのトトロ; My Neighbor Totoro",
         "artist": "Azumi Inoue",
         "anime": "Tonari no Totoro"
     },
@@ -4272,26 +4266,14 @@
         "anime": "Date A Live"
     },
     {
-        "enName": "Makafushigi Adventure",
-        "jpName": "",
-        "artist": "Hiroki Takahashi",
-        "anime": "Dragon Ball"
-    },
-    {
-        "enName": "Romatikku Ageru Yo",
-        "jpName": "",
-        "artist": "Ushio Hashimoto",
-        "anime": "Dragon Ball"
-    },
-    {
         "enName": "Button",
         "jpName": "",
         "artist": "PENGUIN RESEARCH",
         "anime": "ReLIFE"
     },
     {
-        "enName": "Iijuu★Rider",
-        "jpName": "イ―ジュ－★ライダー",
+        "enName": "Iijuu★Rider (イ―ジュ－★ライダー)",
+        "jpName": "",
         "artist": "Tamio Okuda",
         "anime": "ReLIFE"
     },
@@ -4338,8 +4320,8 @@
         "anime": "ReLIFE"
     },
     {
-        "enName": "There will be love there -Ai no Aru Basho- (There will be love there -愛のある場所-)",
-        "jpName": "",
+        "enName": "There will be love there -Ai no Aru Basho-",
+        "jpName": "There will be love there -愛のある場所-",
         "artist": "The Brilliant Green",
         "anime": "ReLIFE"
     },
@@ -4362,14 +4344,26 @@
         "anime": "ReLIFE"
     },
     {
+        "enName": "Makafushigi Adventure",
+        "jpName": "",
+        "artist": "Hiroki Takahashi",
+        "anime": "Dragon Ball"
+    },
+    {
+        "enName": "Romatikku Ageru Yo",
+        "jpName": "",
+        "artist": "Ushio Hashimoto",
+        "anime": "Dragon Ball"
+    },
+    {
         "enName": "Seishun wa Zankoku ja nai",
         "jpName": "青春は残酷じゃない",
         "artist": "Natsuki Hanae",
         "anime": "Saiki Kusuo no Ψ-nan"
     },
     {
-        "enName": "Sai Ψ Sai Kouchou",
-        "jpName": "最Ψ最好調！",
+        "enName": "Sai Ψ Sai Kouchou (最Ψ最好調！)",
+        "jpName": "",
         "artist": "Dempagumi.inc",
         "anime": "Saiki Kusuo no Ψ-nan"
     },
@@ -4404,13 +4398,13 @@
         "anime": "Tokyo Revengers"
     },
     {
-        "enName": "#1 Golden Time",
+        "enName": "Golden Time",
         "jpName": "",
         "artist": "Yui Horie",
         "anime": "Golden Time"
     },
     {
-        "enName": "#2 The♡World's♡End",
+        "enName": "The♡World's♡End",
         "jpName": "",
         "artist": "Yui Horie",
         "anime": "Golden Time"
@@ -4422,13 +4416,7 @@
         "anime": "Golden Time"
     },
     {
-        "enName": "Hanneikyuuteki ni Aishite yo♡",
-        "jpName": "半永久的に愛してよ♡",
-        "artist": "Yui Horie",
-        "anime": "Golden Time"
-    },
-    {
-        "enName": "Golden Time",
+        "enName": "Hanneikyuuteki ni Aishite yo♡ (半永久的に愛してよ♡)",
         "jpName": "",
         "artist": "Yui Horie",
         "anime": "Golden Time"
