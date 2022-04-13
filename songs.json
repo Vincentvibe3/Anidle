@@ -1,6 +1,4 @@
-//Auto generated file
-//Any modification will be overwritten
-export var songs:Array<Song> = [
+[
     {
         "id": "0F8psXXh2oxE5BGdkKaoIs",
         "name": "Shingeki no Kyojin - Guren no Yumiya"
@@ -2254,8 +2252,3 @@ export var songs:Array<Song> = [
         "name": "Shokugeki no Souma: San no Sara - Kyokyo Jitsujitsu"
     }
 ]
-
-export interface Song {
-    id:string,
-    name:string
-}

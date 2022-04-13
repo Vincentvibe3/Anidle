@@ -38,7 +38,7 @@
             "type": "node",
             "request": "launch",
             "runtimeExecutable": "node",
-            "runtimeArgs": ["${workspaceFolder}/songFetching/app.js", "--initial"],
+            "runtimeArgs": ["${workspaceFolder}/songFetching/fetcher.mjs", "--initial"],
             "console":"internalConsole",
             "envFile": "${workspaceFolder}/songFetching/.env",
             "outputCapture": "std"
@@ -48,7 +48,7 @@
             "type": "node",
             "request": "launch",
             "runtimeExecutable": "node",
-            "runtimeArgs": ["${workspaceFolder}/songFetching/linker.js"],
+            "runtimeArgs": ["${workspaceFolder}/songFetching/linker.mjs"],
             "console":"internalConsole",
             "envFile": "${workspaceFolder}/songFetching/.env",
             "outputCapture": "std"
@@ -59,7 +59,17 @@
             "request": "launch",
             "runtimeExecutable": "node",
             "console": "internalConsole",
-            "runtimeArgs": ["${file}"]
+            "runtimeArgs": ["${file}"],
+            "envFile": "${workspaceFolder}/songFetching/.env",
+        },
+        {
+            "name":"Run converter",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "node",
+            "console": "internalConsole",
+            "runtimeArgs": ["${workspaceFolder}/songFetching/converter.mjs", "${workspaceFolder}/songs.json", "${workspaceFolder}/src/lib/songs.ts", "${workspaceFolder}/songFetching/songs.template"],
+            "envFile": "${workspaceFolder}/songFetching/.env",
         }
     ]
 }

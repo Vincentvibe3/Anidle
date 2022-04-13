@@ -1,21 +1,28 @@
-const wanakana = require('wanakana');
-const axios = require('axios')
+import * as fs from "fs"
+import axios from "axios"
+import * as wanakana from "wanakana"
+import { logger, runId } from "./logging.mjs"
+import * as stringSimilarity from "string-similarity"
 
 const client_id = process.env.SPOTIFY_CLIENT
 const client_secret = process.env.SPOTIFY_SECRET
-const fs = require('fs')
+
 let datastr = fs.readFileSync("data.json")
 let dataJson = JSON.parse(datastr)
 
-const Kuroshiro = require("kuroshiro").default
-const KuromojiAnalyzer = require("kuroshiro-analyzer-kuromoji");
-const kuroshiro = new Kuroshiro();
+import Kuroshiro from "kuroshiro"
+import KuromojiAnalyzer from "kuroshiro-analyzer-kuromoji"
+const kuroshiro = new Kuroshiro.default();
 
 let punctuation = /[.,\"\/#!$%\^&\*;:{}=\-'_`~()?]/g
 
 let matches = []
 let failures = []
 let review = new Map()
+
+console.log(`RunId: ${runId}`)
+let reviewLogger = logger.child({type:"review"})
+let failureLogger = logger.child({type:"failure"})
 
 const getJpTitle = (str) => {
     let reversed = str.split("").reverse()
@@ -112,11 +119,15 @@ const getMatches = async (accessToken, query, info, artists, market)=>{
     let tempReview = []
     for (let item of data.tracks.items){
       let spArtists = []
-      for (let artist of item.artists){
-        spArtists.push(artist.name)
+      if (item===null){
+        continue
       }
-      if (await checkTitle(item.name, info.enName, info.jpName)){
-        if (await checkArtist(spArtists, artists.comparison)){
+      for (let artist of item.artists){
+            spArtists.push(artist.name)
+      } 
+      let artistCheck = await checkArtist(spArtists, artists.en, artists.jp)
+      let titleCheck = await checkTitle(item.name, info.enName, info.jpName)
+      if (titleCheck&&artistCheck){
           console.log(`Found ${info.enName}`)
           removeFail(`${info.anime} - ${info.enName}`)
           removeReview(`${info.anime} - ${info.enName}`)
@@ -125,22 +136,22 @@ const getMatches = async (accessToken, query, info, artists, market)=>{
             name:`${info.anime} - ${info.enName}`
           })
           return true
-        } else {
+        } else if (artistCheck||titleCheck) {
           tempReview.push(
             {
               id:item.id,
               url:item.external_urls.spotify
             }
           )
-        }
-      } 
+      }
     }
     if (tempReview.length!=0){
-      console.log(`To review ${info.enName}`)
       removeFail(`${info.anime} - ${info.enName}`)
       addReview(`${info.anime} - ${info.enName}`, tempReview)
     } else {
-      addFail(`${info.anime} - ${info.enName}`)
+      if (!review.has(`${info.anime} - ${info.enName}`)){
+        addFail(`${info.anime} - ${info.enName}`)
+      }
     }
     return false
 }
@@ -150,7 +161,6 @@ const getArtists = (artists) => {
     let listPrelim = artists.split(matcher)
     let jpArtists = []
     let enArtists = []
-    let comparison = []
     let same = true
     for (let item of listPrelim){
         let jp = getJpTitle(item).toLowerCase()
@@ -162,35 +172,34 @@ const getArtists = (artists) => {
         }
         jpArtists.push(jp)
         enArtists.push(en)
-        comparison.push(en.replace(" ", "").replace(punctuation, ""))
     }
     return {
         en:enArtists,
         jp:jpArtists,
-        comparison:comparison,
         same:same
     }
 }
 
-const formatForComparison = async (str) => {
-    let result = await kuroshiro.convert(str, { to: "romaji" })
-    return result
+const format = async (str) => {
+  let stripJp = await kuroshiro.convert(str, { to: "romaji" })
+  let fixedRom = replaceModHepburn(stripJp)
+  return fixedRom.toLowerCase()
+    .replace(punctuation, "")
+    .replace(" ", "")
 }
 
-const checkArtist = async (spotifyArtists, artists) => {
+const checkArtist = async (spotifyArtists, artists, jpArtists) => {
     for (let spArtist of spotifyArtists){
-        let cleanPunct = spArtist.replace(punctuation, "")
-        let clean1 = (await formatForComparison(cleanPunct)).replace(" ", "").toLowerCase()
-        let clean2 = (await formatForComparison(cleanPunct)).split(" ").reverse().join("").toLowerCase()
-        let clean3 = (await formatForComparison(cleanPunct)).replace("ou", "o").split(" ").reverse().join("").toLowerCase()
-        let clean4 = (await formatForComparison(cleanPunct)).replace("ou", "o").split(" ").reverse().join("").toLowerCase()
-        console.log(clean1)
-        console.log(clean2)
-        console.log(clean3)
-        console.log(clean4)
-        console.log(artists)
-        if (artists.includes(clean1)||artists.includes(clean2)||artists.includes(clean3)||artists.includes(clean4)){
+        if (jpArtists.includes(spotifyArtists)){
           return true
+        }
+        for (let artist of artists){
+          let formatted = await format(artist)
+          let spFormatted = await format(spArtist)
+          let sim = stringSimilarity.compareTwoStrings(formatted, spFormatted)
+          if (sim>=0.75){
+            return true
+          }
         }
     }
     return false
@@ -210,20 +219,14 @@ const replaceModHepburn = (str) => {
 }
 
 const checkTitle = async (spTitle, title, jpTitle) => {
-  let jpConvert = wanakana.toKatakana(title, { customKanaMapping: { lu: 'ル', la: 'ラ', li:"り", le:"レ", lo:"ロ" }})
-  let spCleanPunct = spTitle.replace(punctuation, "").toLowerCase()
-  let jpOk = false
-  if (jpTitle!=""){
-    let spCleanPunctRaw = spTitle.replace(punctuation, "").toLowerCase()
-    let jpTitleCleanPunct = jpTitle.replace(punctuation, "").toLowerCase()
-    jpOk = (spCleanPunctRaw.includes(jpTitleCleanPunct)||jpTitleCleanPunct.includes(spCleanPunctRaw))
+  if (jpTitle==""){
+    jpTitle = wanakana.toKatakana(title, { customKanaMapping: { lu: 'ル', la: 'ラ', li:"り", le:"レ", lo:"ロ" }})
   }
-  let titleCleanPunct = title.replace(punctuation, "").toLowerCase()
-  let jpcTitleCleanPunct = jpConvert.replace(punctuation, "").toLowerCase()
-  let spClean = replaceModHepburn((await formatForComparison(spCleanPunct)).replace(" ", ""))
-  let titleClean = replaceModHepburn(titleCleanPunct.replace(" ", ""))
-  let jpcTitleClean = replaceModHepburn((await formatForComparison(jpcTitleCleanPunct)).replace(" ", ""))
-  return (spClean.includes(titleClean)||titleClean.includes(spClean)||spClean.includes(jpcTitleClean)||jpOk)
+  let formatted = await format(title)
+  let jpFormatted = await format(jpTitle)
+  let spFormatted = await format(spTitle)
+  let sim = stringSimilarity.compareTwoStrings(formatted, spFormatted)
+  return (jpFormatted===spFormatted||sim>=0.75)
 }
 
 function sleep(ms) {
@@ -234,7 +237,7 @@ function sleep(ms) {
 
 const writeData = async () => {
   console.log("Writing data")
-  if (ids.length>0){
+  if (matches.length>0){
     fs.writeFile("./songs.json", JSON.stringify(matches),
       err => {
         if (err) {
@@ -243,6 +246,8 @@ const writeData = async () => {
         }
         //file written successfully
       })
+    }
+  if (review.size>0){
     fs.writeFile("./review.json", JSON.stringify(Object.fromEntries(review)),
       err => {
         if (err) {
@@ -251,6 +256,8 @@ const writeData = async () => {
         }
       //file written successfully
     })
+  }
+  if (failures.length){
     fs.writeFile("./failures.json", JSON.stringify(failures),
       err => {
         if (err) {
@@ -260,14 +267,17 @@ const writeData = async () => {
         //file written successfully
       })
   }
-  
 }
 
 const start = async () => {
+    logger.info(`Run started. id:${runId}`)
     let alphaNumeric = /[a-z-A-Z]/
+    let count = 0
     let token = await getToken()
     await kuroshiro.init(new KuromojiAnalyzer())
     for (let song of dataJson){
+        count++
+        console.log(`Processing ${count} of ${dataJson.length}`)
         let queries = []
         let artistsList = getArtists(song.artist)
         let jpConvert = wanakana.toKatakana(song.enName,  { customKanaMapping: { lu: 'ル', la: 'ラ', li:"り", le:"レ", lo:"ロ" }})
@@ -309,7 +319,6 @@ const start = async () => {
         }
         console.log(`Getting ${song.anime} - ${song.enName}`)
         for (let query of queries){
-            console.log(query)
             let res = await getMatches(token, query, song, artistsList, "JP")
             if (!res) {
               res = await getMatches(token, query, song, artistsList, "US")
@@ -319,7 +328,15 @@ const start = async () => {
               break
             }
         }
+        if (review.has(`${song.anime} - ${song.enName}`)){
+            console.warn(`To review ${song.enName}`)
+            reviewLogger.warn({data:review.get(`${song.anime} - ${song.enName}`)}, `To review ${song.enName}`)
+        }
+        if (failures.includes(`${song.anime} - ${song.enName}`)){
+          console.error(`Failed ${song.enName}`)
+          failureLogger.error(`Failed ${song.enName}`)
+        }
     }
     writeData()
 }
-start()
+start() 

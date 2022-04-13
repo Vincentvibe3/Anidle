@@ -1,7 +1,7 @@
-const fs = require('fs')
-const process = require("process")
-const axios = require('axios');
-const wanakana = require('wanakana');
+import * as fs from "fs"
+import axios from "axios"
+import * as wanakana from "wanakana"
+import { logger } from "./logging.mjs"
 const client_id = process.env.MAL_CLIENT
 
 var ids = []
@@ -135,11 +135,11 @@ const checkDuplicates = (anime, data) => {
     }
 }
 
-const processSongs = (category) => {
+const processSongs = (category, anime) => {
     for (let song of category) {
         let formatted = formatSongs(song.text)
         if (formatted != null) {
-            formatted.anime = data.title.replace("(TV)", "")
+            formatted.anime = anime.replace("(TV)", "")
             let duplicate = checkDuplicates(formatted.anime, formatted.enName)
             if (!duplicate) {
                 songData.push(formatted)
@@ -158,12 +158,17 @@ const getSong = async (id) => {
             let ignore = ["music", "special", "ova"]
             if (!ignore.includes(data.media_type.toLowerCase())) {
                 if (typeof data.opening_themes !== "undefined") {
-                    processSongs(data.opening_themes)
+                    processSongs(data.opening_themes, data.title)
                 }
                 if (typeof data.ending_themes !== "undefined") {
-                    processSongs(data.ending_themes)
+                    processSongs(data.ending_themes, data.title)
                 }
             }
+        }
+    ).catch(
+        (error)=>{
+            logger.error(error, `Encountered error at ${id}`)
+            process.exit(1)
         }
     )
 }
@@ -183,6 +188,11 @@ const getTop = async (page) => {
                 }
             }
         }
+    ).catch(
+        (error)=>{
+            logger.error(error, `Encountered error at getTop`)
+            process.exit(1)
+        }
     )
 }
 
@@ -193,7 +203,8 @@ const writeData = async () => {
             err => {
                 if (err) {
                     console.error(err)
-                    return
+                    logger.error(err, "Failed to save file")
+                    process.exit(1)
                 }
                 //file written successfully
             })

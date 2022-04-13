@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "fetcher.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,10 +14,13 @@
     "express": "^4.17.3",
     "kuroshiro": "~1.2.0",
     "kuroshiro-analyzer-kuromoji": "^1.1.0",
+    "pino": "^7.10.0",
+    "pino-logflare": "^0.3.12",
+    "string-similarity": "^4.0.4",
     "wanakana": "^4.0.2"
   },
   "overrides": {
-      "async": "3.2.3"
+    "async": "3.2.3"
   },
   "private": true
 }
