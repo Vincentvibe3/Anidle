@@ -52,6 +52,14 @@
             "console":"internalConsole",
             "envFile": "${workspaceFolder}/songFetching/.env",
             "outputCapture": "std"
+        },
+        {
+            "name":"Launch Current File",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "node",
+            "console": "internalConsole",
+            "runtimeArgs": ["${file}"]
         }
     ]
 }
