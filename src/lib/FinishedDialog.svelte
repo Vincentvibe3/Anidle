@@ -43,7 +43,7 @@
         opacity+=0.1
         container.style.opacity = `${opacity}`
         if (opacity<1){
-            setTimeout(animateFadeIn, 0.1)
+            setTimeout(animateFadeIn, 10)
         } else {
             opacity = 1
         }
@@ -53,7 +53,7 @@
         opacity-=0.1
         container.style.opacity = `${opacity}`
         if (opacity>0){
-            setTimeout(animateFadeOut, 0.1)
+            setTimeout(animateFadeOut, 10)
         } else {
             opacity = 0
             dismiss()

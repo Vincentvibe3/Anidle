@@ -13,7 +13,7 @@ import { onMount } from "svelte";
         opacity-=0.1
         container.style.opacity = `${opacity}`
         if (opacity>0){
-            setTimeout(animateFadeOut, 0.1)
+            setTimeout(animateFadeOut, 10)
         } else {
             opacity = 0
             dismiss()
