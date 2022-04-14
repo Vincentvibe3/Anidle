@@ -31,7 +31,7 @@
     export let finished = false
     export let displayEndScreen = false
     export let gameStarted = false
-    let inputContent = "Search for a op/ed"
+    let inputContent:string = ""
     let suggestions:string[] = []
     let inputContentSet = false
     let hintText = true
@@ -97,6 +97,7 @@
         let success = inputContent == song.name
         attempts = [...attempts, {text:inputContent, success:success, skipped:false}]
         inputContent = ""
+        unfocusInput()
         if (success){
             gameSuccess = true
             finished=true
@@ -212,6 +213,14 @@
         }
     }
 
+    const unfocusInput = () => {
+        if (inputContent==""){
+            inputField.style.color = "#818181"
+            hintText = true
+            inputContent= "Search for a op/ed"
+        }
+    }
+
     $: inputContent, getAnswerSuggestions(inputContent), setSubmitButtonState(inputContent)
     $:attemptCount, getTimeDiff()
     $:playing, adjustIconVisibility(playing)
@@ -221,7 +230,7 @@
         currentTime = media.currentTime
         importProgress()
         adjustIconVisibility(playing)
-        inputField.style.color = "#818181"
+        unfocusInput()
     })
 
     $:finished, displayEndScreen=finished
@@ -239,7 +248,7 @@
         </div>    
     {/if}
     {#if !finished}
-        <input on:click={clearHintText} bind:value={inputContent} bind:this={inputField}>
+        <input on:blur={unfocusInput} on:click={clearHintText} bind:value={inputContent} bind:this={inputField}>
     {/if}
     <Progress bind:max={maxTime} bind:value={currentTime} bind:separatorPositions={attemptsTimestamp} bind:revealed={attemptsTimestamp[attemptCount]}></Progress>
     <div class="buttons">
