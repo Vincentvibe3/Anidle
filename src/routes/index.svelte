@@ -12,7 +12,7 @@
                     props: {
                         song:song,
                         metadata:{},
-                        loadFailed:true,
+                        loadFailed:false,
                         loaded:true,
                         index:songEntry.index,
                         nextTime:songEntry.expiry
@@ -58,6 +58,7 @@
     let dialog = false
     let finished = false
     let displayEndScreen = false
+    let content:HTMLElement
 
     const showAboutCard = () => {
         showAbout = true
@@ -68,6 +69,9 @@
     }
 
     onMount(()=>{
+        if (!loadFailed){
+            content.style.justifyContent = "space-between"
+        }
         if (gameStarted){
             dialog = false
         } else {
@@ -97,7 +101,7 @@
     {/if}
 </header>
 <About bind:displayed={showAbout}></About>
-<main>
+<main bind:this={content}>
     {#if loaded && loadFailed}
         <p>Loading failed.</p>
         <p>Reload the page to try again</p>
@@ -120,6 +124,7 @@
         top: 5rem;
         height: calc(100% - 5rem);
         width: 100%;
+        min-width: 20rem;
     }
 
     header {
@@ -132,6 +137,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        min-width: 20rem;
     }
 
     header .aboutButton {

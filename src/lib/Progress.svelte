@@ -39,12 +39,11 @@
 
     .progress-bar {
         position: relative;
-        width: calc(100% - 0.2rem);
         height: 1rem;
         display: flex;
         flex-direction: row;
         border: #3f434d solid 0.2rem;
-        margin-top: 1rem;
+        margin-top: 0.5rem;
         background-color: #161616;
     }
 

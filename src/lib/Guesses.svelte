@@ -35,21 +35,28 @@
 <style>
 
     .container {
-        position: absolute;
-        top:0%;
-        width: 100%;
+        width: 60%;
+        max-width: 40rem;
+        min-height: 18rem;
+        height: 22rem;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
     }
     
+    @media screen and (max-width: 800px) {
+        .container {
+            width: 80%;
+        }
+    }
+
     .attempts {
-        width: 60%;
+        width: calc(100% - 0.7rem);
         height: 2rem;
-        max-width: 40rem;
         border: solid #3f434d 0.15rem;
         background-color: #161616;
-        margin: 0.5rem;
+        margin: auto;
         padding: 0.2rem;
         display: flex;
         flex-direction: row;

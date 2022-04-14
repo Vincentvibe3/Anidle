@@ -149,6 +149,12 @@
         z-index: 5;
     }
 
+    @media screen and (max-width: 800px) {
+        .card {
+            max-width: 70%;
+        }
+    }
+
     button {
         margin-top: 1rem;
         background-color: rgb(171, 169, 253);

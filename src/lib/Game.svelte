@@ -19,6 +19,7 @@
         submitButton:undefined,
         playButton:undefined
     }
+    let inputField:HTMLElement
     let playIcon:SVGElement
     let pauseIcon:SVGElement
     let playing = false
@@ -30,9 +31,10 @@
     export let finished = false
     export let displayEndScreen = false
     export let gameStarted = false
-    let inputContent = ""
+    let inputContent = "Search for a op/ed"
     let suggestions:string[] = []
     let inputContentSet = false
+    let hintText = true
     let gameSuccess = false
     let diffMessage = ""
     let mounted= false
@@ -139,6 +141,9 @@
     }
 
     const getAnswerSuggestions = (query)=>{
+        if(hintText){
+            return
+        }
         let tempSuggestions = getSuggestions(query, 5)
         if (tempSuggestions[0]==query){
             suggestions = [tempSuggestions[0]]
@@ -152,7 +157,7 @@
 
     const setSubmitButtonState = (inputContent) => {
         if (typeof buttons.submitButton !== "undefined"){
-            if (inputContent.trim() == ""){
+            if (inputContent.trim() == "" || hintText){
                 buttons.submitButton.disabled=true
             } else {
                 if (!finished){
@@ -199,6 +204,14 @@
         
     }
 
+    const clearHintText = () => {
+        if (hintText){
+            inputField.style.color = "inherit"
+            hintText = false
+            inputContent= ""
+        }
+    }
+
     $: inputContent, getAnswerSuggestions(inputContent), setSubmitButtonState(inputContent)
     $:attemptCount, getTimeDiff()
     $:playing, adjustIconVisibility(playing)
@@ -208,6 +221,7 @@
         currentTime = media.currentTime
         importProgress()
         adjustIconVisibility(playing)
+        inputField.style.color = "#818181"
     })
 
     $:finished, displayEndScreen=finished
@@ -225,7 +239,7 @@
         </div>    
     {/if}
     {#if !finished}
-        <input bind:value={inputContent}>
+        <input on:click={clearHintText} bind:value={inputContent} bind:this={inputField}>
     {/if}
     <Progress bind:max={maxTime} bind:value={currentTime} bind:separatorPositions={attemptsTimestamp} bind:revealed={attemptsTimestamp[attemptCount]}></Progress>
     <div class="buttons">
@@ -239,21 +253,24 @@
 </div>
 
 <style>
-
     .controls {
-        position: absolute;
-        bottom: 1rem;
         width: 60%;
         max-width: 40rem;
         display: flex;
         flex-direction: column;
-        justify-items: flex-end;
+        align-items: stretch;
+        margin-top: 0.5rem;
     }
 
     .suggestions {
+        width: inherit;
+        max-width: inherit;
+        position: absolute;
         margin: 1rem 0rem 0rem 0rem;
         display: flex;
         flex-direction: column;
+        z-index: 2;
+        transform: translateY(-109%);
     }
 
     .suggestions button {
@@ -293,6 +310,18 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
+        transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+        outline: 0.1rem solid #00000000;
+    }
+
+    input:hover {
+        border-color: rgb(106, 104, 160);
+        outline: 0.1rem solid rgb(106, 104, 160);
+    }
+
+    input:focus {
+        border-color: rgb(106, 104, 160);
+        outline: 0.1rem solid rgb(106, 104, 160);
     }
 
     .buttons {
@@ -300,7 +329,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin: 1rem 0rem 1rem 0rem;
+        margin: 0rem 0rem 1rem 0rem;
     }
 
     .buttons button {
@@ -328,15 +357,23 @@
     }
 
     .buttons .play{
-        border-radius: 10rem;
+        border-radius: 100%;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 
     .buttons .playIcon{
         position: relative;
         left: 2px;
+    }
+
+    @media screen and (max-width: 800px) {
+        .controls {
+            width: 80%;
+        }
     }
 </style>

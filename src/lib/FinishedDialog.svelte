@@ -228,13 +228,18 @@
 
     .card {
         color: white;
-        width: 50%;
         max-width: 40rem;
         background-color: #161616;
         display: flex;
         flex-direction: column;
         padding: 2rem;
         z-index: 5;
+    }
+
+    @media screen and (max-width: 800px) {
+        .card {
+            max-width: 70%;
+        }
     }
 
     .songInfo {
