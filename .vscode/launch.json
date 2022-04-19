@@ -60,7 +60,8 @@
             "runtimeExecutable": "node",
             "console": "internalConsole",
             "runtimeArgs": ["${file}"],
-            "envFile": "${workspaceFolder}/songFetching/.env",
+            "envFile": "${workspaceFolder}/songLoader/.env",
+            "outputCapture": "std"
         },
         {
             "name":"Run converter",
@@ -70,6 +71,18 @@
             "console": "internalConsole",
             "runtimeArgs": ["${workspaceFolder}/songFetching/converter.mjs", "${workspaceFolder}/songs.json", "${workspaceFolder}/src/lib/songs.ts", "${workspaceFolder}/songFetching/songs.template"],
             "envFile": "${workspaceFolder}/songFetching/.env",
+            "outputCapture": "std"
+        },
+        {
+            "name":"Run new fetcher",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "node",
+            "console": "internalConsole",
+            "cwd": "${workspaceFolder}/songLoader",
+            "runtimeArgs": ["${workspaceFolder}/songLoader/fetcher.js", "${workspaceFolder}/songs.json"],
+            "envFile": "${workspaceFolder}/songLoader/.env",
+            "outputCapture": "std"
         }
     ]
 }

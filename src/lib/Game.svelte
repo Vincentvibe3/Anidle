@@ -72,7 +72,7 @@
         }
         let data = localStorage.getItem("progress").split("+")
         let stringJson = data[1]
-        let id = data[0]
+        let id = parseInt(data[0])
         if (id==song.id){
             gameStarted = true
             attempts = JSON.parse(stringJson)
@@ -240,14 +240,15 @@
 <audio bind:this={media} src={metadata.mediaURL} preload="true"></audio>
 <Guesses bind:maxAttempts={attemptsTimestamp.length} bind:attempts={attempts}></Guesses>
 <div class="controls">
-    {#if !inputContentSet}
-        <div class="suggestions">
-            {#each suggestions as suggestion}
-                <button on:click={()=>{inputContent=suggestion;inputContentSet=true}}>{suggestion}</button>
-            {/each}
-        </div>    
-    {/if}
+    
     {#if !finished}
+        {#if !inputContentSet}
+            <div class="suggestions">
+                {#each suggestions as suggestion}
+                    <button on:click={()=>{inputContent=suggestion;inputContentSet=true}}>{suggestion}</button>
+                {/each}
+            </div>    
+        {/if}
         <input on:blur={unfocusInput} on:click={clearHintText} bind:value={inputContent} bind:this={inputField}>
     {/if}
     <Progress bind:max={maxTime} bind:value={currentTime} bind:separatorPositions={attemptsTimestamp} bind:revealed={attemptsTimestamp[attemptCount]}></Progress>

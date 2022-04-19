@@ -17,7 +17,7 @@ export let getSuggestions = (query:string, max:number)=>{
     let results = []
     const words = query.toLowerCase().split(reNonWord).filter(i => i)
     for (let song of songs){
-        let name = song.name.toLowerCase()
+        let name = song.guessString.toLowerCase()
         if (name.startsWith(query)){
             addScoreEntry(scores, words.length+1, song.name)
         } else {

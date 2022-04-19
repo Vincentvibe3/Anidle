@@ -12,7 +12,7 @@
                     props: {
                         song:song,
                         metadata:{},
-                        loadFailed:false,
+                        loadFailed:true,
                         loaded:true,
                         index:songEntry.index,
                         nextTime:songEntry.expiry
@@ -110,10 +110,24 @@
     {:else}
         <p>Loading...</p>
     {/if}
+    <noscript>
+        <p>This page relies on javascript for the game's functionality</p>
+        <p>The page will be stuck loading without javascript</p>
+    </noscript>
 </main>
 
 
 <style>
+
+    noscript {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    noscript p {
+        margin: 0.5rem;
+    }
 
     main {
         position: absolute;

@@ -1,7 +1,6 @@
 import * as fs from "fs"
 import axios from "axios"
 import * as wanakana from "wanakana"
-import { logger } from "./logging.mjs"
 const client_id = process.env.MAL_CLIENT
 
 var ids = []
@@ -137,6 +136,7 @@ const checkDuplicates = (anime, data) => {
 
 const processSongs = (category, anime) => {
     for (let song of category) {
+        console.log(song)
         let formatted = formatSongs(song.text)
         if (formatted != null) {
             formatted.anime = anime.replace("(TV)", "")
@@ -173,7 +173,7 @@ const getSong = async (id) => {
     )
 }
 
-const getTop = async (page) => {
+export const getTop = async (page) => {
     axios.get(`https://api.myanimelist.net/v2/anime/ranking?ranking_type=bypopularity&offset=${page * 100}&limit=100`,
         {
             headers: { "X-MAL-Client-ID": client_id }
@@ -182,7 +182,7 @@ const getTop = async (page) => {
         ({ data }) => {
             for (let entry of data.data) {
                 if (ids.length < animeCount) {
-                    ids.push(entry.node.id)
+                    ids.push(entry.node.title)
                 } else {
                     break
                 }
@@ -190,7 +190,6 @@ const getTop = async (page) => {
         }
     ).catch(
         (error)=>{
-            logger.error(error, `Encountered error at getTop`)
             process.exit(1)
         }
     )

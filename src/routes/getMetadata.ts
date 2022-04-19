@@ -49,6 +49,18 @@ const fetchData = async (token:string, id:string):Promise<Metadata> => {
     }
 }
 
+const getVideoUrl = async (id) => {
+    let response = await fetch(`https://staging.animethemes.moe/api/video/?filter[id]=${id}`)
+    let respData = await response.json()
+    let videos = respData.videos
+    for (let video of videos){
+        if (video.id==id){
+            return video.link
+        }
+    }
+    return null
+}
+
 //fix cache clearing
 /** @type {import('./[id]').RequestHandler} */
 export async function get({ url }) {

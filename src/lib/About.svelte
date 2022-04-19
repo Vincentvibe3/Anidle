@@ -26,23 +26,23 @@
 
     const animateFadeIn = ()=>{
         opacity+=0.1
-        container.style.opacity = `${opacity}`
         if (opacity<1){
             setTimeout(animateFadeIn, 10)
         } else {
             opacity = 1
         }
+        container.style.opacity = `${opacity}`
     }
 
     const animateFadeOut = ()=>{
         opacity-=0.1
-        container.style.opacity = `${opacity}`
         if (opacity>0){
             setTimeout(animateFadeOut, 10)
         } else {
             opacity = 0
             dismiss()
         }
+        container.style.opacity = `${opacity}`
         
     }
 
@@ -67,13 +67,15 @@
     <div on:click={flipDisplay} class="bg"></div>
     <div class="card">
         <h2>About</h2>
-        <p>An anime quiz inspired by <a href="https://www.heardle.app/">Heardle</a>/<a href="https://www.nytimes.com/games/wordle/index.html">Wordle</a></p>
+        <p class="description">An anime quiz inspired by <a href="https://www.heardle.app/">Heardle</a>/<a href="https://www.nytimes.com/games/wordle/index.html">Wordle</a></p>
+        <span class="divider"></span>
         <p>Built with <a href="https://svelte.dev/">Svelte</a></p>
         <p>Hosted by <a href="https://vercel.com/">Vercel</a></p>
-        <p>Audio by <a href="https://www.spotify.com/">Spotify</a></p>
-        <p>Icons by <a href="https://iconsvg.xyz/">IconSvg</a></p>
+        <p>Openings provided by <a href="https://staging.animethemes.moe/wiki/">animethemes.moe</a></p>
+        <p>Icons from <a href="https://iconsvg.xyz/">IconSvg</a></p>
         <p>Font used: <a href="https://fonts.google.com/specimen/Manrope">Manrope</a></p>
-        <p>Open Sourced <a href="https://github.com/Vincentvibe3/Anidle/">here</a></p>
+        <p>Open Sourced on <a href="https://github.com/Vincentvibe3/Anidle/">Github</a></p>
+        <span class="divider"></span>
         <div class="submissions">
             <p>Want to include a song?</p>
             <a href="https://github.com/Vincentvibe3/Anidle/issues">Submit a song request</a>
@@ -86,13 +88,33 @@
 
 <style>
 
-    p {
-        margin-top: 0rem;
+    .description {
+        font-size: 1rem;
+        margin-bottom: 0rem;
+    }
+
+    .divider {
+        width: 100%;
+        height: 0.06rem;
+        background-color: #3f434d;
+        margin-top: 1rem;
         margin-bottom: 1rem;
     }
 
-    .submissions {
+    p {
+        font-size: 0.8rem;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+
+    p + p {
+        font-size: 0.8rem;
         margin-top: 1rem;
+        margin-bottom: 0rem;
+    }
+
+    .submissions {
+        margin-top: 0rem;
         margin-bottom: 1rem;
     }
 

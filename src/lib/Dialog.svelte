@@ -1,6 +1,4 @@
 <script>
-import { onMount } from "svelte";
-
 
     let container
     let opacity = 1
@@ -11,14 +9,13 @@ import { onMount } from "svelte";
 
     const animateFadeOut = ()=>{
         opacity-=0.1
-        container.style.opacity = `${opacity}`
         if (opacity>0){
             setTimeout(animateFadeOut, 10)
         } else {
             opacity = 0
             dismiss()
         }
-        
+        container.style.opacity = `${opacity}`
     }
 </script>
 <div bind:this={container} class="container">

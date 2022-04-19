@@ -41,23 +41,23 @@
 
     const animateFadeIn = ()=>{
         opacity+=0.1
-        container.style.opacity = `${opacity}`
         if (opacity<1){
             setTimeout(animateFadeIn, 10)
         } else {
             opacity = 1
         }
+        container.style.opacity = `${opacity}`
     }
 
     const animateFadeOut = ()=>{
         opacity-=0.1
-        container.style.opacity = `${opacity}`
         if (opacity>0){
             setTimeout(animateFadeOut, 10)
         } else {
             opacity = 0
             dismiss()
         }
+        container.style.opacity = `${opacity}`
     }
 
     const animateFadeInClipboard = ()=>{
@@ -150,7 +150,7 @@
         <div class="songInfo">
             <img alt="Album art for {metadata.albumArt}" src={metadata.albumArt}>
             <div class="infoText">
-                <p class="title">{song.name}</p>
+                <p class="title">{song.guessString}</p>
                 <p>by {metadata.artist}</p>
                 <a href="{metadata.spotifyURL}">Listen on Spotify</a>
             </div>
@@ -229,6 +229,7 @@
     .card {
         color: white;
         max-width: 40rem;
+        width: 50%;
         background-color: #161616;
         display: flex;
         flex-direction: column;
@@ -239,6 +240,7 @@
     @media screen and (max-width: 800px) {
         .card {
             max-width: 70%;
+            width: 70%;
         }
     }
 

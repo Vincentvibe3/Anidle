@@ -1,0 +1,23 @@
+# To do
+
+[x] Fetch top anime using Mal
+
+[x] Link anime to entry on animethemes.moe
+
+[x] Get songs for each anime entry + cluster by series
+
+[x] Filter by popularity using Youtube
+
+[x] Write to file
+
+[x] Check for duplicates in existing file
+
+[x] Link to external resources (Spotify, Youtube)
+
+[x] Put artist name if needed
+
+[ ] Add support for seasonal updates
+
+[x] Match each entry to a incrementing numerical index independent of true index
+
+[ ] Shifting of entries to slot in seasonal animes
