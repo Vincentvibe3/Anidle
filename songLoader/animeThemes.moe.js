@@ -10,7 +10,8 @@ function sleep(ms) {
     });
 }
 
-export const getAnimeData = async (slug) => {
+export const getAnimeData = async (slug, mapping) => {
+    let malSongs = mapping.get(slug)
     let data = {}
     let requestOk = false
     let response
@@ -52,7 +53,7 @@ export const getAnimeData = async (slug) => {
         data.series = name
     }
     console.log(`Series name set to ${data.series}`)
-    let processedSongs = processSongData(response.data, data.series, altSeriesNames)
+    let processedSongs = processSongData(response.data, data.series, altSeriesNames, malSongs)
     data.songs = processedSongs
     return data
 }
@@ -117,7 +118,25 @@ const getVideoId = (videos) => {
     return null
 }
 
-const processSongData = (data, anime, synonyms) => {
+const getMalSongMatch = (songName, malSongs) => {
+    let scoresMapping = new Map()
+    let scores = []
+    for (let song of malSongs){
+        if (song!=null){
+            let sim = stringSimilarity.compareTwoStrings(song.track, songName)
+            scores.push(sim)
+            scoresMapping.set(sim, song)
+        }
+    }
+    scores.sort(function compareNumbers(a, b) {
+        return a - b;
+    } ).reverse()
+    let index = scores[0]
+    let songData = scoresMapping.get(index)
+    return songData.artist
+}
+
+const processSongData = (data, anime, synonyms, malSongs) => {
     let songs = []
     let themes = data.anime.animethemes
     for (let entry of themes){
@@ -128,7 +147,7 @@ const processSongData = (data, anime, synonyms) => {
         }
         let artistStr
         if (artists.length==0){
-            artistStr = ""
+            artistStr = getMalSongMatch(songName, malSongs)
         } else {
             artistStr = artists.join(", ")
         }

@@ -89,7 +89,7 @@ export const spotifyLinking = async (song) => {
     let matches = scores.get(top)
     if (scores.size!==0){
         let match = matches[0]
-        if (top>0.65){
+        if (top>0.80){
             song.externalData.push(
                 {
                     source:"spotify",
