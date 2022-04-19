@@ -1,31 +1,66 @@
 <script lang="ts" context="module">
     import { browser } from '$app/env'
 
+    const getVideo = async (id:number, url):Promise<string> => {
+        let response = await fetch(`${url.origin}/getVideo?id=${id}`)
+        if (response.status!=200){
+            return null
+        } else {
+            return (await response.json()).video.link
+        }
+    }
+
+    const getMetadata = async (song:Song, url):Promise<Metadata> => {
+        let metadata:Metadata
+        for (let externalSource of song.external){
+            if (externalSource.source=="youtube"){
+                let source = externalSource as YoutubeInfo
+                metadata = {
+                    URL:`https://www.youtube.com/watch?v=${source.id}`,
+                    albumArt:source.thumbnail,
+                    artist:song.artist,
+                    expiry:Date.now()+86400000,
+                    source:"youtube"
+                }
+            } else if (externalSource.source=="spotify"){
+                let response = await fetch(`${url.origin}/getMetadata?id=${externalSource.id}`)
+                if (response.status!=200){
+                    return null
+                }
+                metadata =  (await response.json()).metadata
+            }
+        }
+        return metadata
+    }
+
     /** @type {import('./[slug]').Load} */  
     export async function load({ url }) {
         if (browser) {
+            console.log("Loading")
             let songEntry:SongEntry = getSong()
             let song = songEntry.song
-            let response = await fetch(`${url.origin}/getMetadata?id=${song.id}`)
-            if (response.status!=200){
+            let link = await getVideo(song.id, url)
+            let metadata = await getMetadata(song, url)
+            if (metadata==null||link==null){
                 return {
                     props: {
                         song:song,
                         metadata:{},
+                        link:"",
                         loadFailed:true,
                         loaded:true,
-                        index:songEntry.index,
+                        index:songEntry.song.index,
                         nextTime:songEntry.expiry
                     }
                 }
             }
-            let metadata:Metadata = (await response.json()).metadata
             return {
                 props: {
                     song:song,
                     metadata: metadata,
+                    link:link,
                     loaded: true,
-                    index:songEntry.index,
+                    index:songEntry.song.index,
                     nextTime:songEntry.expiry
                 }
             }
@@ -43,7 +78,7 @@
     import About from "$lib/About.svelte"
     import { getSong, type SongEntry } from '$lib/songChooser';
     import type { Metadata } from './getMetadata';
-    import type { Song } from '$lib/songs';
+    import type { Song, YoutubeInfo } from '$lib/songs';
     import { onMount } from 'svelte';
 
     export let loaded = false
@@ -52,6 +87,7 @@
     export let metadata:Metadata
     export let index:number
     export let nextTime:number
+    export let link:string
 
     let gameStarted = false
     let showAbout = false
@@ -81,6 +117,7 @@
 </script>
 <svelte:head>
 	<title>Anidle</title>
+    <link rel="preconnect" href="https://animethemes.moe">
 </svelte:head>
 {#if dialog && !finished && !loadFailed}
     <Dialog></Dialog>
@@ -106,9 +143,9 @@
         <p>Loading failed.</p>
         <p>Reload the page to try again</p>
     {:else if loaded && !loadFailed}
-        <Game bind:nextTime={nextTime} bind:gameStarted={gameStarted} bind:song={song} bind:metadata={metadata} bind:index={index} bind:displayEndScreen={displayEndScreen} bind:finished={finished}></Game>
+        <Game bind:link={link} bind:nextTime={nextTime} bind:gameStarted={gameStarted} bind:song={song} bind:metadata={metadata} bind:index={index} bind:displayEndScreen={displayEndScreen} bind:finished={finished}></Game>
     {:else}
-        <p>Loading...</p>
+        <p>Loading Game ...</p>
     {/if}
     <noscript>
         <p>This page relies on javascript for the game's functionality</p>
@@ -139,6 +176,7 @@
         height: calc(100% - 5rem);
         width: 100%;
         min-width: 20rem;
+        z-index: 1;
     }
 
     header {
@@ -152,6 +190,7 @@
         align-items: center;
         justify-content: center;
         min-width: 20rem;
+        z-index: 2;
     }
 
     header .aboutButton {

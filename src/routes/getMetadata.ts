@@ -5,6 +5,7 @@ const process = import("process")
 const getToken = async ():Promise<string> => {
     const client = (await process).env.VITE_SPOTIFY_CLIENT
     const secret = (await process).env.VITE_SPOTIFY_SECRET
+    console.log(client)
     let auth = Buffer.from(`${client}:${secret}`).toString("base64")
     let response = await fetch("https://accounts.spotify.com/api/token", 
         {
@@ -21,11 +22,11 @@ const getToken = async ():Promise<string> => {
 }
 
 export interface Metadata{
-    mediaURL:string,
-    spotifyURL:string,
+    URL:string,
     artist:string,
     expiry:number, //Unix Timestamp
     albumArt:string
+    source:string
 }
 
 const fetchData = async (token:string, id:string):Promise<Metadata> => {
@@ -39,29 +40,17 @@ const fetchData = async (token:string, id:string):Promise<Metadata> => {
             },
         }
     )
+    console.log(response.status)
     let respData = await response.json()
     return {
-        mediaURL:respData.preview_url,
-        spotifyURL:respData.external_urls.spotify,
+        URL:respData.external_urls.spotify,
         artist:respData.artists[0].name,
         expiry:Date.now()+86400000,
-        albumArt:respData.album.images[0].url
+        albumArt:respData.album.images[0].url,
+        source:"spotify"
     }
 }
 
-const getVideoUrl = async (id) => {
-    let response = await fetch(`https://staging.animethemes.moe/api/video/?filter[id]=${id}`)
-    let respData = await response.json()
-    let videos = respData.videos
-    for (let video of videos){
-        if (video.id==id){
-            return video.link
-        }
-    }
-    return null
-}
-
-//fix cache clearing
 /** @type {import('./[id]').RequestHandler} */
 export async function get({ url }) {
     if (url.searchParams.has("id")){

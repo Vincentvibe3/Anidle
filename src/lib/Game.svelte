@@ -7,18 +7,22 @@
     import Guesses from "$lib/Guesses.svelte";
     import FinishedDialog from "$lib/FinishedDialog.svelte";
     import type { Attempt } from "./reportGenerator";
+    import videojs from 'video.js';
 
     export let song:Song
     export let metadata:Metadata
     export let index:number
     export let nextTime:number
+    export let link:string
 
-    let media:HTMLAudioElement
+    let media:HTMLElement
+    let overlay:HTMLElement
     let buttons:Buttons = {
         skipButton:undefined,
         submitButton:undefined,
         playButton:undefined
     }
+    var player
     let inputField:HTMLElement
     let playIcon:SVGElement
     let pauseIcon:SVGElement
@@ -26,6 +30,8 @@
     let currentTime:number = 0
     let maxTime:number = 16
     let attemptsTimestamp = [1, 2, 4, 7, 11, 16]
+    let separators = attemptsTimestamp
+    let revealed = 1
     let attempts:Attempt[] = []
     let attemptCount = 0
     export let finished = false
@@ -38,11 +44,27 @@
     let gameSuccess = false
     let diffMessage = ""
     let mounted= false
+    let vidDuration = 0
+    let playerReady = false
 
     interface Buttons {
         submitButton:HTMLButtonElement,
         skipButton:HTMLButtonElement,
         playButton:HTMLButtonElement
+    }
+
+    const setFinished = () => {
+        finished = true
+        disableButtons()
+        if (vidDuration==0){
+            maxTime = 90
+        } else {
+            maxTime = vidDuration
+        }
+        separators = []
+        revealed = maxTime
+        media.style.filter = "None"
+        overlay.style.opacity = "0.6"
     }
 
     const addAttempt = () => {
@@ -53,9 +75,9 @@
     const incrementAttempts = ()=> {
         if (attemptCount!=attemptsTimestamp.length-1){
             attemptCount++
+            revealed = attemptsTimestamp[attemptCount]
         } else {
-            finished=true
-            disableButtons()
+            setFinished()
         }
         saveProgress()
     }
@@ -78,14 +100,13 @@
             attempts = JSON.parse(stringJson)
             if (attempts.at(-1).success){
                 attemptCount = attempts.length
-                finished = true
                 gameSuccess = true
-                disableButtons()
+                setFinished()
             } else {
                 attemptCount = attempts.length
+                revealed = attemptsTimestamp[attemptCount]
                 if (attemptCount==attemptsTimestamp.length){
-                    finished=true
-                    disableButtons()
+                    setFinished()
                 }
             }
             
@@ -94,14 +115,13 @@
     }
 
     const checkAttempt = () => {
-        let success = inputContent == song.name
+        let success = inputContent == song.guessString
         attempts = [...attempts, {text:inputContent, success:success, skipped:false}]
         inputContent = ""
         unfocusInput()
         if (success){
             gameSuccess = true
-            finished=true
-            disableButtons()
+            setFinished()
             saveProgress()
         } else {
             incrementAttempts()
@@ -110,32 +130,40 @@
     }
 
     const disableButtons = ()=>{
-        playIcon.style.stroke = "#FFFFFF"
-        pauseIcon.style.stroke = "#FFFFFF"
         Object.keys(buttons).forEach((key)=>{
-            buttons[key].disabled = true
+            if (key!="playButton"){
+                buttons[key].disabled = true
+            }
         })
     }
 
     const updateProgress = ()=>{
-        currentTime = media.currentTime
+        currentTime = player.currentTime()
+        if (finished){
+            maxTime = player.duration()
+            revealed = maxTime
+            setTimeout(updateProgress, 10)
+            return
+        }
         if (playing&&currentTime<attemptsTimestamp[attemptCount]){
             setTimeout(updateProgress, 10)
         } else {
             playing=false
-            media.pause()
-            media.currentTime = 0
+            player.pause()
+            player.currentTime(0)
             currentTime = 0
         }
     }
 
     const playPause = ()=>{
         if (playing){
-            media.pause()
-            media.currentTime = 0
-            currentTime = 0
+            player.pause()
+            if (!finished){
+                player.currentTime(0)
+                currentTime = 0
+            }
         } else {
-            media.play()
+            player.play()
             setTimeout(updateProgress, 10)
         }
         playing=!playing
@@ -225,22 +253,55 @@
     $:attemptCount, getTimeDiff()
     $:playing, adjustIconVisibility(playing)
 
+    const onEnd = () => {
+        vidDuration = currentTime
+        player.currentTime(0)
+        playing = false
+    }
+
+    const onPlayerReady = ()=>{
+        console.log("player ready")
+        media.style.display = "block"
+        playerReady = true
+        Object.keys(buttons).forEach((key)=>{
+            if (key!="playButton"&&!finished){
+                buttons[key].disabled = false
+            }
+        })
+    }
+
     onMount(()=>{
         mounted = true
-        currentTime = media.currentTime
+        disableButtons()
         importProgress()
         adjustIconVisibility(playing)
         unfocusInput()
+        player = videojs('player', {
+            controls:false
+        });
+        player.on("ended", onEnd)
+        player.on("canplay", onPlayerReady)
+        currentTime = player.currentTime()
     })
 
     $:finished, displayEndScreen=finished
-</script>
 
+</script>
+<svelte:head>
+    <script src="https://vjs.zencdn.net/7.18.1/video.min.js"></script>
+    <link href="https://vjs.zencdn.net/7.18.1/video-js.css" rel="stylesheet" />
+</svelte:head>
 <FinishedDialog bind:nextTime={nextTime} bind:index={index} bind:displayed={displayEndScreen} bind:song={song} bind:metadata={metadata} bind:attempts={attempts} bind:success={gameSuccess} bind:maxAttempts={attemptsTimestamp.length}></FinishedDialog>
-<audio bind:this={media} src={metadata.mediaURL} preload="true"></audio>
+<div bind:this={media} class="vidContainer">
+    <video id="player" class="video-js" preload="auto">
+        <track kind="captions"/>
+        <source src={link}/>
+    </video>
+    <div bind:this={overlay} class="videoOverlay"></div>
+</div>
+
 <Guesses bind:maxAttempts={attemptsTimestamp.length} bind:attempts={attempts}></Guesses>
 <div class="controls">
-    
     {#if !finished}
         {#if !inputContentSet}
             <div class="suggestions">
@@ -251,18 +312,58 @@
         {/if}
         <input on:blur={unfocusInput} on:click={clearHintText} bind:value={inputContent} bind:this={inputField}>
     {/if}
-    <Progress bind:max={maxTime} bind:value={currentTime} bind:separatorPositions={attemptsTimestamp} bind:revealed={attemptsTimestamp[attemptCount]}></Progress>
+    <Progress bind:max={maxTime} bind:value={currentTime} bind:separatorPositions={separators} bind:revealed={revealed}></Progress>
     <div class="buttons">
         <button bind:this={buttons.skipButton} on:click={addAttempt} class="controlButton">Skip{diffMessage}</button>
-        <button bind:this={buttons.playButton} on:mouseenter={adjustPlayIconColor} on:mouseleave={adjustPlayIconColorMouseOut} on:click={playPause} class="play controlButton">
-            <svg bind:this={pauseIcon} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
-            <svg bind:this={playIcon} class="playIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-        </button>
+        {#if !playerReady}
+            <button bind:this={buttons.playButton} on:mouseenter={adjustPlayIconColor} on:mouseleave={adjustPlayIconColorMouseOut} on:click={playPause} class="play controlButton">
+                <svg bind:this={pauseIcon} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+                <svg bind:this={playIcon} class="playIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            </button>
+        {:else}
+             <svg class="spinner" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="6"></line><line x1="12" y1="18" x2="12" y2="22"></line><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"></line><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"></line><line x1="2" y1="12" x2="6" y2="12"></line><line x1="18" y1="12" x2="22" y2="12"></line><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"></line><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line></svg>
+        {/if}
         <button bind:this={buttons.submitButton} on:click={checkAttempt} class="controlButton" disabled>Submit</button>
     </div>
 </div>
 
 <style>
+
+    @keyframes rotate {
+        0% {transform: rotate(0);}
+        50% {transform: rotate(180);}
+        100% {transform: rotate(360);}
+    }
+
+    .spinner {
+        animation-name: rotate;
+    }
+
+    .vidContainer {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top:0rem;
+        left:0rem;
+        object-fit: cover;
+        z-index: -1;
+        background-color: #161616;
+        filter: blur(300px);
+        pointer-events: none;
+        display: none;
+    }
+
+    .videoOverlay {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top:0rem;
+        left:0rem;
+        background-color: #161616;
+        display: block;
+        opacity: 0.7;
+    }
+
     .controls {
         width: 60%;
         max-width: 40rem;

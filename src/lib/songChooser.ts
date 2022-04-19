@@ -21,7 +21,7 @@ export const getSong = ():SongEntry => {
     const index = Math.floor((currentTime+dstoffset-epoch)/86400000)
     let next = (index + 1) * 86400000 + epoch - dstoffset
     return {
-        song:songs[index%songs.length], 
+        song:songs[70],//index%songs.length], 
         index:index%songs.length+1,
         expiry:next
     }

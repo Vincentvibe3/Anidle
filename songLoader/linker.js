@@ -89,7 +89,7 @@ export const spotifyLinking = async (song) => {
     let matches = scores.get(top)
     if (scores.size!==0){
         let match = matches[0]
-        if (top>0.80){
+        if (top>0.72){
             song.externalData.push(
                 {
                     source:"spotify",
@@ -137,7 +137,7 @@ const scoreMatches = async (song, query, market, store) => {
     let tries = 0
     let requestOk = false
     let response
-    let isArtistQuery =false
+    let isArtistQuery = false
     if (song.artist!=""){
         isArtistQuery = query.includes(song.artist)
     }
@@ -185,6 +185,8 @@ const scoreMatches = async (song, query, market, store) => {
         let score
         if (items.length == 1&&isArtistQuery){
             score = sim*0.85+popularity*0.15
+        } else if (isArtistQuery) {
+            score = sim*0.4+popularity*0.6
         } else {
             score = sim*0.3+popularity*0.7
         }

@@ -19,7 +19,7 @@ export let getSuggestions = (query:string, max:number)=>{
     for (let song of songs){
         let name = song.guessString.toLowerCase()
         if (name.startsWith(query)){
-            addScoreEntry(scores, words.length+1, song.name)
+            addScoreEntry(scores, words.length+1, song.guessString)
         } else {
             let score = 0
             for (let word of words){
@@ -27,7 +27,7 @@ export let getSuggestions = (query:string, max:number)=>{
                     score++
                 }
             }
-            addScoreEntry(scores, score, song.name)
+            addScoreEntry(scores, score, song.guessString)
         }
     }
     let added = 0

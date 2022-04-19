@@ -5,14 +5,30 @@
     export let separatorPositions:Array<number>
     let formattedTime:string
 
-    const formatTime = (time:number)=>{
-        let out = ""
-        if (time<10){
-            out+="0"
+    const timeFormatter = (num:number):string => {
+        if (num>9){
+            return `${num}`
+        } else {
+            return `0${num}`
         }
-        formattedTime = `${out}${Math.floor(time)}`
     }
-    $: value, formatTime(value)
+
+    const formatTime = (time:number)=>{
+        if (time==0){
+            return "00:00"
+        }
+        let diff = time
+        let minutes = Math.floor(diff/(60))
+        let seconds
+        if (minutes!=0){
+            seconds = Math.floor(diff%(minutes*60))
+        } else {
+            seconds = Math.floor(diff)
+        }
+        return `${timeFormatter(minutes)}:${timeFormatter(seconds)}`
+    }
+
+    $: value, formattedTime=formatTime(value)
 </script>
 <div class="progress-bar">
     <div class="revealed" style="width: {revealed/max*100}%;"></div>
@@ -22,8 +38,8 @@
     {/each}
 </div>
 <div class="progress-time">
-    <p>0:{formattedTime}</p>
-    <p>0:{max}</p>
+    <p>{formattedTime}</p>
+    <p>{formatTime(max)}</p>
 </div>
 
 <style>

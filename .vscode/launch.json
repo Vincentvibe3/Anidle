@@ -69,7 +69,7 @@
             "request": "launch",
             "runtimeExecutable": "node",
             "console": "internalConsole",
-            "runtimeArgs": ["${workspaceFolder}/songFetching/converter.mjs", "${workspaceFolder}/songs.json", "${workspaceFolder}/src/lib/songs.ts", "${workspaceFolder}/songFetching/songs.template"],
+            "runtimeArgs": ["${workspaceFolder}/songLoader/converter.js", "${workspaceFolder}/songs.json", "${workspaceFolder}/src/lib/songs.ts", "${workspaceFolder}/songLoader/songs.template"],
             "envFile": "${workspaceFolder}/songFetching/.env",
             "outputCapture": "std"
         },

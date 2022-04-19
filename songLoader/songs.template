@@ -1,0 +1,24 @@
+//Auto generated file
+//Any modification will be overwritten
+export var songs:Array<Song> = %songs%
+
+export interface Song {
+    name:string,
+    anime:string,
+    id:number,
+    artist:string,
+    guessString:string,
+    external:ExternalInfo[],
+    altAnimes:string[],
+    index:number
+}
+
+
+export interface ExternalInfo {
+    source:string,
+    id:string
+}
+
+export interface YoutubeInfo extends ExternalInfo{
+    thumbnail:string
+}

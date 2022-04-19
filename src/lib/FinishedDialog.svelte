@@ -152,7 +152,11 @@
             <div class="infoText">
                 <p class="title">{song.guessString}</p>
                 <p>by {metadata.artist}</p>
-                <a href="{metadata.spotifyURL}">Listen on Spotify</a>
+                {#if metadata.source == "spotify"}
+                    <a href="{metadata.URL}">Listen on Spotify</a>
+                {:else if metadata.source =="youtube"}
+                    <a href="{metadata.URL}">Listen on Youtube</a>
+                {/if}
             </div>
             
         </div>

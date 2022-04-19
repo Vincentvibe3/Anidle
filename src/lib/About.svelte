@@ -73,6 +73,7 @@
         <p>Hosted by <a href="https://vercel.com/">Vercel</a></p>
         <p>Openings provided by <a href="https://staging.animethemes.moe/wiki/">animethemes.moe</a></p>
         <p>Icons from <a href="https://iconsvg.xyz/">IconSvg</a></p>
+        <p>Video Player by <a href="https://iconsvg.xyz/">video.js</a></p>
         <p>Font used: <a href="https://fonts.google.com/specimen/Manrope">Manrope</a></p>
         <p>Open Sourced on <a href="https://github.com/Vincentvibe3/Anidle/">Github</a></p>
         <span class="divider"></span>
