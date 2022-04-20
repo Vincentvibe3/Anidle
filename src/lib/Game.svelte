@@ -45,7 +45,8 @@
     let diffMessage = ""
     let mounted= false
     let vidDuration = 0
-    let playerReady = false
+    let loadingSpinner:SVGSVGElement
+    let html5Player
 
     interface Buttons {
         submitButton:HTMLButtonElement,
@@ -261,8 +262,9 @@
 
     const onPlayerReady = ()=>{
         console.log("player ready")
-        media.style.display = "block"
-        playerReady = true
+        media.style.display = "flex"
+        buttons.playButton.style.display = "flex"
+        loadingSpinner.style.display = "none"
         Object.keys(buttons).forEach((key)=>{
             if (key!="playButton"&&!finished){
                 buttons[key].disabled = false
@@ -282,6 +284,7 @@
         player.on("ended", onEnd)
         player.on("canplay", onPlayerReady)
         currentTime = player.currentTime()
+        console.log(html5Player._root)
     })
 
     $:finished, displayEndScreen=finished
@@ -289,11 +292,11 @@
 </script>
 <svelte:head>
     <script src="https://vjs.zencdn.net/7.18.1/video.min.js"></script>
-    <link href="https://vjs.zencdn.net/7.18.1/video-js.css" rel="stylesheet" />
+    <!-- <link href="https://vjs.zencdn.net/7.18.1/video-js.css" rel="stylesheet" /> -->
 </svelte:head>
 <FinishedDialog bind:nextTime={nextTime} bind:index={index} bind:displayed={displayEndScreen} bind:song={song} bind:metadata={metadata} bind:attempts={attempts} bind:success={gameSuccess} bind:maxAttempts={attemptsTimestamp.length}></FinishedDialog>
 <div bind:this={media} class="vidContainer">
-    <video id="player" class="video-js" preload="auto">
+    <video bind:this={html5Player} id="player" class="video-js" preload="auto">
         <track kind="captions"/>
         <source src={link}/>
     </video>
@@ -315,34 +318,60 @@
     <Progress bind:max={maxTime} bind:value={currentTime} bind:separatorPositions={separators} bind:revealed={revealed}></Progress>
     <div class="buttons">
         <button bind:this={buttons.skipButton} on:click={addAttempt} class="controlButton">Skip{diffMessage}</button>
-        {#if !playerReady}
             <button bind:this={buttons.playButton} on:mouseenter={adjustPlayIconColor} on:mouseleave={adjustPlayIconColorMouseOut} on:click={playPause} class="play controlButton">
                 <svg bind:this={pauseIcon} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
                 <svg bind:this={playIcon} class="playIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
             </button>
-        {:else}
-             <svg class="spinner" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="6"></line><line x1="12" y1="18" x2="12" y2="22"></line><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"></line><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"></line><line x1="2" y1="12" x2="6" y2="12"></line><line x1="18" y1="12" x2="22" y2="12"></line><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"></line><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line></svg>
-        {/if}
+            <svg bind:this={loadingSpinner} class="spinner" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                <linearGradient id="myGradient" gradientTransform="rotate(90)">
+                    <stop offset="5%"  stop-color="#3f434d" />
+                    <stop offset="95%" stop-color="rgb(171, 169, 253)" />
+                </linearGradient>
+                </defs>
+    
+                <circle cx="5" cy="5" r="4" fill="transparent" stroke="url('#myGradient')" />
+            </svg>
         <button bind:this={buttons.submitButton} on:click={checkAttempt} class="controlButton" disabled>Submit</button>
     </div>
 </div>
 
 <style>
 
-    @keyframes rotate {
-        0% {transform: rotate(0);}
-        50% {transform: rotate(180);}
-        100% {transform: rotate(360);}
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
     }
 
     .spinner {
-        animation-name: rotate;
+        width: 1.5rem;
+        height: 1.5rem;
+        animation: spin 1s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
+    }
+
+    #player :global(div) {
+        display: none;
+    }
+
+    #player :global(button) {
+        display: none;
+    }
+
+    #player :global(video) {
+        width: 150vw;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    #player {
+        width: 150vw;
+        height: 100vh;
+        object-fit: cover;
     }
 
     .vidContainer {
         position: fixed;
         width: 100vw;
-        height: 100vh;
         top:0rem;
         left:0rem;
         object-fit: cover;
@@ -351,6 +380,9 @@
         filter: blur(300px);
         pointer-events: none;
         display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .videoOverlay {
@@ -365,6 +397,7 @@
     }
 
     .controls {
+        position: relative;
         width: 60%;
         max-width: 40rem;
         display: flex;
@@ -374,14 +407,14 @@
     }
 
     .suggestions {
-        width: inherit;
-        max-width: inherit;
         position: absolute;
+        width: 100%;
+        bottom: 13.8rem;
+        max-width: inherit;
         margin: 1rem 0rem 0rem 0rem;
         display: flex;
         flex-direction: column;
         z-index: 2;
-        transform: translateY(-109%);
     }
 
     .suggestions button {
@@ -423,6 +456,7 @@
         overflow: hidden;
         transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
         outline: 0.1rem solid #00000000;
+        z-index: 3;
     }
 
     input:hover {
@@ -440,6 +474,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         margin: 0rem 0rem 1rem 0rem;
     }
 
@@ -469,7 +504,7 @@
 
     .buttons .play{
         border-radius: 100%;
-        display: flex;
+        display: none;
         flex-direction: row;
         align-items: center;
         justify-content: center;
