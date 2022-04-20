@@ -2746,22 +2746,22 @@ export var songs:Array<Song> = [
         "index": 145
     },
     {
-        "name": "Still...",
-        "anime": "anohana: The Flower We Saw That Day",
-        "id": 3495,
-        "guessString": "anohana: The Flower We Saw That Day - Still...",
+        "name": "Daydream café.",
+        "anime": "Gochuumon wa Usagi Desu ka?",
+        "id": 5382,
+        "guessString": "Gochuumon wa Usagi Desu ka? - Daydream café.",
         "altAnimes": [
-            "Ano Hi Mita Hana no Namae wo Bokutachi wa Mada Shiranai.",
-            "anohana: The Flower We Saw That Day"
+            "Is the order a rabbit?",
+            "GochiUsa"
         ],
         "external": [
             {
                 "source": "youtube",
-                "id": "SJywJjwqIK8",
-                "thumbnail": "https://i.ytimg.com/vi/SJywJjwqIK8/hq720.jpg?sqp=-oaymwEjCOgCEMoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCaA06AebTIowGT2_6T13rS-Be-Ww"
+                "id": "rEnjmOt-rzQ",
+                "thumbnail": "https://i.ytimg.com/vi/rEnjmOt-rzQ/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC7sHjnlxACLg2RMskZZIrt-ohcjg"
             }
         ],
-        "artist": "Galileo Galilei",
+        "artist": "Ayane Sakura, Inori Minase, Maaya Uchida, Risa Taneda, Satomi Satou",
         "index": 146
     },
     {
@@ -6496,16 +6496,6 @@ export var songs:Array<Song> = [
     }
 ]
 
-export interface ExternalInfo {
-    source:string,
-    id:string
-    thumbnail?:string
-}
-
-export interface YoutubeInfo extends ExternalInfo{
-    thumbnail:string
-}
-
 export interface Song {
     name:string,
     anime:string,
@@ -6515,4 +6505,15 @@ export interface Song {
     external:ExternalInfo[],
     altAnimes:string[],
     index:number
+}
+
+
+export interface ExternalInfo {
+    source:string,
+    id:string,
+    thumbnail?:string
+}
+
+export interface YoutubeInfo extends ExternalInfo{
+    thumbnail:string
 }

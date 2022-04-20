@@ -16,7 +16,8 @@ export interface Song {
 
 export interface ExternalInfo {
     source:string,
-    id:string
+    id:string,
+    thumbnail?:string
 }
 
 export interface YoutubeInfo extends ExternalInfo{

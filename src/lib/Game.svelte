@@ -261,7 +261,6 @@
     }
 
     const onPlayerReady = ()=>{
-        console.log("player ready")
         media.style.display = "flex"
         buttons.playButton.style.display = "flex"
         loadingSpinner.style.display = "none"
@@ -284,7 +283,6 @@
         player.on("ended", onEnd)
         player.on("canplay", onPlayerReady)
         currentTime = player.currentTime()
-        console.log(html5Player._root)
     })
 
     $:finished, displayEndScreen=finished

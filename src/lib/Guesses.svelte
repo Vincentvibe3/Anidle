@@ -55,7 +55,7 @@
         width: calc(100% - 0.7rem);
         height: 2rem;
         border: solid #3f434d 0.15rem;
-        background-color: #161616;
+        background-color: #161616d0;
         margin: auto;
         padding: 0.2rem;
         display: flex;
