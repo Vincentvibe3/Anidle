@@ -47,7 +47,7 @@
                         song:song,
                         metadata:{},
                         link:"",
-                        loadFailed:true,
+                        loadFailed:false,
                         loaded:true,
                         index:songEntry.song.index,
                         nextTime:songEntry.expiry
@@ -190,7 +190,7 @@
         align-items: center;
         justify-content: center;
         min-width: 20rem;
-        z-index: 2;
+        z-index: 1;
     }
 
     header .aboutButton {

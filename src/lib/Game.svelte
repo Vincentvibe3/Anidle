@@ -261,14 +261,20 @@
     }
 
     const onPlayerReady = ()=>{
-        media.style.display = "flex"
-        buttons.playButton.style.display = "flex"
-        loadingSpinner.style.display = "none"
-        Object.keys(buttons).forEach((key)=>{
-            if (key!="playButton"&&!finished){
-                buttons[key].disabled = false
-            }
-        })
+        console.log(player.bufferedPercent())
+        if (player.bufferedPercent()<0.20){
+            setTimeout(onPlayerReady, 100)
+        } else {
+            media.style.display = "flex"
+            buttons.playButton.style.display = "flex"
+            loadingSpinner.style.display = "none"
+            Object.keys(buttons).forEach((key)=>{
+                if (key!="playButton"&&!finished){
+                    buttons[key].disabled = false
+                }
+            })
+        }
+        
     }
 
     onMount(()=>{
@@ -281,7 +287,7 @@
             controls:false
         });
         player.on("ended", onEnd)
-        player.on("canplay", onPlayerReady)
+        player.on("canplaythrough", onPlayerReady)
         currentTime = player.currentTime()
     })
 
@@ -323,8 +329,8 @@
             <svg bind:this={loadingSpinner} class="spinner" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs>
                 <linearGradient id="myGradient" gradientTransform="rotate(90)">
-                    <stop offset="5%"  stop-color="#3f434d" />
-                    <stop offset="95%" stop-color="rgb(171, 169, 253)" />
+                    <stop offset="75%"  stop-color="#3f434d" />
+                    <stop offset="100%" stop-color="rgb(171, 169, 253)" />
                 </linearGradient>
                 </defs>
     

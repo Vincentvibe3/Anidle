@@ -117,8 +117,9 @@
     const updateTimer = () => {
         let diff = nextTime-Date.now()
         let hours = Math.floor(diff/(60*60*1000))
-        let minutes = Math.floor(diff%(hours*60*60*1000)/(60*1000))
-        let seconds = Math.floor(diff%((hours*60*60*1000)+(minutes*60*1000))/1000)
+        let minutes = Math.floor(diff/(60*1000))-hours*60
+        let seconds = Math.floor(diff/1000)-minutes*60-hours*60*60
+        // let seconds = Math.floor(diff%((hours*60*60*1000)+(minutes*60*1000))/1000)
         timer=`${timeFormatter(hours)}:${timeFormatter(minutes)}:${timeFormatter(seconds)}`
         setTimeout(updateTimer, 1000)
     }
