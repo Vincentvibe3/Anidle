@@ -83,6 +83,28 @@
             "runtimeArgs": ["${workspaceFolder}/songLoader/fetcher.js", "${workspaceFolder}/songs.json"],
             "envFile": "${workspaceFolder}/songLoader/.env",
             "outputCapture": "std"
+        },
+        {
+            "name":"Run process.js",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "node",
+            "console": "internalConsole",
+            "cwd": "${workspaceFolder}/videoProcessing",
+            "runtimeArgs": ["${workspaceFolder}/videoProcessing/process.js", "1234"],
+            "envFile": "${workspaceFolder}/videoProcessing/.env",
+            "outputCapture": "std"
+        },
+        {
+            "name":"Create supabase user",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "node",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/videoProcessing",
+            "runtimeArgs": ["${workspaceFolder}/videoProcessing/createUser.js"],
+            "envFile": "${workspaceFolder}/videoProcessing/.env",
+            "outputCapture": "std"
         }
     ]
 }

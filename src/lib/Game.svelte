@@ -298,15 +298,13 @@
     <script src="https://vjs.zencdn.net/7.18.1/video.min.js"></script>
     <!-- <link href="https://vjs.zencdn.net/7.18.1/video-js.css" rel="stylesheet" /> -->
 </svelte:head>
-<FinishedDialog bind:nextTime={nextTime} bind:index={index} bind:displayed={displayEndScreen} bind:song={song} bind:metadata={metadata} bind:attempts={attempts} bind:success={gameSuccess} bind:maxAttempts={attemptsTimestamp.length}></FinishedDialog>
 <div bind:this={media} class="vidContainer">
     <video bind:this={html5Player} id="player" class="video-js" preload="auto">
         <track kind="captions"/>
-        <source src={link}/>
+        <source src="/processed.webm"/><!--{link}/>-->
     </video>
     <div bind:this={overlay} class="videoOverlay"></div>
 </div>
-
 <Guesses bind:maxAttempts={attemptsTimestamp.length} bind:attempts={attempts}></Guesses>
 <div class="controls">
     {#if !finished}
@@ -339,6 +337,7 @@
         <button bind:this={buttons.submitButton} on:click={checkAttempt} class="controlButton" disabled>Submit</button>
     </div>
 </div>
+<FinishedDialog bind:nextTime={nextTime} bind:index={index} bind:displayed={displayEndScreen} bind:song={song} bind:metadata={metadata} bind:attempts={attempts} bind:success={gameSuccess} bind:maxAttempts={attemptsTimestamp.length}></FinishedDialog>
 
 <style>
 
@@ -379,7 +378,6 @@
         top:0rem;
         left:0rem;
         object-fit: cover;
-        z-index: -1;
         background-color: #161616;
         filter: blur(300px);
         pointer-events: none;
@@ -387,6 +385,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        z-index: -1;
     }
 
     .videoOverlay {

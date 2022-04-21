@@ -181,6 +181,7 @@
         justify-content: center;
         padding: 1rem;
         opacity: 0;
+        z-index: 1;
     }
 
     .copied p {
@@ -219,7 +220,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        z-index: 4;
     }
 
     .bg{
