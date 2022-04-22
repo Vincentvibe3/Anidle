@@ -261,20 +261,15 @@
     }
 
     const onPlayerReady = ()=>{
-        console.log(player.bufferedPercent())
-        if (player.bufferedPercent()<0.20){
-            setTimeout(onPlayerReady, 100)
-        } else {
-            media.style.display = "flex"
-            buttons.playButton.style.display = "flex"
-            loadingSpinner.style.display = "none"
-            Object.keys(buttons).forEach((key)=>{
-                if (key!="playButton"&&!finished){
-                    buttons[key].disabled = false
-                }
-            })
-        }
-        
+        media.style.display = "flex"
+        buttons.playButton.style.display = "flex"
+        loadingSpinner.style.display = "none"
+        Object.keys(buttons).forEach((key)=>{
+            if (key!="playButton"&&!finished){
+                buttons[key].disabled = false
+            }
+        })
+    
     }
 
     onMount(()=>{
@@ -301,7 +296,7 @@
 <div bind:this={media} class="vidContainer">
     <video bind:this={html5Player} id="player" class="video-js" preload="auto">
         <track kind="captions"/>
-        <source src="/processed.webm"/><!--{link}/>-->
+        <source src={link}/>
     </video>
     <div bind:this={overlay} class="videoOverlay"></div>
 </div>
@@ -385,7 +380,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        z-index: -1;
+        z-index: 1;
     }
 
     .videoOverlay {
@@ -407,6 +402,7 @@
         flex-direction: column;
         align-items: stretch;
         margin-top: 0.5rem;
+        z-index: 2;
     }
 
     .suggestions {
@@ -459,7 +455,6 @@
         overflow: hidden;
         transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
         outline: 0.1rem solid #00000000;
-        z-index: 3;
     }
 
     input:hover {

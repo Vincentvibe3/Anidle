@@ -72,6 +72,7 @@
         <p>Built with <a href="https://svelte.dev/">Svelte</a></p>
         <p>Hosted by <a href="https://vercel.com/">Vercel</a></p>
         <p>Openings provided by <a href="https://staging.animethemes.moe/wiki/">animethemes.moe</a></p>
+        <p>Powered by <a href="https://supabase.com/">Supabase</a></p>
         <p>Icons from <a href="https://iconsvg.xyz/">IconSvg</a></p>
         <p>Video Player by <a href="https://iconsvg.xyz/">video.js</a></p>
         <p>Font used: <a href="https://fonts.google.com/specimen/Manrope">Manrope</a></p>
@@ -151,7 +152,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        z-index: 4;
+        z-index: 3;
     }
 
     .bg{

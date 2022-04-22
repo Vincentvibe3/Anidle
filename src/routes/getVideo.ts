@@ -23,7 +23,7 @@ const login = async () => {
       }
 }
 
-// await login()
+await login()
 
 const getVideoInfo = async (id:string):Promise<VideoInfo> => {
     let response = await fetch(`https://staging.animethemes.moe/api/video/?filter[id]=${id}`)
