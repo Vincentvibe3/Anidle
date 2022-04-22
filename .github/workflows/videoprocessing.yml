@@ -31,4 +31,4 @@ jobs:
     - run: npm install
     - run: chmod +x ./getKeyFrames.sh
     - run: node downloader.js ../songs.json
-    - run : process.js
+    - run : node process.js
