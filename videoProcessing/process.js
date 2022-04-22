@@ -5,9 +5,11 @@ import { createClient } from '@supabase/supabase-js'
 const email = process.env.EMAIL
 const password = process.env.PASSWORD
 const key = process.env.SUPABASE_KEY
+const url = process.env.SUPABASE_URL
+const bucketName = process.env.BUCKET_NAME
 
 // Create a single supabase client for interacting with your database 
-const supabase = createClient("https://zlencksndnokcgxdxqec.supabase.co", key)
+const supabase = createClient(url, key)
 
 const isKeyframe = /^(.*K.)$/gm
 
@@ -78,7 +80,7 @@ const getKeyframes = async (file)=>{
 
 const uploadMetadata = async (keyframes) => {
     const { data, error } = await supabase.storage
-        .from('animethemes-mirror')
+        .from(bucketName)
         .upload(`${id}/keyframes.json`, keyframes, {
             upsert: true,
             contentType:"application/json"
@@ -92,7 +94,7 @@ const uploadMetadata = async (keyframes) => {
 
 const clearOldData = async () => {
     const { data, error } = await supabase.storage
-        .from('animethemes-mirror')
+        .from(bucketName)
         .list()
     if (error!=null){
         console.log(error)
@@ -100,7 +102,7 @@ const clearOldData = async () => {
         for (let file of data){
             if (!validIds.includes(parseInt(file.name))){
                 const { errorDel } = await supabase.storage
-                    .from('animethemes-mirror')
+                    .from(bucketName)
                     .remove([`${file.name}/video.webm`, `${file.name}/keyframes.json`])
                 if (errorDel!=null){
                     console.log(errorDel)
@@ -115,7 +117,7 @@ const clearOldData = async () => {
 const uploadProcessedVideo = async (file) => {
     let video = fs.readFileSync(file)
     const { data, error } = await supabase.storage
-        .from('animethemes-mirror')
+        .from(bucketName)
         .upload(`${id}/video.webm`, video, {
             upsert: true,
             contentType:"video/webm"

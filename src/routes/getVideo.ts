@@ -42,7 +42,7 @@ const getVideoInfo = async (id:string):Promise<VideoInfo> => {
 
 const checkMirror = async (id) => {
     const { data, error } = await supabase.storage
-        .from('animethemes-mirror')
+        .from(bucketName)
         .list()
     if (error!=null){
         console.log(error)

@@ -32,16 +32,16 @@ npm install
 Set the following environment variables
 
 ```properties
-#To fetch metadata for select openings
+# To fetch metadata for select openings
 VITE_SPOTIFY_CLIENT=<Spotify Api Client Id>
 VITE_SPOTIFY_SECRET=<Spotify Api Client Id>
 
-#To access mirrored songs
+# To access mirrored songs
 VITE_SUPABASE_KEY=<Supabase Anon Key>
 VITE_SUPABASE_URL=<Supabase API link>
 # Must be a public bucket
 VITE_BUCKET_NAME=<storage bucket name>
-#Credential for a Supabase User than can read the bucket's info
+# Credential for a Supabase User than can read the bucket's info
 VITE_USERNAME=<Username/email>
 VITE_PASSWORD=<Password>
 
@@ -52,3 +52,43 @@ Run for development
 ```console
 npm run dev
 ```
+
+## Using Supabase to serve optimized media
+
+*The processing script is currently only for UNIX systems*
+
+Install dependencies
+
+```console
+cd videoProcessing
+npm install
+```
+
+Install ffmpeg from [Here]()
+
+Set environment variables
+
+```properties
+# To create the Supabase client
+SUPABASE_KEY=<Supabase Anon Key>
+SUPABASE_URL=<Supabase API link>
+
+# Only needed to create a user with createUser.js
+SUPABASE_SERVICE_KEY=<Supabase Service key>
+
+# Crendentials to user with permission to modify the bucket
+EMAIL=vincentvibe3@gmail.com
+PASSWORD=2GZEUt53_ASuDLILwaploA
+
+# Must be a public bucket
+BUCKET_NAME=<storage bucket name>
+```
+
+Run scripts
+
+```
+chmod +x ./getKeyframes.sh
+node downloader.js ../songs.json
+node process.js
+```
+Check [this workflow]() for the github action automating the processing.
