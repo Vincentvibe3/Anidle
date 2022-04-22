@@ -7,7 +7,7 @@ const password = process.env.PASSWORD
 const key = process.env.SUPABASE_KEY
 const url = process.env.SUPABASE_URL
 const bucketName = process.env.BUCKET_NAME
-
+console.log(url)
 // Create a single supabase client for interacting with your database 
 const supabase = createClient(url, key)
 
