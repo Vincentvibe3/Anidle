@@ -43,9 +43,6 @@ jobs:
     - name: Add ffmpeg to PATH
       run: echo "$GITHUB_WORKSPACE/videoProcessing/ffmpeg" >> $GITHUB_PATH
       
-    - name: print cwd
-      run: pwd
-      
     - name: Install npm dependencies
       run: npm install
       
@@ -56,4 +53,4 @@ jobs:
       run: node downloader.js ../songs.json
       
     - name: Process data and upload
-      run : process.js
+      run : node process.js
