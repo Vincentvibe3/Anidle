@@ -27,7 +27,8 @@ const getId = async () => {
     let songs = loadSongs()
     let dstoffset = getDstOffset()
     const epoch = new Date(2022, 0, 1, 0, 0, 0, 0).valueOf()
-    const currentTime = Date.now()
+    const utc = new Date().toISOString()
+    const currentTime = Date.parse(utc)+14*3600000
     const index = Math.floor((currentTime+dstoffset-epoch)/86400000)+1
     return {
         toFetch:songs[index%songs.length].id, 
