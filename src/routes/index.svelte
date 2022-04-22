@@ -47,7 +47,7 @@
                         song:song,
                         metadata:{},
                         link:"",
-                        loadFailed:false,
+                        loadFailed:true,
                         loaded:true,
                         index:songEntry.song.index,
                         nextTime:songEntry.expiry
