@@ -1,6 +1,3 @@
-# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
-
 name: Process Video
 
 on:
@@ -19,7 +16,10 @@ jobs:
       matrix:
         node-version: [16.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
+    defaults:
+      run:
+        working-directory: ./videoProcessing
+        
     steps:
     - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
@@ -27,8 +27,33 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: cd videoProcessing
-    - run: npm install
-    - run: chmod +x ./getKeyFrames.sh
-    - run: node downloader.js ../songs.json
-    - run : node process.js
+    
+    - name: Download ffmpeg
+      run: wget -O ffmpeg.tar.xz https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-amd64-static.tar.xz
+      
+    - name: Create ffmpeg directory
+      run: mkdir ffmpeg
+      
+    - name: Unzip ffmpeg
+      run: tar -xvf ffmpeg.tar.xz -C ffmpeg --strip-components=1
+      
+    - name: Add ffmpeg to PATH
+      run: echo "$GITHUB_WORKSPACE/videoProcessing/ffmpeg" >> $GITHUB_PATH
+      
+    - name: Install npm dependencies
+      run: npm install
+      
+    - name: Allow running video processing script
+      run: chmod +x ./getKeyframes.sh
+      
+    - name: Run downloader and script
+      run: node downloader.js ../songs.json
+      
+    - name: Process data and upload
+      run : node process.js
+      env: 
+        SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+        EMAIL: ${{ secrets.EMAIL }}
+        PASSWORD: ${{ secrets.PASSWORD }}
+        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+        BUCKET_NAME: ${{ secrets.BUCKET_NAME }}

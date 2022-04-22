@@ -8,3 +8,9 @@ node_modules
 !.env.example
 .npmrc
 .vercel_build_output
+.ignore
+*.webm
+*.log
+ids.json
+dump_original.txt
+dump_processed.txt

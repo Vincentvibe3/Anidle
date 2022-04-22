@@ -1,4 +1,29 @@
 import { cachedVideo } from "$lib/cache"
+import { createClient } from "@supabase/supabase-js"
+
+const supabaseUrl = process.env.VITE_SUPABASE_URL
+const supabaseKey = process.env.VITE_SUPABASE_KEY
+const bucketName = process.env.VITE_BUCKET_NAME
+const supabasePassword = process.env.VITE_PASSWORD
+const supabaseUsername = process.env.VITE_USERNAME
+
+const supabase = createClient(supabaseUrl, supabaseKey)
+
+let supabaseLoggedIn = false
+
+const login = async () => {
+    const { session, error } = await supabase.auth.signIn({
+        email: supabaseUsername,
+        password: supabasePassword,
+      })
+      if (error==null){
+          supabase.auth.setAuth(session.access_token)
+          supabaseLoggedIn = true
+      } else {
+          console.log(error)
+          console.log("Login Failed")
+      }
+}
 
 const getVideoInfo = async (id:string):Promise<VideoInfo> => {
     let response = await fetch(`https://staging.animethemes.moe/api/video/?filter[id]=${id}`)
@@ -15,6 +40,34 @@ const getVideoInfo = async (id:string):Promise<VideoInfo> => {
     return null
 }
 
+const checkMirror = async (id) => {
+    const { data, error } = await supabase.storage
+        .from(bucketName)
+        .list()
+    if (error!=null){
+        console.log(error)
+    } else {
+        for (let file of data){
+            if (file.name==id){
+                return {
+                    link:await getMirrorVideoLink(id),
+                    metadata:await getMetadataLink(id),
+                    expiry:Date.now()+86400000,
+                }
+            }
+        }
+    }
+    return null
+}
+
+const getMetadataLink = async (id) => {
+    return `${supabaseUrl}/storage/v1/object/public/${bucketName}/${id}/keyframes.json`
+}
+
+const getMirrorVideoLink = async (id) => {
+    return `${supabaseUrl}/storage/v1/object/public/${bucketName}/${id}/video.webm`
+}
+
 export interface VideoInfo{
     link:string,
     expiry:number
@@ -22,6 +75,9 @@ export interface VideoInfo{
 
 /** @type {import('./[id]').RequestHandler} */
 export async function get({ url }) {
+    if (!supabaseLoggedIn){
+        await login()
+    }
     if (url.searchParams.has("id")){
         let id = url.searchParams.get("id")
         if (cachedVideo.has(id)){
@@ -38,6 +94,17 @@ export async function get({ url }) {
             }
         }
         try {
+            if (supabaseLoggedIn){
+                let mirrorVideoInfo = await checkMirror(id)
+                if (mirrorVideoInfo!=null){
+                    return {
+                        status:200,
+                        body:{
+                            video:mirrorVideoInfo
+                        }
+                    }
+                }
+            }
             let videoInfo = await getVideoInfo(id)
             cachedVideo.set(id, videoInfo)
             return {

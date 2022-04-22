@@ -96,12 +96,12 @@
     let displayEndScreen = false
     let content:HTMLElement
 
-    const showAboutCard = () => {
-        showAbout = true
+    const flipAboutCard = () => {
+        showAbout = !showAbout
     }
 
-    const showOnEndCard = () => {
-        displayEndScreen = true
+    const flipEndCard = () => {
+        displayEndScreen = !displayEndScreen
     }
 
     onMount(()=>{
@@ -122,22 +122,7 @@
 {#if dialog && !finished && !loadFailed}
     <Dialog></Dialog>
 {/if}
-<header>
-    <button on:click={showAboutCard} class="aboutButton">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
-    </button>
-    <h1>Anidle</h1>
-    {#if finished}
-        <button class="endButton" on:click="{showOnEndCard}">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"></line><line x1="18" y1="20" x2="18" y2="4"></line><line x1="6" y1="20" x2="6" y2="16"></line></svg>
-        </button>
-    {:else}
-        <button class="endButton" on:click="{showOnEndCard}" disabled>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3f4146" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"></line><line x1="18" y1="20" x2="18" y2="4"></line><line x1="6" y1="20" x2="6" y2="16"></line></svg>
-        </button>
-    {/if}
-</header>
-<About bind:displayed={showAbout}></About>
+
 <main bind:this={content}>
     {#if loaded && loadFailed}
         <p>Loading failed.</p>
@@ -152,6 +137,22 @@
         <p>The page will be stuck loading without javascript</p>
     </noscript>
 </main>
+<About bind:displayed={showAbout}></About>
+<header>
+    <button on:click={flipAboutCard} class="aboutButton">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+    </button>
+    <h1>Anidle</h1>
+    {#if finished}
+        <button class="endButton" on:click="{flipEndCard}">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"></line><line x1="18" y1="20" x2="18" y2="4"></line><line x1="6" y1="20" x2="6" y2="16"></line></svg>
+        </button>
+    {:else}
+        <button class="endButton" on:click="{flipEndCard}" disabled>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3f4146" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"></line><line x1="18" y1="20" x2="18" y2="4"></line><line x1="6" y1="20" x2="6" y2="16"></line></svg>
+        </button>
+    {/if}
+</header>
 
 
 <style>
@@ -176,7 +177,6 @@
         height: calc(100% - 5rem);
         width: 100%;
         min-width: 20rem;
-        z-index: 1;
     }
 
     header {
@@ -190,7 +190,7 @@
         align-items: center;
         justify-content: center;
         min-width: 20rem;
-        z-index: 2;
+        z-index: 1;
     }
 
     header .aboutButton {

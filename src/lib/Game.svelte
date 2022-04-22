@@ -269,6 +269,7 @@
                 buttons[key].disabled = false
             }
         })
+    
     }
 
     onMount(()=>{
@@ -281,7 +282,7 @@
             controls:false
         });
         player.on("ended", onEnd)
-        player.on("canplay", onPlayerReady)
+        player.on("canplaythrough", onPlayerReady)
         currentTime = player.currentTime()
     })
 
@@ -290,9 +291,7 @@
 </script>
 <svelte:head>
     <script src="https://vjs.zencdn.net/7.18.1/video.min.js"></script>
-    <!-- <link href="https://vjs.zencdn.net/7.18.1/video-js.css" rel="stylesheet" /> -->
 </svelte:head>
-<FinishedDialog bind:nextTime={nextTime} bind:index={index} bind:displayed={displayEndScreen} bind:song={song} bind:metadata={metadata} bind:attempts={attempts} bind:success={gameSuccess} bind:maxAttempts={attemptsTimestamp.length}></FinishedDialog>
 <div bind:this={media} class="vidContainer">
     <video bind:this={html5Player} id="player" class="video-js" preload="auto">
         <track kind="captions"/>
@@ -300,7 +299,6 @@
     </video>
     <div bind:this={overlay} class="videoOverlay"></div>
 </div>
-
 <Guesses bind:maxAttempts={attemptsTimestamp.length} bind:attempts={attempts}></Guesses>
 <div class="controls">
     {#if !finished}
@@ -323,8 +321,8 @@
             <svg bind:this={loadingSpinner} class="spinner" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs>
                 <linearGradient id="myGradient" gradientTransform="rotate(90)">
-                    <stop offset="5%"  stop-color="#3f434d" />
-                    <stop offset="95%" stop-color="rgb(171, 169, 253)" />
+                    <stop offset="75%"  stop-color="#3f434d" />
+                    <stop offset="100%" stop-color="rgb(171, 169, 253)" />
                 </linearGradient>
                 </defs>
     
@@ -333,6 +331,7 @@
         <button bind:this={buttons.submitButton} on:click={checkAttempt} class="controlButton" disabled>Submit</button>
     </div>
 </div>
+<FinishedDialog bind:nextTime={nextTime} bind:index={index} bind:displayed={displayEndScreen} bind:song={song} bind:metadata={metadata} bind:attempts={attempts} bind:success={gameSuccess} bind:maxAttempts={attemptsTimestamp.length}></FinishedDialog>
 
 <style>
 
@@ -373,7 +372,6 @@
         top:0rem;
         left:0rem;
         object-fit: cover;
-        z-index: -1;
         background-color: #161616;
         filter: blur(300px);
         pointer-events: none;
@@ -381,6 +379,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        z-index: 1;
     }
 
     .videoOverlay {
@@ -402,6 +401,7 @@
         flex-direction: column;
         align-items: stretch;
         margin-top: 0.5rem;
+        z-index: 2;
     }
 
     .suggestions {
@@ -454,7 +454,6 @@
         overflow: hidden;
         transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
         outline: 0.1rem solid #00000000;
-        z-index: 3;
     }
 
     input:hover {
