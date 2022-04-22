@@ -30,7 +30,7 @@ jobs:
     - run: cd videoProcessing
     
     - name: Download ffmpeg
-      run: curl -o ffmpeg.tar.xz https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-amd64-static.tar.xz
+      run: curl -v -o ffmpeg.tar.xz https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-amd64-static.tar.xz
       
     - name: Create ffmpeg directory
       run: mkdir ffmpeg
