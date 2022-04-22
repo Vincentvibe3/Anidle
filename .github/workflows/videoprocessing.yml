@@ -28,7 +28,27 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: cd videoProcessing
-    - run: npm install
-    - run: chmod +x ./getKeyFrames.sh
-    - run: node downloader.js ../songs.json
-    - run : process.js
+    
+    - name: Download ffmpeg
+      run: curl -o ffmpeg.tar.xz https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-amd64-static.tar.xz
+      
+    - name: Create ffmpeg directory
+      run: mkdir ffmpeg
+      
+    - name: Unzip ffmpeg
+      run: tar -xvf ffmpeg.tar.xz -C ffmpeg --strip-components=1
+      
+    - name: Add ffmpeg to PATH
+      run: echo "$GITHUB_WORKSPACE/videoProcessing/ffmpeg" >> $GITHUB_PATH
+      
+    - name: Install npm dependencies
+      run: npm install
+      
+    - name: Allow running video processing script
+      run: chmod +x ./getKeyframes.sh
+      
+    - name: Run downloader and script
+      run: node downloader.js ../songs.json
+      
+    - name: Process data and upload
+      run : process.js
