@@ -59,4 +59,5 @@ jobs:
         EMAIL: ${{ secrets.EMAIL }}
         PASSWORD: ${{ secrets.PASSWORD }}
         SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+        BUCKET_NAME: ${{ secrets.BUCKET_NAME }}
         
