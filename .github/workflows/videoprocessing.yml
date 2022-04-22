@@ -27,10 +27,11 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+        
     - run: cd videoProcessing
     
     - name: Download ffmpeg
-      run: curl -v -L -o ffmpeg.tar.xz https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-amd64-static.tar.xz
+      run: wget -O ffmpeg.tar.xz https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-amd64-static.tar.xz
       
     - name: Create ffmpeg directory
       run: mkdir ffmpeg
