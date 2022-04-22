@@ -291,7 +291,6 @@
 </script>
 <svelte:head>
     <script src="https://vjs.zencdn.net/7.18.1/video.min.js"></script>
-    <!-- <link href="https://vjs.zencdn.net/7.18.1/video-js.css" rel="stylesheet" /> -->
 </svelte:head>
 <div bind:this={media} class="vidContainer">
     <video bind:this={html5Player} id="player" class="video-js" preload="auto">

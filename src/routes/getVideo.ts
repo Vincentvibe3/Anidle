@@ -18,10 +18,10 @@ const login = async () => {
       })
       if (error==null){
           supabase.auth.setAuth(session.access_token)
+          supabaseLoggedIn = true
       } else {
           console.log(error)
           console.log("Login Failed")
-          process.exit(1)
       }
 }
 
@@ -94,12 +94,14 @@ export async function get({ url }) {
             }
         }
         try {
-            let mirrorVideoInfo = await checkMirror(id)
-            if (mirrorVideoInfo!=null){
-                return {
-                    status:200,
-                    body:{
-                        video:mirrorVideoInfo
+            if (supabaseLoggedIn){
+                let mirrorVideoInfo = await checkMirror(id)
+                if (mirrorVideoInfo!=null){
+                    return {
+                        status:200,
+                        body:{
+                            video:mirrorVideoInfo
+                        }
                     }
                 }
             }

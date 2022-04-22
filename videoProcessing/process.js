@@ -131,16 +131,6 @@ const start = async () => {
     console.log("Logging in")
     await login()
     console.log("Logged in")
-    const { data, error } = await supabase.storage
-        .from('animethemes-mirror')
-        .list()
-    if (error!=null){
-        console.log(data)
-        return data
-    } else {
-        console.log(error)
-        return null
-    }
     await clearOldData()
     let file = await getSmallestFile()
     let keyframes = await getKeyframes(file)

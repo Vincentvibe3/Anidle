@@ -70,9 +70,9 @@
         <p class="description">An anime quiz inspired by <a href="https://www.heardle.app/">Heardle</a>/<a href="https://www.nytimes.com/games/wordle/index.html">Wordle</a></p>
         <span class="divider"></span>
         <p>Built with <a href="https://svelte.dev/">Svelte</a></p>
+        <p>Powered by <a href="https://supabase.com/">Supabase</a></p>
         <p>Hosted by <a href="https://vercel.com/">Vercel</a></p>
         <p>Openings provided by <a href="https://staging.animethemes.moe/wiki/">animethemes.moe</a></p>
-        <p>Powered by <a href="https://supabase.com/">Supabase</a></p>
         <p>Icons from <a href="https://iconsvg.xyz/">IconSvg</a></p>
         <p>Video Player by <a href="https://videojs.com/">video.js</a></p>
         <p>Font used: <a href="https://fonts.google.com/specimen/Manrope">Manrope</a></p>
