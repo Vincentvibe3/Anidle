@@ -5,19 +5,6 @@ import { spawn } from "child_process"
 let args = process.argv
 let songsFile = args[2]
 
-const getDstOffset = () => {
-    let now = new Date()
-    let jan = new Date(now.getFullYear(), 0, 1);
-    let jul = new Date(now.getFullYear(), 6, 1);
-    let stdTimezoneOffset = Math.max(jan.getTimezoneOffset(), jul.getTimezoneOffset());
-    let dstTimezoneOffser = Math.min(jan.getTimezoneOffset(), jul.getTimezoneOffset());
-    if (stdTimezoneOffset>now.getTimezoneOffset()){
-        return (stdTimezoneOffset-dstTimezoneOffser)*60*1000
-    } else {
-        return 0
-    }
-}
-
 const loadSongs = () => {
     let songsStr = fs.readFileSync(songsFile, "utf-8")
     return JSON.parse(songsStr)
@@ -25,16 +12,16 @@ const loadSongs = () => {
 
 const getId = async () => {
     let songs = loadSongs()
-    let dstoffset = getDstOffset()
     const epoch = new Date(2022, 0, 1, 0, 0, 0, 0).valueOf()
     const utc = new Date().toISOString()
     const currentTime = Date.parse(utc)+14*3600000
-    const index = Math.floor((currentTime+dstoffset-epoch)/86400000)+1
+    const index = Math.floor((currentTime-epoch)/86400000)+1
     console.log("Getting song:")
     console.log("id: "+songs[index%songs.length].id)
     return {
         toFetch:songs[index%songs.length].id, 
         valid:[
+            songs[(index-3)%songs.length].id,
             songs[(index-2)%songs.length].id,
             songs[(index-1)%songs.length].id,
             songs[index%songs.length].id,
