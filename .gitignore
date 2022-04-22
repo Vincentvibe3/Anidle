@@ -12,3 +12,5 @@ node_modules
 *.webm
 *.log
 ids.json
+dump_original.txt
+dump_processed.txt
