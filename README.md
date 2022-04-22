@@ -64,7 +64,7 @@ cd videoProcessing
 npm install
 ```
 
-Install ffmpeg from [Here]()
+Install ffmpeg from [Here](https://ffmpeg.org/)
 
 Set environment variables
 
@@ -91,4 +91,4 @@ chmod +x ./getKeyframes.sh
 node downloader.js ../songs.json
 node process.js
 ```
-Check [this workflow]() for the github action automating the processing.
+Check [this workflow](https://github.com/Vincentvibe3/Anidle/blob/main/.github/workflows/videoprocessing.yml) for the github action automating the processing.
