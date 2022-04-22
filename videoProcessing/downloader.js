@@ -30,6 +30,8 @@ const getId = async () => {
     const utc = new Date().toISOString()
     const currentTime = Date.parse(utc)+14*3600000
     const index = Math.floor((currentTime+dstoffset-epoch)/86400000)+1
+    console.log("Getting song:")
+    console.log("id: "+songs[index%songs.length].id)
     return {
         toFetch:songs[index%songs.length].id, 
         valid:[
