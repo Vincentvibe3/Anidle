@@ -9,6 +9,8 @@ const supabaseUsername = process.env.VITE_USERNAME
 
 const supabase = createClient(supabaseUrl, supabaseKey)
 
+let supabaseLoggedIn = false
+
 const login = async () => {
     const { session, error } = await supabase.auth.signIn({
         email: supabaseUsername,
@@ -22,8 +24,6 @@ const login = async () => {
           process.exit(1)
       }
 }
-
-await login()
 
 const getVideoInfo = async (id:string):Promise<VideoInfo> => {
     let response = await fetch(`https://staging.animethemes.moe/api/video/?filter[id]=${id}`)
@@ -75,6 +75,9 @@ export interface VideoInfo{
 
 /** @type {import('./[id]').RequestHandler} */
 export async function get({ url }) {
+    if (!supabaseLoggedIn){
+        await login()
+    }
     if (url.searchParams.has("id")){
         let id = url.searchParams.get("id")
         if (cachedVideo.has(id)){
