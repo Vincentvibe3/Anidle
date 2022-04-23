@@ -10,7 +10,7 @@ on:
         - main
     paths:
         - 'songs.json'
-        - 'src\lib\songs.ts'
+        - 'src/lib/songs.ts'
     
 
 jobs:
