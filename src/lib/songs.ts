@@ -321,11 +321,11 @@ export var songs:Array<Song> = [
     },
     {
         "name": "Black Rover",
-        "anime": "Black Clover (TV)",
+        "anime": "Black Clover",
         "id": 7540,
-        "guessString": "Black Clover (TV) - Black Rover",
+        "guessString": "Black Clover - Black Rover",
         "altAnimes": [
-            "Black Clover (TV)"
+            "Black Clover"
         ],
         "external": [
             {
@@ -684,9 +684,9 @@ export var songs:Array<Song> = [
     },
     {
         "name": "Kakusei Heroism ~The Hero without a Name~",
-        "anime": "DTB",
+        "anime": "Darker than Black",
         "id": 1785,
-        "guessString": "DTB - Kakusei Heroism ~The Hero without a Name~",
+        "guessString": "Darker than Black - Kakusei Heroism ~The Hero without a Name~",
         "altAnimes": [
             "Darker than Black: Kuro no Keiyakusha",
             "Darker than Black",
@@ -722,11 +722,11 @@ export var songs:Array<Song> = [
     },
     {
         "name": "Black Catcher",
-        "anime": "Black Clover (TV)",
+        "anime": "Black Clover",
         "id": 7528,
-        "guessString": "Black Clover (TV) - Black Catcher",
+        "guessString": "Black Clover - Black Catcher",
         "altAnimes": [
-            "Black Clover (TV)"
+            "Black Clover"
         ],
         "external": [
             {
@@ -2003,9 +2003,9 @@ export var songs:Array<Song> = [
     },
     {
         "name": "Howling",
-        "anime": "DTB",
+        "anime": "Darker than Black",
         "id": 1784,
-        "guessString": "DTB - Howling",
+        "guessString": "Darker than Black - Howling",
         "altAnimes": [
             "Darker than Black: Kuro no Keiyakusha",
             "Darker than Black",
@@ -2113,9 +2113,9 @@ export var songs:Array<Song> = [
     },
     {
         "name": "Dreams",
-        "anime": "DTB",
+        "anime": "Darker than Black",
         "id": 1783,
-        "guessString": "DTB - Dreams",
+        "guessString": "Darker than Black - Dreams",
         "altAnimes": [
             "Darker than Black: Kuro no Keiyakusha",
             "Darker than Black",
@@ -2205,9 +2205,9 @@ export var songs:Array<Song> = [
     },
     {
         "name": "Tsuki Akari",
-        "anime": "DTB",
+        "anime": "Darker than Black",
         "id": 1782,
-        "guessString": "DTB - Tsuki Akari",
+        "guessString": "Darker than Black - Tsuki Akari",
         "altAnimes": [
             "Darker than Black: Kuro no Keiyakusha",
             "Darker than Black",
@@ -3821,11 +3821,11 @@ export var songs:Array<Song> = [
     },
     {
         "name": "Haruka Mirai",
-        "anime": "Black Clover (TV)",
+        "anime": "Black Clover",
         "id": 7526,
-        "guessString": "Black Clover (TV) - Haruka Mirai",
+        "guessString": "Black Clover - Haruka Mirai",
         "altAnimes": [
-            "Black Clover (TV)"
+            "Black Clover"
         ],
         "external": [
             {
@@ -6228,11 +6228,11 @@ export var songs:Array<Song> = [
     },
     {
         "name": "Grandeur",
-        "anime": "Black Clover (TV)",
+        "anime": "Black Clover",
         "id": 7532,
-        "guessString": "Black Clover (TV) - Grandeur",
+        "guessString": "Black Clover - Grandeur",
         "altAnimes": [
-            "Black Clover (TV)"
+            "Black Clover"
         ],
         "external": [
             {
