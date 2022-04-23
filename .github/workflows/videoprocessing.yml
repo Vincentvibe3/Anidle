@@ -8,6 +8,9 @@ on:
   push:
     branches:
         - main
+    paths:
+        - 'songs.json'
+        - 'src\lib\songs.ts'
     
 
 jobs:
