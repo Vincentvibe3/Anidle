@@ -6493,6 +6493,24 @@ export var songs:Array<Song> = [
         ],
         "artist": "JAM Project",
         "index": 342
+    },
+    {
+        "name": "Guren no Yumiya",
+        "anime": "Shingeki no Kyojin",
+        "id": 4744,
+        "guessString": "Shingeki no Kyojin - Guren no Yumiya",
+        "altAnimes": [
+            "Shingeki no Kyojin"
+        ],
+        "external": [
+            {
+                "source": "youtube",
+                "id": "Pn7dCgtwX2c",
+                "thumbnail": "https://i.ytimg.com/vi/Pn7dCgtwX2c/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAltePDgegrISuR0cM9qWZpmcHJkQ"
+            }
+        ],
+        "artist": "Linked Horizon",
+        "index": 343
     }
 ]
 
