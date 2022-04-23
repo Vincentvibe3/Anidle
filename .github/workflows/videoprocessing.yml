@@ -33,12 +33,19 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: cd videoProcessing
-    - run: npm install
-    - run: chmod +x ./getKeyFrames.sh
-    - run: node downloader.js ../songs.json
-    - run : process.js
-
+    
+    - name: Download ffmpeg
+      run: sudo apt install ffmpeg
+      
+    - name: Install npm dependencies
+      run: npm install
+      
+    - name: Allow running video processing script
+      run: chmod +x ./getKeyframes.sh
+      
+    - name: Run downloader and script
+      run: node downloader.js ../songs.json
+      
     - name: Process data and upload
       run : node process.js
       env: 
