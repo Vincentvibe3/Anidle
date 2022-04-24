@@ -35,7 +35,7 @@ jobs:
         cache: 'npm'
     
     - name: Download ffmpeg
-      run: curl -L --output ffmpeg.tar.xz https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-amd64-static.tar.xz
+      run: sudo apt install ffmpeg
       
     - name: Create ffmpeg directory
       run: mkdir ffmpeg
