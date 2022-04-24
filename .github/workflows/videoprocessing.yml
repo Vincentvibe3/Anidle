@@ -35,7 +35,7 @@ jobs:
         cache: 'npm'
     
     - name: Download ffmpeg
-      run: wget -O ffmpeg.tar.xz https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-amd64-static.tar.xz
+      run: curl -L --output ffmpeg.tar.xz https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-amd64-static.tar.xz
       
     - name: Create ffmpeg directory
       run: mkdir ffmpeg
