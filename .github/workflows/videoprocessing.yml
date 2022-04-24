@@ -37,15 +37,6 @@ jobs:
     - name: Download ffmpeg
       run: sudo apt install ffmpeg
       
-    - name: Create ffmpeg directory
-      run: mkdir ffmpeg
-      
-    - name: Unzip ffmpeg
-      run: tar -xvf ffmpeg.tar.xz -C ffmpeg --strip-components=1
-      
-    - name: Add ffmpeg to PATH
-      run: echo "$GITHUB_WORKSPACE/videoProcessing/ffmpeg" >> $GITHUB_PATH
-      
     - name: Install npm dependencies
       run: npm install
       
