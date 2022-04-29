@@ -35,16 +35,7 @@ jobs:
         cache: 'npm'
     
     - name: Download ffmpeg
-      run: wget -O ffmpeg.tar.xz https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-amd64-static.tar.xz
-      
-    - name: Create ffmpeg directory
-      run: mkdir ffmpeg
-      
-    - name: Unzip ffmpeg
-      run: tar -xvf ffmpeg.tar.xz -C ffmpeg --strip-components=1
-      
-    - name: Add ffmpeg to PATH
-      run: echo "$GITHUB_WORKSPACE/videoProcessing/ffmpeg" >> $GITHUB_PATH
+      run: sudo apt install ffmpeg
       
     - name: Install npm dependencies
       run: npm install
