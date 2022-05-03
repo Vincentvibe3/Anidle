@@ -30,6 +30,7 @@
     let currentTime:number = 0
     let maxTime:number = 16
     let attemptsTimestamp = [1, 2, 4, 7, 11, 16]
+    let startTime = 1
     let separators = attemptsTimestamp
     let revealed = 1
     let attempts:Attempt[] = []
@@ -55,6 +56,10 @@
     }
 
     const setFinished = () => {
+        startTime = 0
+        if (!playing){
+            player.currentTime(0)
+        }
         finished = true
         disableButtons()
         if (vidDuration==0){
@@ -139,7 +144,7 @@
     }
 
     const updateProgress = ()=>{
-        currentTime = player.currentTime()
+        currentTime = player.currentTime()-startTime
         if (finished){
             maxTime = player.duration()
             revealed = maxTime
@@ -151,7 +156,7 @@
         } else {
             playing=false
             player.pause()
-            player.currentTime(0)
+            player.currentTime(startTime)
             currentTime = 0
         }
     }
@@ -160,7 +165,7 @@
         if (playing){
             player.pause()
             if (!finished){
-                player.currentTime(0)
+                player.currentTime(startTime)
                 currentTime = 0
             }
         } else {
@@ -256,7 +261,7 @@
 
     const onEnd = () => {
         vidDuration = currentTime
-        player.currentTime(0)
+        player.currentTime(startTime)
         playing = false
     }
 
@@ -283,7 +288,8 @@
         });
         player.on("ended", onEnd)
         player.on("canplaythrough", onPlayerReady)
-        currentTime = player.currentTime()
+        currentTime = 0
+        player.currentTime(startTime)
     })
 
     $:finished, displayEndScreen=finished
