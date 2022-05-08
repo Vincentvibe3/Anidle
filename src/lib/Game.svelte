@@ -47,7 +47,6 @@
     let mounted= false
     let vidDuration = 0
     let loadingSpinner:SVGSVGElement
-    let html5Player
 
     interface Buttons {
         submitButton:HTMLButtonElement,
@@ -279,10 +278,6 @@
 
     onMount(()=>{
         mounted = true
-        disableButtons()
-        importProgress()
-        adjustIconVisibility(playing)
-        unfocusInput()
         player = videojs('player', {
             controls:false
         });
@@ -290,6 +285,10 @@
         player.on("canplaythrough", onPlayerReady)
         currentTime = 0
         player.currentTime(startTime)
+        disableButtons()
+        importProgress()
+        adjustIconVisibility(playing)
+        unfocusInput()
     })
 
     $:finished, displayEndScreen=finished
@@ -299,7 +298,7 @@
     <script src="https://vjs.zencdn.net/7.18.1/video.min.js"></script>
 </svelte:head>
 <div bind:this={media} class="vidContainer">
-    <video bind:this={html5Player} id="player" class="video-js" preload="auto">
+    <video id="player" class="video-js" preload="auto">
         <track kind="captions"/>
         <source src={link}/>
     </video>
