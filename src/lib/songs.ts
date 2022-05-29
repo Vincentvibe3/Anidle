@@ -2216,8 +2216,8 @@ export var songs:Array<Song> = [
         "external": [
             {
                 "source": "youtube",
-                "id": "Tu-WyAn1zWg",
-                "thumbnail": "https://i.ytimg.com/vi/Tu-WyAn1zWg/hq720.jpg?sqp=-oaymwEjCOgCEMoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLA88MnAnBAEF6MFNMtI_bQ15g5qcw"
+                "id": "EMQnrQwvXA8",
+                "thumbnail": "https://i.ytimg.com/vi/EMQnrQwvXA8/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAIvkXQXyyDP0vapPC8Zs2o1sHUXg"
             }
         ],
         "artist": "Rie Fu",
@@ -2815,8 +2815,8 @@ export var songs:Array<Song> = [
         "external": [
             {
                 "source": "youtube",
-                "id": "OrgpX-_bFqM",
-                "thumbnail": "https://i.ytimg.com/vi/OrgpX-_bFqM/hq720.jpg?sqp=-oaymwEjCOgCEMoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBVDUI4nkxauO6QugypnmjdS6R1dw"
+                "id": "GIlMPJNk-pU",
+                "thumbnail": "https://i.ytimg.com/vi/GIlMPJNk-pU/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB4R9PSDNtTbjmgENS7tYcVCX_UwQ"
             }
         ],
         "artist": "Eri Kitamura",
