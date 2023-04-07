@@ -49,8 +49,6 @@ jobs:
     - name: Process data and upload
       run : node process.js
       env: 
-        SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
-        EMAIL: ${{ secrets.EMAIL }}
-        PASSWORD: ${{ secrets.PASSWORD }}
+        SUPABASE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
         SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
         BUCKET_NAME: ${{ secrets.BUCKET_NAME }}
