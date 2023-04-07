@@ -184,7 +184,7 @@
         background-color: rgb(171, 169, 253);
         border: none;
         height: 2rem;
-        transition: all cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.2s;
+        transition: all ease-in-out 0.2s;
         box-shadow: 0.5rem 0.5rem 1rem 0.5rem #00000030;
     }
     button:hover {

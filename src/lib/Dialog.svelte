@@ -87,7 +87,7 @@
         background-color: rgb(171, 169, 253);
         border: none;
         height: 2rem;
-        transition: all cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.2s;
+        transition: all ease-in-out 0.2s;
     }
     button:hover {
         background-color: rgb(106, 104, 160);

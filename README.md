@@ -77,8 +77,8 @@ SUPABASE_URL=<Supabase API link>
 SUPABASE_SERVICE_KEY=<Supabase Service key>
 
 # Crendentials to user with permission to modify the bucket
-EMAIL=vincentvibe3@gmail.com
-PASSWORD=2GZEUt53_ASuDLILwaploA
+EMAIL=<email>
+PASSWORD=<password>
 
 # Must be a public bucket
 BUCKET_NAME=<storage bucket name>

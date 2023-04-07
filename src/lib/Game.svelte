@@ -1,6 +1,6 @@
 <script lang="ts">
     import type { Song } from "$lib/songs";
-    import type { Metadata } from '../routes/getMetadata';
+    import type { Metadata } from '../../old/getMetadata';
     import { onMount } from 'svelte';
     import Progress from "$lib/Progress.svelte";
     import { getSuggestions } from '$lib/suggestions';
@@ -250,7 +250,7 @@
         if (inputContent==""){
             inputField.style.color = "#818181"
             hintText = true
-            inputContent= "Search for a op/ed"
+            // inputContent= "Search for a op/ed"
         }
     }
 
@@ -314,7 +314,7 @@
                 {/each}
             </div>    
         {/if}
-        <input on:blur={unfocusInput} on:click={clearHintText} bind:value={inputContent} bind:this={inputField}>
+        <input on:blur={unfocusInput} on:click={clearHintText} bind:value={inputContent} bind:this={inputField} placeholder="Search for a op/ed">
     {/if}
     <Progress bind:max={maxTime} bind:value={currentTime} bind:separatorPositions={separators} bind:revealed={revealed}></Progress>
     <div class="buttons">
@@ -457,7 +457,7 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
-        transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+        transition: all ease-in-out 0.5s;
         outline: 0.1rem solid #00000000;
     }
 
@@ -482,7 +482,7 @@
 
     .buttons button {
         background-color: rgb(171, 169, 253);
-        transition: all cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.2s;
+        transition: all ease-in-out 0.2s;
         color: black;
         border: none;
         padding: 0.8rem 1rem 0.8rem 1rem;

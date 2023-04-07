@@ -1,11 +1,13 @@
-import { cachedMetadata } from "$lib/cache"
+import { cachedMetadata } from '$lib/cache';
+import type { RequestHandler } from './$types';
+import {json, error } from '@sveltejs/kit';
 
-const process = import("process")
+import {
+    VITE_SPOTIFY_CLIENT as client,
+    VITE_SPOTIFY_SECRET as secret
+} from '$env/static/private'
 
 const getToken = async ():Promise<string> => {
-    const client = (await process).env.VITE_SPOTIFY_CLIENT
-    const secret = (await process).env.VITE_SPOTIFY_SECRET
-    console.log(client)
     let auth = Buffer.from(`${client}:${secret}`).toString("base64")
     let response = await fetch("https://accounts.spotify.com/api/token", 
         {
@@ -51,19 +53,15 @@ const fetchData = async (token:string, id:string):Promise<Metadata> => {
     }
 }
 
-/** @type {import('./[id]').RequestHandler} */
-export async function get({ url }) {
+export const GET: RequestHandler = async ({url}) => {
     if (url.searchParams.has("id")){
         let id = url.searchParams.get("id")
         if (cachedMetadata.has(id)){
             let metadata = cachedMetadata.get(id)
             if (metadata.expiry>Date.now()){
-                return {
-                    status:200,
-                    body:{
-                        metadata:metadata
-                    }
-                }
+                return json({
+                    metadata:metadata
+                })
             } else {
                 cachedMetadata.delete(id)
             }
@@ -72,15 +70,12 @@ export async function get({ url }) {
             let token = await getToken()
             let metadata = await fetchData(token, url.searchParams.get("id"))
             cachedMetadata.set(id, metadata)
-            return {
-                status:200,
-                body:{
-                    metadata:metadata
-                }
-            }
+            
+            
+            return json({
+                metadata:metadata
+            })
         } catch (FetchError) {}
     }
-    return {
-        status:400
-    }
-}
+    throw error(400)
+};

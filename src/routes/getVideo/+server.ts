@@ -1,31 +1,43 @@
+import type { RequestHandler } from './$types';
+
 import { cachedVideo } from "$lib/cache"
 import { createClient } from "@supabase/supabase-js"
+import {json, error } from '@sveltejs/kit';
+import {
+    VITE_SUPABASE_KEY as supabaseKey,
+    VITE_SUPABASE_URL as supabaseUrl,
+    VITE_BUCKET_NAME as bucketName,
+    VITE_PASSWORD as supabasePassword,
+    VITE_USERNAME as supabaseUsername
+} from '$env/static/private'
 
-const supabaseUrl = process.env.VITE_SUPABASE_URL
-const supabaseKey = process.env.VITE_SUPABASE_KEY
-const bucketName = process.env.VITE_BUCKET_NAME
-const supabasePassword = process.env.VITE_PASSWORD
-const supabaseUsername = process.env.VITE_USERNAME
+// const supabaseUrl = process.env.VITE_SUPABASE_URL
+// const supabaseKey = process.env.VITE_SUPABASE_KEY
+// const bucketName = process.env.VITE_BUCKET_NAME
+// const supabasePassword = process.env.VITE_PASSWORD
+// const supabaseUsername = process.env.VITE_USERNAME
 
 const supabase = createClient(supabaseUrl, supabaseKey)
 
 let supabaseLoggedIn = false
 
 const login = async () => {
-    const { session, error } = await supabase.auth.signIn({
+    const { data, error } = await supabase.auth.signInWithPassword({
         email: supabaseUsername,
         password: supabasePassword,
       })
+      const { session, user } = data
       if (error==null){
-          supabase.auth.setAuth(session.access_token)
-          supabaseLoggedIn = true
+        supabase.auth.setSession(session)
+        // supabase.auth.setAuth(session.access_token)
+        supabaseLoggedIn = true
       } else {
-          console.log(error)
-          console.log("Login Failed")
+        console.log(error)
+        console.log("Login Failed")
       }
 }
 
-const getVideoInfo = async (id:string):Promise<VideoInfo> => {
+const getVideoInfo = async (id:string, fetch):Promise<VideoInfo> => {
     let response = await fetch(`https://staging.animethemes.moe/api/video/?filter[id]=${id}`)
     let respData = await response.json()
     let videos = respData.videos
@@ -73,8 +85,7 @@ export interface VideoInfo{
     expiry:number
 }
 
-/** @type {import('./[id]').RequestHandler} */
-export async function get({ url }) {
+export const GET: RequestHandler = async ({url, fetch}) => {
     if (!supabaseLoggedIn){
         await login()
     }
@@ -83,12 +94,10 @@ export async function get({ url }) {
         if (cachedVideo.has(id)){
             let videoInfo = cachedVideo.get(id)
             if (videoInfo.expiry>Date.now()){
-                return {
-                    status:200,
-                    body:{
-                        video:videoInfo
-                    }
-                }
+                return json({
+                    video:videoInfo
+                })
+                
             } else {
                 cachedVideo.delete(id)
             }
@@ -97,25 +106,17 @@ export async function get({ url }) {
             if (supabaseLoggedIn){
                 let mirrorVideoInfo = await checkMirror(id)
                 if (mirrorVideoInfo!=null){
-                    return {
-                        status:200,
-                        body:{
-                            video:mirrorVideoInfo
-                        }
-                    }
+                    return json({
+                        video:mirrorVideoInfo
+                    })
                 }
             }
-            let videoInfo = await getVideoInfo(id)
+            let videoInfo = await getVideoInfo(id, fetch)
             cachedVideo.set(id, videoInfo)
-            return {
-                status:200,
-                body:{
+            return json({
                     video:videoInfo
-                }
-            }
+                })
         } catch (FetchError) {}
     }
-    return {
-        status:400
-    }
-}
+    throw error(400)
+};
