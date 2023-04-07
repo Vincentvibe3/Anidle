@@ -6,6 +6,7 @@ import {
     VITE_SPOTIFY_CLIENT as client,
     VITE_SPOTIFY_SECRET as secret
 } from '$env/static/private'
+import type { Metadata } from '$lib/types';
 
 const getToken = async ():Promise<string> => {
     let auth = Buffer.from(`${client}:${secret}`).toString("base64")
@@ -21,14 +22,6 @@ const getToken = async ():Promise<string> => {
     )
     let respData = await response.json()
     return respData.access_token
-}
-
-export interface Metadata{
-    URL:string,
-    artist:string,
-    expiry:number, //Unix Timestamp
-    albumArt:string
-    source:string
 }
 
 const fetchData = async (token:string, id:string):Promise<Metadata> => {

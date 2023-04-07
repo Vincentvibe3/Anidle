@@ -3,7 +3,7 @@
     import Dialog from "$lib/Dialog.svelte"
     import Game from "$lib/Game.svelte";
     import About from "$lib/About.svelte"
-    import type { Metadata } from '../../old/getMetadata';
+    import type { Metadata } from "$lib/types"
     import type { Song } from '$lib/songs';
     import { onMount } from 'svelte';
     import type { PageData } from "./$types";
@@ -13,7 +13,7 @@
     export let loaded = false
     export let loadFailed = data.props.loadFailed
     export let song:Song = data.props.song
-    export let metadata:Metadata|{} = data.props.metadata
+    export let metadata:Metadata = data.props.metadata
     export let index:number = data.props.index
     export let nextTime:number = data.props.nextTime
     export let link:string = data.props.link

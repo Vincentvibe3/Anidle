@@ -1,6 +1,6 @@
 <script lang="ts">
     import type { Song } from "$lib/songs";
-    import type { Metadata } from '../../old/getMetadata';
+    import type {Metadata} from "$lib/types"
     import { onMount } from 'svelte';
     import Progress from "$lib/Progress.svelte";
     import { getSuggestions } from '$lib/suggestions';

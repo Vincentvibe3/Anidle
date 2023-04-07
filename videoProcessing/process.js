@@ -4,7 +4,7 @@ import { createClient } from '@supabase/supabase-js'
 
 const email = process.env.EMAIL
 const password = process.env.PASSWORD
-const key = process.env.SUPABASE_KEY
+const key = process.env.SUPABASE_SERVICE_KEY
 const url = process.env.SUPABASE_URL
 const bucketName = process.env.BUCKET_NAME
 
@@ -17,19 +17,19 @@ let idData = JSON.parse(fs.readFileSync("./ids.json", "utf-8"))
 let validIds = idData.valid
 let id = idData.toFetch
 
-const login = async () => {
-    const { session, error } = await supabase.auth.signIn({
-        email: email,
-        password: password,
-      })
-      if (error==null){
-          supabase.auth.setAuth(session.access_token)
-      } else {
-          console.log(error)
-          console.log("Login Failed")
-          process.exit(1)
-      }
-}
+// const login = async () => {
+//     const { session, error } = await supabase.auth.signIn({
+//         email: email,
+//         password: password,
+//       })
+//       if (error==null){
+//           supabase.auth.setAuth(session.access_token)
+//       } else {
+//           console.log(error)
+//           console.log("Login Failed")
+//           process.exit(1)
+//       }
+// }
 
 const getSmallestFile = async () => {
     let originalExists = fs.existsSync("./original.webm")
@@ -130,9 +130,9 @@ const uploadProcessedVideo = async (file) => {
 }
 
 const start = async () => {
-    console.log("Logging in")
-    await login()
-    console.log("Logged in")
+    // console.log("Logging in")
+    // await login()
+    // console.log("Logged in")
     await clearOldData()
     let file = await getSmallestFile()
     let keyframes = await getKeyframes(file)

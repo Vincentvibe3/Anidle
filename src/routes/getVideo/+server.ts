@@ -7,10 +7,8 @@ import {
     VITE_SUPABASE_KEY as supabaseKey,
     VITE_SUPABASE_URL as supabaseUrl,
     VITE_BUCKET_NAME as bucketName,
-    VITE_PASSWORD as supabasePassword,
-    VITE_USERNAME as supabaseUsername
 } from '$env/static/private'
-
+import type { VideoInfo } from "$lib/types";
 // const supabaseUrl = process.env.VITE_SUPABASE_URL
 // const supabaseKey = process.env.VITE_SUPABASE_KEY
 // const bucketName = process.env.VITE_BUCKET_NAME
@@ -18,24 +16,6 @@ import {
 // const supabaseUsername = process.env.VITE_USERNAME
 
 const supabase = createClient(supabaseUrl, supabaseKey)
-
-let supabaseLoggedIn = false
-
-const login = async () => {
-    const { data, error } = await supabase.auth.signInWithPassword({
-        email: supabaseUsername,
-        password: supabasePassword,
-      })
-      const { session, user } = data
-      if (error==null){
-        supabase.auth.setSession(session)
-        // supabase.auth.setAuth(session.access_token)
-        supabaseLoggedIn = true
-      } else {
-        console.log(error)
-        console.log("Login Failed")
-      }
-}
 
 const getVideoInfo = async (id:string, fetch):Promise<VideoInfo> => {
     let response = await fetch(`https://staging.animethemes.moe/api/video/?filter[id]=${id}`)
@@ -80,15 +60,7 @@ const getMirrorVideoLink = async (id) => {
     return `${supabaseUrl}/storage/v1/object/public/${bucketName}/${id}/video.webm`
 }
 
-export interface VideoInfo{
-    link:string,
-    expiry:number
-}
-
 export const GET: RequestHandler = async ({url, fetch}) => {
-    if (!supabaseLoggedIn){
-        await login()
-    }
     if (url.searchParams.has("id")){
         let id = url.searchParams.get("id")
         if (cachedVideo.has(id)){
@@ -103,19 +75,19 @@ export const GET: RequestHandler = async ({url, fetch}) => {
             }
         }
         try {
-            if (supabaseLoggedIn){
-                let mirrorVideoInfo = await checkMirror(id)
-                if (mirrorVideoInfo!=null){
-                    return json({
-                        video:mirrorVideoInfo
-                    })
-                }
-            }
-            let videoInfo = await getVideoInfo(id, fetch)
-            cachedVideo.set(id, videoInfo)
-            return json({
-                    video:videoInfo
+            let mirrorVideoInfo = await checkMirror(id)
+            if (mirrorVideoInfo!=null){
+                return json({
+                    video:mirrorVideoInfo
                 })
+            } else {
+                let videoInfo = await getVideoInfo(id, fetch)
+                cachedVideo.set(id, videoInfo)
+                return json({
+                        video:videoInfo
+                    })
+            }
+            
         } catch (FetchError) {}
     }
     throw error(400)

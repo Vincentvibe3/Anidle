@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type { get, Metadata } from "src/routes/getMetadata";
+    import type { Metadata } from "$lib/types"
     import { onMount } from "svelte";
     import Report from "./Report.svelte";
     import { getReport, type Attempt } from "./reportGenerator";
