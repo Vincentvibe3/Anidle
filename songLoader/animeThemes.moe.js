@@ -19,7 +19,7 @@ export const getAnimeData = async (slug, mapping) => {
     let tries = 0
     while (!requestOk){
         try{
-            response = await axios.get(`https://staging.animethemes.moe/api/anime/${slug}?include=animethemes,animesynonyms,series,animethemes.animethemeentries.videos,animethemes.song,animethemes.song.artists&fields[song]=title&fields[video]=id,overlap,deleted_at&fields[animetheme]=deleted_at&fields[animethemeentry]=deleted_at,nsfw&fields[anime]=name,deleted_at,slug`, { timeout: 2000 })
+            response = await axios.get(`https://api.animethemes.moe/anime/${slug}?include=animethemes,animesynonyms,series,animethemes.animethemeentries.videos,animethemes.song,animethemes.song.artists&fields[song]=title&fields[video]=id,overlap,deleted_at&fields[animetheme]=deleted_at&fields[animethemeentry]=deleted_at,nsfw&fields[anime]=name,deleted_at,slug`, { timeout: 2000 })
             requestOk = true
         } catch {
             requestOk = false
@@ -63,7 +63,7 @@ export const getSlug = async (name) => {
     let query = name.replace(" ", "+")
     let requestOk = false
     let response
-    let url = encodeURI(`https://staging.animethemes.moe/api/anime/?q=${query}&include=series`)
+    let url = encodeURI(`https://api.animethemes.moe/anime/?q=${query}&include=series`)
     let tries = 0
     while (!requestOk){
         try {

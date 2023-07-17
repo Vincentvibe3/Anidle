@@ -18,7 +18,7 @@ import type { VideoInfo } from "$lib/types";
 const supabase = createClient(supabaseUrl, supabaseKey)
 
 const getVideoInfo = async (id:string, fetch):Promise<VideoInfo> => {
-    let response = await fetch(`https://staging.animethemes.moe/api/video/?filter[id]=${id}`)
+    let response = await fetch(`https://api.animethemes.moe/video/?filter[id]=${id}`)
     let respData = await response.json()
     let videos = respData.videos
     for (let video of videos){

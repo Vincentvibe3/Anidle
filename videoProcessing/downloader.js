@@ -30,7 +30,7 @@ const getId = async () => {
 }
 
 const getLink = async (id) => {
-    let response = await axios.get(`https://staging.animethemes.moe/api/video/?filter[id]=${id}`)
+    let response = await axios.get(`https://api.animethemes.moe/video/?filter[id]=${id}`)
     let respData = response.data
     let videos = respData.videos
     for (let video of videos){
