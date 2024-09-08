@@ -16,7 +16,7 @@ importers:
         specifier: ^2.0.0
         version: 2.1.1(@sveltejs/kit@1.30.4(svelte@3.59.2)(vite@4.5.3(@types/node@22.5.4)))
       '@sveltejs/kit':
-        specifier: ^1.15.2
+        specifier: ^1.30.4
         version: 1.30.4(svelte@3.59.2)(vite@4.5.3(@types/node@22.5.4))
       svelte:
         specifier: ^3.58.0
