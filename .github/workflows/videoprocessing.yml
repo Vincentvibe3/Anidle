@@ -34,8 +34,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     
-    - name: Download ffmpeg
-      run: sudo apt update && sudo apt install ffmpeg
+    - name: Download ffmpeg and wget
+      run: sudo apt update && sudo apt install ffmpeg && sudo apt install wget
       
     - name: Install npm dependencies
       run: npm install
