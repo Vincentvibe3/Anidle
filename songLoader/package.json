@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.26.1",
-    "express": "^4.17.3",
+    "express": "^4.19.2",
     "kuroshiro": "~1.2.0",
     "kuroshiro-analyzer-kuromoji": "^1.1.0",
     "pino": "^7.10.0",
