@@ -74,8 +74,9 @@ export const GET: RequestHandler = async ({url, fetch}) => {
                 cachedVideo.delete(id)
             }
         }
+        let mirrorVideoInfo = null
         try {
-            let mirrorVideoInfo = await checkMirror(id)
+            mirrorVideoInfo = await checkMirror(id)
         } catch (FetchError) {}
         if (mirrorVideoInfo!=null){
             return json({
