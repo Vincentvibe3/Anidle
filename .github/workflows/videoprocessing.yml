@@ -42,7 +42,10 @@ jobs:
       
     - name: Allow running video processing script
       run: chmod +x ./getKeyframes.sh
-      
+    
+    - name: download metadata from wget
+      run: wget "https://api.animethemes.moe/video/?filter[id]=6898"
+    
     - name: Run downloader and script
       run: node downloader.js ../songs.json
       
