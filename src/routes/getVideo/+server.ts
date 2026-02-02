@@ -61,6 +61,7 @@ const getMirrorVideoLink = async (id) => {
 }
 
 export const GET: RequestHandler = async ({url, fetch}) => {
+    console.log("request received")
     if (url.searchParams.has("id")){
         let id = url.searchParams.get("id")
         if (cachedVideo.has(id)){
@@ -84,13 +85,14 @@ export const GET: RequestHandler = async ({url, fetch}) => {
             })
         } else {
             try {
+                console.log("Trying original")
                 let videoInfo = await getVideoInfo(id, fetch)
                 cachedVideo.set(id, videoInfo)
                 return json({
                         video:videoInfo
                     })
             } catch (FetchError) {
-                throw error(400, "Can't fetch video")
+                throw error(400, FetchError.message)
             }
         }
     }
