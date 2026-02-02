@@ -78,16 +78,12 @@ export const loadVideo = async (id) => {
                 video:mirrorVideoInfo
             }
         } else {
-            try {
-                console.log("Trying original")
-                let videoInfo = await getVideoInfo(id)
-                cachedVideo.set(id, videoInfo)
-                return {
-                        video:videoInfo
-                    }
-            } catch (FetchError) {
-                throw error(400, FetchError.message)
-            }
+            console.log("Trying original")
+            let videoInfo = await getVideoInfo(id)
+            cachedVideo.set(id, videoInfo)
+            return {
+                    video:videoInfo
+                }
         }
     // }
     // throw error(400)
