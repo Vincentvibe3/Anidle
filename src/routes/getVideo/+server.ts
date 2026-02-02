@@ -81,14 +81,20 @@ export const GET: RequestHandler = async ({url, fetch}) => {
                     video:mirrorVideoInfo
                 })
             } else {
-                let videoInfo = await getVideoInfo(id, fetch)
-                cachedVideo.set(id, videoInfo)
-                return json({
-                        video:videoInfo
-                    })
+                try {
+                    let videoInfo = await getVideoInfo(id, fetch)
+                    cachedVideo.set(id, videoInfo)
+                    return json({
+                            video:videoInfo
+                        })
+                catch (FetchError) {
+                    throw error(400, "Can;t fetch video")
+                }
             }
             
-        } catch (FetchError) {}
+        } catch (FetchError) {
+            throw error(400, "Mirror Unavailable")
+        }
     }
     throw error(400)
 };
