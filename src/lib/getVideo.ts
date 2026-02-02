@@ -1,6 +1,6 @@
 
 import { cachedVideo } from "$lib/cache"
-import { createClient } from "@supabase/supabase-js"
+// import { createClient } from "@supabase/supabase-js"
 import {json, error } from '@sveltejs/kit';
 import type { VideoInfo } from "$lib/types";
 // const supabaseUrl = process.env.VITE_SUPABASE_URL
@@ -11,7 +11,7 @@ import type { VideoInfo } from "$lib/types";
 
 // const supabase = createClient(supabaseUrl, supabaseKey)
 
-const getVideoInfo = async (id:string, fetch):Promise<VideoInfo> => {
+const getVideoInfo = async (id:string):Promise<VideoInfo> => {
     let response = await fetch(`https://api.animethemes.moe/video/?filter[id]=${id}`)
     let respData = await response.json()
     let videos = respData.videos
@@ -54,7 +54,7 @@ const getVideoInfo = async (id:string, fetch):Promise<VideoInfo> => {
 //     return `${supabaseUrl}/storage/v1/object/public/${bucketName}/${id}/video.webm`
 // }
 
-export const loadVideo = async ({id, fetch}) => {
+export const loadVideo = async (id) => {
     console.log("request received")
     // if (url.searchParams.has("id")){
         // let id = url.searchParams.get("id")
@@ -80,7 +80,7 @@ export const loadVideo = async ({id, fetch}) => {
         } else {
             try {
                 console.log("Trying original")
-                let videoInfo = await getVideoInfo(id, fetch)
+                let videoInfo = await getVideoInfo(id)
                 cachedVideo.set(id, videoInfo)
                 return {
                         video:videoInfo

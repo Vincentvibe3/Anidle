@@ -6,7 +6,7 @@ import { loadVideo } from "$lib/getVideo"
 
 const getVideo = async (id:number, url):Promise<string> => {
     console.log("Getting video")
-    let response = await loadVideo({id:id, fetch:fetch})
+    let response = await loadVideo(id)
     // if (response.status!=200){
     //     console.log("Failed to fetch video")
     //     return null
