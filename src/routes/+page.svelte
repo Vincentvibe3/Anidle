@@ -49,7 +49,8 @@
     onMount(async ()=>{
 
         try {
-            await getVideo(data.props.song.id)
+            let video = await getVideo(data.props.song.id)
+            data.props.link = video
         } catch (e){
             loadFailed = false
         }
