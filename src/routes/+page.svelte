@@ -51,6 +51,7 @@
         try {
             let video = await getVideo(data.props.song.id)
             data.props.link = video
+            link = video
         } catch (e){
             loadFailed = false
         }
