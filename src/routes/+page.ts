@@ -2,16 +2,18 @@ import { getSong, type SongEntry } from '$lib/songChooser';
 import type { Song, YoutubeInfo } from '$lib/songs';
 import type { PageLoad } from './$types';
 import type { Metadata } from "$lib/types"
+import { loadVideo } from "$lib/getVideo"
 
 const getVideo = async (id:number, url):Promise<string> => {
     console.log("Getting video")
-    let response = await fetch(`${url.origin}/getVideo?id=${id}`)
-    if (response.status!=200){
-        console.log("Failed to fetch video")
-        return null
-    } else {
-        return (await response.json()).video.link
-    }
+    let response = await loadVideo({id:id, fetch:fetch})
+    // if (response.status!=200){
+    //     console.log("Failed to fetch video")
+    //     return null
+    // } else {
+    //     return (await response.json()).video.link
+    // }
+    return response.video.link
 }
 
 const getMetadata = async (song:Song, url):Promise<Metadata> => {
