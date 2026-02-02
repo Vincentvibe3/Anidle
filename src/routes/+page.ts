@@ -4,17 +4,17 @@ import type { PageLoad } from './$types';
 import type { Metadata } from "$lib/types"
 import { loadVideo } from "$lib/getVideo"
 
-const getVideo = async (id:number, url):Promise<string> => {
-    console.log("Getting video")
-    let response = await loadVideo(id)
-    // if (response.status!=200){
-    //     console.log("Failed to fetch video")
-    //     return null
-    // } else {
-    //     return (await response.json()).video.link
-    // }
-    return response.video.link
-}
+// const getVideo = async (id:number, url):Promise<string> => {
+//     console.log("Getting video")
+//     let response = await loadVideo(id)
+//     // if (response.status!=200){
+//     //     console.log("Failed to fetch video")
+//     //     return null
+//     // } else {
+//     //     return (await response.json()).video.link
+//     // }
+//     return response.video.link
+// }
 
 const getMetadata = async (song:Song, url):Promise<Metadata> => {
     let metadata:Metadata
@@ -44,9 +44,9 @@ export const load = (async ({url}) => {
         console.log("Loading")
         let songEntry:SongEntry = getSong()
         let song = songEntry.song
-        let link = await getVideo(song.id, url)
+        // let link = await getVideo(song.id, url)
         let metadata = await getMetadata(song, url)
-        if (metadata==null||link==null){
+        if (metadata==null){
             return {
                 props: {
                     song:song,
@@ -70,7 +70,7 @@ export const load = (async ({url}) => {
                 song:song,
                 metadata: metadata,
                 loadFailed:false,
-                link:link,
+                // link:link,
                 loaded: true,
                 index:songEntry.song.index,
                 nextTime:songEntry.expiry

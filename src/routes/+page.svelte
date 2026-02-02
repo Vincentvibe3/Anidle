@@ -7,6 +7,7 @@
     import type { Song } from '$lib/songs';
     import { onMount } from 'svelte';
     import type { PageData } from "./$types";
+  import { loadVideo } from "$lib/getVideo";
 
     export let data:PageData;
 
@@ -33,7 +34,25 @@
         displayEndScreen = !displayEndScreen
     }
 
-    onMount(()=>{
+    const getVideo = async (id:number):Promise<string> => {
+        console.log("Getting video")
+        let response = await loadVideo(id)
+        // if (response.status!=200){
+        //     console.log("Failed to fetch video")
+        //     return null
+        // } else {
+        //     return (await response.json()).video.link
+        // }
+        return response.video.link
+    }
+
+    onMount(async ()=>{
+
+        try {
+            await getVideo(data.props.song.id)
+        } catch (e){
+            loadFailed = false
+        }
         loaded = data.props.loaded
         if (!loadFailed){
             content.style.justifyContent = "space-between"
