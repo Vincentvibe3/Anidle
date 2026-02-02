@@ -1,6 +1,7 @@
 import * as fs from 'fs';
 import axios from "axios"
 import { spawn } from "child_process"
+import { error } from 'console';
 
 let args = process.argv
 let songsFile = args[2]
@@ -35,13 +36,25 @@ const getLink = async (id) => {
     let videos = respData.videos
     for (let video of videos){
         if (video.id==id){
+            console.log(video.link.replace("staging.", ""))
             return video.link.replace("staging.", "")
         }
     }
     return null
 }
 
+const downloadFile = async (link) => {
+    let response = await axios.get(link, {
+        responseType:"blob"
+    })
+    console.log("Writing file")
+    fs.writeFile("original.webm", response.data, (err) => {
+        console.log(err)
+    })
+}
+
 const getMetadata = async (link) => {
+    console.log(link)
     let script = spawn(`./getKeyframes.sh`, [link]);
 
     script.stdout.on("data", data => {
@@ -71,11 +84,12 @@ const start = async () => {
     let link = await getLink(idData.toFetch)
     if (link!=null){
         console.log("downloading + running ffprobe")
-        getMetadata(link)
+        await downloadFile(link)
+        await getMetadata(link)
     } else {
         console.log("Failed")
         process.exit(1)
     }
 }
 
-start()
+await start()
