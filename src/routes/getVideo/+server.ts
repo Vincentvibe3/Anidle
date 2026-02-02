@@ -87,7 +87,7 @@ export const GET: RequestHandler = async ({url, fetch}) => {
                     return json({
                             video:videoInfo
                         })
-                catch (FetchError) {
+                } catch (FetchError) {
                     throw error(400, "Can;t fetch video")
                 }
             }
